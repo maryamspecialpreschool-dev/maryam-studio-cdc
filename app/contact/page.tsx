@@ -1,0 +1,84 @@
+import Link from 'next/link';
+import Breadcrumb from '@/components/Breadcrumb';
+
+export default function ContactPage() {
+    return (
+        <main>
+            <Breadcrumb title="Contact Us" />
+
+            <section className="contact-section space-page">
+                <div className="container">
+                    <div className="row gx-50 gy-30">
+                        <div className="col-lg-5 wow fadeInLeft" data-wow-delay="0.1s">
+                            <div className="contact-form-box">
+                                <h2 className="contact-title">Leave a Message</h2>
+                                <p className="mb-35">We are here to help. Send us your query and we will get back to you as soon as possible.</p>
+                                <form className="contact-form ajax-contact">
+                                    <div className="row">
+                                        <div className="form-group col-12">
+                                            <label htmlFor="name" className="form-label">Your Name*</label>
+                                            <input type="text" className="form-control" name="name" id="name" placeholder="Name..." required />
+                                        </div>
+                                        <div className="form-group col-12">
+                                            <label htmlFor="email" className="form-label">Your Email*</label>
+                                            <input type="email" className="form-control" name="email" id="email" placeholder="Email..." required />
+                                        </div>
+                                        <div className="form-group col-12">
+                                            <label htmlFor="message" className="form-label">Your Message*</label>
+                                            <textarea className="form-control" name="message" id="message" placeholder="Describe Your Inquiry" required></textarea>
+                                        </div>
+                                        <div className="form-group col-12">
+                                            <button type="submit" className="vs-btn wave-btn">Send Now</button>
+                                        </div>
+                                    </div>
+                                    <p className="form-messages mb-0 mt-3"></p>
+                                </form>
+                            </div>
+                        </div>
+                        <div className="col-lg-7 wow fadeInRight" data-wow-delay="0.1s">
+                            <div className="contact-info-box">
+                                <h1 className="contact-title h2">Contact the Leading Autism School in Hyderabad</h1>
+                                <p className="mb-35">Looking for professional autism therapy in Hyderabad? Visit Maryam Child Development Studio & Research for Autism.</p>
+                                <div className="info-media">
+                                    <div className="media-icon">
+                                        <img src="/images/icon/location.png" alt="icon" />
+                                    </div>
+                                    <div className="media-body">
+                                        <h4 className="info-title">Office Address:</h4>
+                                        <p className="info-text">Maryam Child Development Studio<br />Hyderabad, India</p>
+                                    </div>
+                                </div>
+                                <div className="info-media">
+                                    <div className="media-icon">
+                                        <img src="/images/icon/phone.png" alt="icon" />
+                                    </div>
+                                    <div className="media-body">
+                                        <h4 className="info-title">Call Us For Help:</h4>
+                                        <p className="info-text"><a href="tel:+919876543210">+91 98765 43210</a></p>
+                                    </div>
+                                </div>
+                                <div className="info-media">
+                                    <div className="media-icon">
+                                        <img src="/images/icon/email.png" alt="icon" />
+                                    </div>
+                                    <div className="media-body">
+                                        <h4 className="info-title">Mail info:</h4>
+                                        <p className="info-text"><a href="mailto:info@maryamcdc.com">info@maryamcdc.com</a></p>
+                                    </div>
+                                </div>
+                                <div className="contact-location">
+                                    {/* Hyderabad Map Placeholder */}
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15224.997548777978!2d78.4746363!3d17.4482937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb90c76ac9695b%3A0x6b86c2576b2f7636!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                                        allowFullScreen
+                                        loading="lazy">
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    );
+}

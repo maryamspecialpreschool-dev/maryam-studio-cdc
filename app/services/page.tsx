@@ -1,0 +1,92 @@
+import Link from 'next/link';
+import Breadcrumb from '@/components/Breadcrumb';
+import { servicesData } from '@/lib/servicesData';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Autism Therapy Services Hyderabad | Full-Day Programs',
+    description: 'Explore our comprehensive range of autism therapy services in Hyderabad, including Full-Day Programs, Speech Therapy, Occupational Therapy, and Behavioral Therapy.',
+};
+
+export default function ServicesPage() {
+    const jsonLd = {
+        '@context': 'https://schema.org',
+        '@type': 'ItemList',
+        itemListElement: Object.entries(servicesData).map(([slug, service], index) => ({
+            '@type': 'ListItem',
+            position: index + 1,
+            url: `https://maryamcdc.com/services/${slug}`,
+            name: service.title,
+            description: service.description,
+            image: service.image
+        }))
+    };
+
+    return (
+        <main>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+            />
+            <Breadcrumb title="Services" />
+
+            {/* Service Section */}
+            <section className="service-section space">
+                <div className="container">
+                    <div className="title-area text-center wow fadeInUp" data-wow-delay="0.1s">
+                        <span className="sub-title">Our Services</span>
+                        <h2 className="sec-title">Autism Therapy & Full-Day Programs in Hyderabad</h2>
+                        <p className="mb-4">At Maryam Studio CDC, we provide comprehensive autism support services designed to address every developmental area.</p>
+                    </div>
+                    <div className="row gy-30 justify-content-center">
+                        {Object.entries(servicesData).map(([slug, service], index) => (
+                            <div key={slug} className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay={`${0.1 * (index + 1)}s`}>
+                                <div className="service-box" data-overlay="title" data-opacity="6">
+                                    <div className="service-img">
+                                        <img src={service.image} alt={service.title} />
+                                    </div>
+                                    <div className="service-content">
+                                        <div className="service-icon">
+                                            <img src={`/images/icon/sr-${(index % 6) + 1}.png`} alt="icon" />
+                                        </div>
+                                        <h3 className="service-title"><Link href={`/services/${slug}`}>{service.title}</Link></h3>
+                                        <p className="service-text">{service.description}</p>
+                                        <Link href={`/services/${slug}`} className="vs-btn style-2">See Details</Link>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* CTA Section */}
+            <section className="cta-section space-shape-plus" style={{ backgroundImage: "url('/images/bg/cta-4.jpg')" }} data-opacity="8" data-overlay="custom">
+                <div className="container text-center z-index-common">
+                    <div className="title-area mb-35 wow fadeInUp" data-wow-delay="0.1s">
+                        <span className="sub-title text-white">Enrollment Open</span>
+                        <h2 className="sec-title text-white">Start Your Child's Journey Today <a className="d-block text-inherit" href="tel:+910000000000">+91 (000) 000 0000</a></h2>
+                    </div>
+                    <Link href="/contact" className="vs-btn wave-btn">Schedule Assessment</Link>
+                </div>
+                <div className="section-before style-2"><img src="/images/shape/main-shape-before.png" alt="shape" /></div>
+                <div className="section-after style-2"><img src="/images/shape/main-shape-after.png" alt="shape" /></div>
+            </section>
+
+            {/* Simple Section */}
+            <section className="mockup1 space-extra-top" style={{ backgroundImage: "url('/images/bg/bg_2.png')" }}>
+                <div className="container">
+                    <div className="row justify-content-center">
+                        <div className="col-lg-9 text-center wow fadeInUp" data-wow-delay="0.1s">
+                            <img className="mb-70" src="/images/icon/mail-big-icon.png" alt="icon" />
+                            <h2 className="h1">Contact Us For Information</h2>
+                            <p className="mb-35">We are here to answer your questions and guide you through the process of enrollment and therapy planning.</p>
+                            <Link href="/contact" className="vs-btn wave-btn">Contact Us</Link>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    );
+}
