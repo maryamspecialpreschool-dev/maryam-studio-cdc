@@ -7,6 +7,19 @@ export interface ServiceData {
     image: string;
     description: string;
     content: string;
+    seoDescription?: string;
+    seoKeywords?: string;
+    id?: string;
+    slug?: string;
+    shortDescription?: string;
+    icon?: string;
+    benefits?: string[];
+    approach?: { title: string; description: string }[];
+    whoBenefits?: string[];
+    faqs?: { question: string; answer: string }[];
+    localAreas?: string;
+    quote?: string;
+    quoteAuthor?: string;
 }
 
 const servicesDirectory = path.join(process.cwd(), 'data/services');
