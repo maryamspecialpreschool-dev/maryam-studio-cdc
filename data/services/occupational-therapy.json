@@ -1,6 +1,68 @@
 {
+    "id": "occupational-therapy",
     "title": "Occupational Therapy",
-    "image": "/images/service/s-3.jpg",
-    "description": "Developing fine motor skills, sensory integration, and daily living skills.",
-    "content": "\n            <p><strong>Building independence, one skill at a time. Expert Occupational Therapy for children in Hyderabad.</strong></p>\n            <p>A child's \"occupation\" is to play, learn, and grow. When developmental hurdles interfere with these activities, Occupational Therapy (OT) steps in. At Maryam Studio, our OT program enables children to participate fully in their daily lives, from boosting academic performance to mastering self-care tasks.</p>\n\n            <h3 class=\"h3 mt-4\">Why is OT Vital for Autism?</h3>\n            <p>Children with autism often struggle with sensory processing, motor coordination, and self-regulation. Our Occupational Therapists act as detectives, identifying the underlying sensory or motor barriers and designing fun, purposeful activities to overcome them.</p>\n\n            <h3 class=\"h3 mt-4\">Key Focus Areas</h3>\n\n            <h4 class=\"h4 mt-3\">Sensory Integration (SI)</h4>\n            <p>Many of our students are either over-sensitive (avoiding loud noises, textures) or under-sensitive (seeking movement, crashing). We utilize a state-of-the-art <strong>Sensory Gym</strong> equipped with swings, trampolines, climbing walls, and tactile surfaces. Therapy helps the nervous system process sensory input correctly, leading to a calmer, more focused child.</p>\n\n            <h4 class=\"h4 mt-3\">Fine Motor Skills</h4>\n            <p>We work on small muscle movements essential for:</p>\n            <ul>\n                <li><strong>Writing:</strong> Grip strength, letter formation.</li>\n                <li><strong>Self-Care:</strong> Buttoning shirts, tying shoelaces, using utensils using a spoon/fork.</li>\n                <li><strong>Play:</strong> Manipulating small blocks, puzzles, and toys.</li>\n            </ul>\n\n            <h4 class=\"h4 mt-3\">Gross Motor Skills</h4>\n            <p>Building core strength, balance, and coordination through obstacle courses, ball games, and climbing. This improves posture, stamina for sitting in class, and confidence in the playground.</p>\n\n            <h4 class=\"h4 mt-3\">Activities of Daily Living (ADL)</h4>\n            <p>We explicitly teach the steps for independence: brushing teeth, toilet training, dressing, and organizing school bags. </p>\n\n            <p class=\"mt-4\">Through Occupational Therapy, we help children make sense of their bodies and the world around them, paving the way for a more independent and fulfilling life.</p>\n        "
+    "slug": "occupational-therapy",
+    "shortDescription": "Expert occupational therapy for children in Hyderabad. Specialized sensory integration, fine motor skills development, and daily living skills training at our Banjara Hills center.",
+    "description": "At Maryam Child Development Studio, we provide expert occupational therapy (OT) services in Hyderabad for children with autism, ADHD, sensory processing disorders, and developmental delays. Our certified occupational therapists in Banjara Hills use evidence-based approaches to help children develop essential life skills, improve sensory processing, and enhance fine motor abilities. Serving families across Hyderabad including Jubilee Hills, Gachibowli, Madhapur, Kondapur, and surrounding areas.",
+    "image": "/images/services/ot-1.jpg",
+    "icon": "/images/icon/sr2-1.svg",
+    "benefits": [
+        "Improved sensory processing and integration for children with autism in Hyderabad",
+        "Enhanced fine motor skills development - writing, cutting, buttoning",
+        "Better gross motor coordination and balance",
+        "Increased independence in daily living activities",
+        "Improved attention and focus in classroom settings",
+        "Better self-regulation and emotional control",
+        "Enhanced visual-motor integration skills",
+        "Improved handwriting and pre-writing skills for Hyderabad schools"
+    ],
+    "approach": [
+        {
+            "title": "Sensory Integration Therapy",
+            "description": "Our specialized sensory gym in Banjara Hills features swings, climbing equipment, and tactile materials to help children process sensory information effectively."
+        },
+        {
+            "title": "Fine Motor Skills Development",
+            "description": "Targeted activities to improve hand strength, finger dexterity, and coordination needed for writing, self-care, and academic tasks in Hyderabad schools."
+        },
+        {
+            "title": "Activities of Daily Living (ADL) Training",
+            "description": "Teaching essential self-care skills like dressing, feeding, grooming, and toileting to promote independence at home and school."
+        },
+        {
+            "title": "Handwriting Without Tears Program",
+            "description": "Evidence-based handwriting program tailored for children in Hyderabad, preparing them for academic success in local schools."
+        }
+    ],
+    "whoBenefits": [
+        "Children with Autism Spectrum Disorder (ASD) in Hyderabad",
+        "Children with ADHD and attention difficulties",
+        "Children with sensory processing disorders",
+        "Children with developmental delays",
+        "Children with fine motor skill challenges",
+        "Children with handwriting difficulties in Hyderabad schools",
+        "Children with coordination problems"
+    ],
+    "faqs": [
+        {
+            "question": "What is occupational therapy for children in Hyderabad?",
+            "answer": "Occupational therapy (OT) helps children develop the skills needed for daily activities like eating, dressing, writing, and playing. At our Banjara Hills center, we focus on sensory integration, fine motor skills, and independence training for children with autism and developmental delays."
+        },
+        {
+            "question": "How long are OT sessions at Maryam Studio Hyderabad?",
+            "answer": "Our occupational therapy sessions in Hyderabad are typically 45-60 minutes, conducted 2-3 times per week based on your child's needs. We serve families from Jubilee Hills, Gachibowli, Madhapur, and across Hyderabad."
+        },
+        {
+            "question": "Do you accept insurance for OT services in Hyderabad?",
+            "answer": "We provide detailed invoices and documentation that you can submit to your insurance provider. Many families in Hyderabad successfully claim reimbursement for our occupational therapy services."
+        },
+        {
+            "question": "What age children do you serve for OT in Hyderabad?",
+            "answer": "We provide occupational therapy services for children aged 2-16 years at our Hyderabad center, with specialized programs for toddlers, preschoolers, school-age children, and teenagers."
+        }
+    ],
+    "seoTitle": "Occupational Therapy for Children in Hyderabad | Maryam Studio Banjara Hills",
+    "seoDescription": "Best occupational therapy for children in Hyderabad. Expert OT services for autism, sensory processing, fine motor skills at our Banjara Hills center. Serving Jubilee Hills, Gachibowli, Madhapur.",
+    "seoKeywords": "occupational therapy Hyderabad, OT for kids Hyderabad, sensory therapy Hyderabad, pediatric OT Hyderabad, child occupational therapy Banjara Hills, autism OT Hyderabad, fine motor skills therapy, sensory integration Hyderabad, OT near me Hyderabad, occupational therapy Jubilee Hills, OT Gachibowli, occupational therapy Madhapur",
+    "localAreas": "Banjara Hills, Jubilee Hills, Gachibowli, Madhapur, Kondapur, Kukatpally, HITEC City, Financial District, Begumpet, Somajiguda"
 }

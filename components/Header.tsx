@@ -1,4 +1,7 @@
+'use client';
+
 import Link from 'next/link';
+
 
 
 export default function Header() {
@@ -38,7 +41,7 @@ export default function Header() {
                         <div className="vs-widget-about">
                             <div className="about-logo">
                                 <Link href="/">
-                                    <img src="/images/logo.svg" alt="Maryam Child Development Studio" />
+                                    <img src="/images/logo.png" alt="Maryam Child Development Studio" style={{ maxHeight: '60px' }} />
                                 </Link>
                             </div>
                             <p className="about-text">Maryam Child Development Studio & Research for Autism offers specialized therapy and educational programs for children with autism.</p>
@@ -56,7 +59,7 @@ export default function Header() {
                         <div className="vs-widget-contact">
                             <p className="footer-info"><i className="fas fa-map-marker-alt"></i>Hyderabad, India</p>
                             <p className="footer-info"><i className="fas fa-envelope"></i><a href="mailto:info@maryamcdc.com">info@maryamcdc.com</a></p>
-                            <p className="footer-info"><i className="fas fa-phone-alt"></i><a href="tel:+910000000000">+91 (000) 000 0000</a></p>
+                            <p className="footer-info"><i className="fas fa-phone-alt"></i><a href="tel:+917702426362">+91 77024 26362</a></p>
                         </div>
                     </div>
 
@@ -83,7 +86,7 @@ export default function Header() {
                 <div className="vs-menu-area">
                     <button className="vs-menu-toggle"><i className="fal fa-times"></i></button>
                     <div className="mobile-logo">
-                        <Link href="/"><img src="/images/logo.svg" alt="Maryam Child Development Studio" /></Link>
+                        <Link href="/"><img src="/images/logo.png" alt="Maryam Child Development Studio" style={{ maxHeight: '60px' }} /></Link>
                     </div>
                     <div className="vs-mobile-menu">
                         <ul>
@@ -91,16 +94,16 @@ export default function Header() {
                                 <Link href="/">Home</Link>
                             </li>
                             <li><Link href="/about">About Us</Link></li>
-                            <li><Link href="/team">Team</Link></li>
                             <li className="menu-item-has-children">
                                 <Link href="/services">Services</Link>
                                 <ul className="sub-menu">
-                                    <li><Link href="/services">All Services</Link></li>
-                                    <li><Link href="/services/early-intervention">Early Intervention</Link></li>
-                                    <li><Link href="/services/aba-therapy">ABA Therapy</Link></li>
                                     <li><Link href="/services/occupational-therapy">Occupational Therapy</Link></li>
                                     <li><Link href="/services/speech-therapy">Speech Therapy</Link></li>
-                                    <li><Link href="/services/special-education">Special Education</Link></li>
+                                    <li><Link href="/services/physiotherapy">Physiotherapy</Link></li>
+                                    <li><Link href="/services/aba-therapy">ABA & Behavioural Therapy</Link></li>
+                                    <li><Link href="/services/daycare">Daycare Program</Link></li>
+                                    <li><Link href="/services/primary-education">Primary Education</Link></li>
+                                    <li><Link href="/services/living-skills">Living Skills Training</Link></li>
                                 </ul>
                             </li>
                             <li><Link href="/gallery">Gallery</Link></li>
@@ -121,8 +124,8 @@ export default function Header() {
                             <div className="col-auto">
                                 <div className="header-links d-none d-lg-block">
                                     <ul>
-                                        <li><i className="fal fa-clock"></i>9:30 am - 6:30 pm - Mon - Sun</li>
-                                        <li><i className="fal fa-phone"></i><a href="tel:+910000000000">+91 (000) 000 0000</a></li>
+                                        <li><i className="fal fa-clock"></i>Monday - Saturday: 8:30 AM to 4:00 PM</li>
+                                        <li><i className="fal fa-phone"></i><a href="tel:+917702426362">+91 77024 26362</a></li>
                                         <li><i className="fal fa-map-marker-alt"></i>Hyderabad, India</li>
                                     </ul>
                                 </div>
@@ -150,7 +153,7 @@ export default function Header() {
                                         <div className="col-auto">
                                             <div className="header-logo">
                                                 <Link href="/">
-                                                    <img src="/images/logo.svg" alt="Maryam Child Development Studio" />
+                                                    <img src="/images/logo.png" alt="Maryam Child Development Studio" style={{ maxHeight: '60px' }} />
                                                 </Link>
                                             </div>
                                         </div>
@@ -161,16 +164,16 @@ export default function Header() {
                                                         <Link href="/">Home</Link>
                                                     </li>
                                                     <li><Link href="/about">About Us</Link></li>
-                                                    <li><Link href="/team">Team</Link></li>
                                                     <li className="menu-item-has-children">
                                                         <Link href="/services">Services</Link>
                                                         <ul className="sub-menu">
-                                                            <li><Link href="/services">All Services</Link></li>
-                                                            <li><Link href="/services/early-intervention">Early Intervention</Link></li>
-                                                            <li><Link href="/services/aba-therapy">ABA Therapy</Link></li>
                                                             <li><Link href="/services/occupational-therapy">Occupational Therapy</Link></li>
                                                             <li><Link href="/services/speech-therapy">Speech Therapy</Link></li>
-                                                            <li><Link href="/services/special-education">Special Education</Link></li>
+                                                            <li><Link href="/services/physiotherapy">Physiotherapy</Link></li>
+                                                            <li><Link href="/services/aba-therapy">ABA & Behavioural Therapy</Link></li>
+                                                            <li><Link href="/services/daycare">Daycare Program</Link></li>
+                                                            <li><Link href="/services/primary-education">Primary Education</Link></li>
+                                                            <li><Link href="/services/living-skills">Living Skills Training</Link></li>
                                                         </ul>
                                                     </li>
                                                     <li><Link href="/gallery">Gallery</Link></li>
@@ -186,8 +189,7 @@ export default function Header() {
                                         </div>
                                         <div className="col-auto d-none d-xl-block">
                                             <div className="header-button">
-                                                <Link href="/contact" className="vs-btn wave-btn">Book a visit</Link>
-                                                <button type="button" className="searchBoxToggler icon-btn"><i className="far fa-search"></i></button>
+                                                <button type="button" onClick={() => (window as any).openBookingModal?.()} className="vs-btn wave-btn">Book a visit</button>
                                                 <button type="button" className="sideMenuToggler icon-btn"><i className="fal fa-bars"></i></button>
                                             </div>
                                         </div>

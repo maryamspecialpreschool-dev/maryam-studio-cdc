@@ -188,6 +188,123 @@ export default function ScriptLoader() {
                     $(this).removeAttr('data-bg-src').addClass('background-image');
                 });
 
+                // 7. Mobile Menu & Side Menu Logic
+                // Mobile Menu Toggle
+                $('.vs-menu-toggle').off('click').on('click', function (e: any) {
+                    e.preventDefault();
+                    $('.vs-menu-wrapper').toggleClass('vs-body-visible');
+                });
+
+                // Dropdown Toggle for Mobile
+                if ($('.vs-mobile-menu .menu-item-has-children > span.expander').length === 0) {
+                    $('.vs-mobile-menu .menu-item-has-children').each(function (this: any) {
+                        $(this).prepend('<span class="expander"><i class="fal fa-plus"></i></span>');
+                    });
+                }
+
+                $('.vs-mobile-menu').off('click', '.expander').on('click', '.expander', function (this: any, e: any) {
+                    e.preventDefault();
+                    $(this).parent().children('.sub-menu').slideToggle();
+                    $(this).find('i').toggleClass('fa-plus fa-minus');
+                    $(this).parent().toggleClass('active');
+                });
+
+                // 8. Data Mask Src
+                if ($('[data-mask-src]').length > 0) {
+                    $('[data-mask-src]').each(function (this: any) {
+                        var mask = $(this).attr('data-mask-src');
+                        $(this).css({
+                            'mask-image': 'url(' + mask + ')',
+                            '-webkit-mask-image': 'url(' + mask + ')'
+                        });
+                        $(this).removeAttr('data-mask-src');
+                    });
+                }
+
+                // 9. Data Overlay
+                if ($('[data-overlay]').length > 0) {
+                    $('[data-overlay]').each(function (this: any) {
+                        var $this = $(this);
+                        if ($this.find('.overlay').length > 0) return; // Prevent duplicate overlay
+
+                        var overlay = $this.data('overlay');
+                        var opacity = $this.data('opacity');
+                        var color = 'var(--black-color)'; // Default black
+
+                        if (overlay === 'title') color = 'var(--title-color)';
+                        if (overlay === 'theme') color = 'var(--theme-color)';
+                        if (overlay === 'secondary') color = 'var(--secondary-color)';
+                        if (overlay === 'smoke') color = 'var(--smoke-color)';
+                        if (overlay === 'white') color = 'var(--white-color)';
+                        if (overlay === 'black') color = 'var(--black-color)';
+
+                        $this.css('position', 'relative');
+                        $this.prepend(`<div class="overlay" style="background-color: ${color}; opacity: ${opacity / 10};"></div>`);
+                    });
+                }
+
+                // 10. Shape Mockup
+                $.fn.shapeMockup = function () {
+                    var $shape = $(this);
+                    $shape.each(function (this: any) {
+                        var $currentShape = $(this),
+                            shapeTop = $currentShape.data('top'),
+                            shapeRight = $currentShape.data('right'),
+                            shapeBottom = $currentShape.data('bottom'),
+                            shapeLeft = $currentShape.data('left');
+                        $currentShape.css({
+                            top: shapeTop,
+                            right: shapeRight,
+                            bottom: shapeBottom,
+                            left: shapeLeft,
+                        }).removeAttr('data-top')
+                            .removeAttr('data-right')
+                            .removeAttr('data-bottom')
+                            .removeAttr('data-left')
+                            .parent().addClass('shape-mockup-wrap');
+                    });
+                };
+
+                if ($('.shape-mockup').length > 0) {
+                    $('.shape-mockup').shapeMockup();
+                }
+
+                // 11. Counter Up
+                if ($('.counter-number').length > 0 && (window as any).jQuery.fn.counterUp) {
+                    $('.counter-number').counterUp({
+                        delay: 10,
+                        time: 1000
+                    });
+                }
+
+                // Side Menu Toggle
+                $('.sideMenuToggler').off('click').on('click', function (e: any) {
+                    e.preventDefault();
+                    $('.sidemenu-wrapper').addClass('show');
+                });
+
+                $('.sideMenuCls, .sidemenu-wrapper').off('click').on('click', function (e: any) {
+                    // unexpected behavior fix: prevents closing when clicking content
+                    if ($(e.target).hasClass('sidemenu-wrapper') || $(e.target).closest('.sideMenuCls').length > 0) {
+                        e.preventDefault();
+                        $('.sidemenu-wrapper').removeClass('show');
+                    }
+                });
+
+                // Prevent closing when clicking content
+                $('.sidemenu-content').on('click', function (e: any) {
+                    e.stopPropagation();
+                });
+
+                // Sticky Header
+                $(window).on('scroll', function () {
+                    if ($(window).scrollTop() > 400) {
+                        $('.sticky-wrapper').addClass('sticky');
+                    } else {
+                        $('.sticky-wrapper').removeClass('sticky');
+                    }
+                });
+
             }
         }, 100); // 100ms delay to ensure React has rendered
 

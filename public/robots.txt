@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://maryamstudio.com/sitemap.xml
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+
+# Allow all service pages
+Allow: /occupational-therapy
+Allow: /speech-therapy
+Allow: /physiotherapy
+Allow: /aba-therapy
+Allow: /daycare
+Allow: /primary-education
+Allow: /living-skills
+Allow: /about
+Allow: /contact

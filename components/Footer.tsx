@@ -5,7 +5,7 @@ export default function Footer() {
         <>
             <footer className="footer-wrapper footer-layout4" style={{ backgroundImage: "url('/images/bg/footer-3.png')", color: '#ffffff' }}>
                 <div className="footer-overlay" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', backgroundColor: 'rgba(109, 27, 109, 0.85)', zIndex: 0 }}></div>
-                <div className="widget-area" style={{ position: 'relative', zIndex: 1 }}>
+                <div className="widget-area" style={{ position: 'relative', zIndex: 1, color: '#ffffff' }}>
                     <div className="container">
                         <div className="row justify-content-between">
                             {/* About Widget */}
@@ -14,7 +14,7 @@ export default function Footer() {
                                     <div className="vs-widget-about">
                                         <div className="about-logo">
                                             <Link href="/">
-                                                <img src="/images/logo.svg" alt="Maryam Child Development Studio" />
+                                                <img src="/images/logo.png" alt="Maryam Child Development Studio" style={{ maxHeight: '60px' }} />
                                             </Link>
                                         </div>
                                         <p className="about-text">Maryam Child Development Studio & Research for Autism offers specialized therapy and educational programs for children with autism.</p>
@@ -35,7 +35,7 @@ export default function Footer() {
                                         <li><Link href="/contact">Appointment</Link></li>
                                         <li><Link href="/about">About Us</Link></li>
                                         <li><Link href="/gallery">Gallery</Link></li>
-                                        <li><Link href="/team">Our Team</Link></li>
+
                                     </ul>
                                 </div>
                             </div>
@@ -72,9 +72,10 @@ export default function Footer() {
                                 <div className="widget footer-widget">
                                     <h3 className="widget_title">Contact Us</h3>
                                     <div className="vs-widget-contact">
-                                        <p className="footer-info"><i className="fas fa-map-marker-alt"></i>Hyderabad, India</p>
+                                        <p className="footer-info"><i className="fas fa-map-marker-alt"></i>Hyderabad, Telangana, India</p>
                                         <p className="footer-info"><i className="fas fa-envelope"></i><a href="mailto:info@maryamcdc.com">info@maryamcdc.com</a></p>
-                                        <p className="footer-info"><i className="fas fa-phone-alt"></i><a href="tel:+910000000000">+91 (000) 000 0000</a></p>
+                                        <p className="footer-info"><i className="fas fa-phone-alt"></i><a href="tel:+917702426362">+91 77024 26362</a></p>
+                                        <p className="footer-info"><i className="fas fa-clock"></i>Monday - Saturday: 8:30 AM to 4:00 PM</p>
                                     </div>
                                 </div>
                             </div>

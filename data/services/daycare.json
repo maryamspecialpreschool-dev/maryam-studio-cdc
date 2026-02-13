@@ -1,0 +1,68 @@
+{
+    "id": "daycare",
+    "title": "Daycare Program",
+    "slug": "daycare",
+    "shortDescription": "Specialized daycare for children with autism in Hyderabad. Full-day sensory-friendly program with therapy integration at our Banjara Hills center.",
+    "description": "Maryam Child Development Studio offers a specialized full-day daycare program in Hyderabad designed for children with autism and special needs. Our sensory-friendly daycare in Banjara Hills integrates occupational therapy, speech therapy, and structured activities in a nurturing environment. We provide a safe, supportive space for children while parents work, serving families across Hyderabad including Jubilee Hills, Gachibowli, Madhapur, and Kondapur.",
+    "image": "/images/services/daycare-1.jpg",
+    "icon": "/images/icon/sr2-4.svg",
+    "benefits": [
+        "Safe, sensory-friendly environment for children with autism in Hyderabad",
+        "Integrated therapy services during daycare hours",
+        "Structured routine promoting security and learning",
+        "Socialization opportunities with peers",
+        "Nutritious meals and snacks provided",
+        "Trained staff experienced with special needs children",
+        "Regular communication with parents",
+        "Convenient location in Banjara Hills, Hyderabad"
+    ],
+    "approach": [
+        {
+            "title": "Structured Daily Routine",
+            "description": "Predictable schedule with visual supports helping children with autism in Hyderabad feel secure and engaged throughout the day."
+        },
+        {
+            "title": "Therapy Integration",
+            "description": "Occupational therapy, speech therapy, and behavioral support seamlessly integrated into daily activities at our Hyderabad center."
+        },
+        {
+            "title": "Sensory-Friendly Environment",
+            "description": "Specially designed spaces with sensory rooms, quiet areas, and adaptive equipment for children with sensory processing needs."
+        },
+        {
+            "title": "Social Skills Development",
+            "description": "Structured peer interactions and group activities promoting social communication and friendship skills for Hyderabad children."
+        }
+    ],
+    "whoBenefits": [
+        "Children with autism spectrum disorder in Hyderabad",
+        "Children with developmental delays",
+        "Children with sensory processing disorders",
+        "Working parents in Hyderabad needing specialized care",
+        "Children aged 3-10 years",
+        "Children needing integrated therapy services",
+        "Families in Banjara Hills, Jubilee Hills, Gachibowli areas"
+    ],
+    "faqs": [
+        {
+            "question": "What are the daycare timings in Hyderabad?",
+            "answer": "Our specialized daycare program in Banjara Hills operates Monday-Saturday from 8:30 AM to 4:00 PM. We offer flexible timing options to accommodate working parents across Hyderabad."
+        },
+        {
+            "question": "Do you provide meals during daycare?",
+            "answer": "Yes, we provide nutritious breakfast, lunch, and snacks. We accommodate dietary restrictions and preferences. Our Hyderabad center follows hygienic food preparation practices."
+        },
+        {
+            "question": "Is therapy included in the daycare program?",
+            "answer": "Yes, our daycare program in Hyderabad includes integrated therapy sessions (OT, speech, behavioral therapy) as part of the daily schedule, supervised by certified therapists."
+        },
+        {
+            "question": "What is the staff-to-child ratio?",
+            "answer": "We maintain a low staff-to-child ratio of 1:3 to 1:4 at our Hyderabad center, ensuring personalized attention and safety for each child with special needs."
+        }
+    ],
+    "seoTitle": "Autism Daycare Program in Hyderabad | Maryam Studio Banjara Hills",
+    "seoDescription": "Specialized daycare for children with autism in Hyderabad. Full-day sensory-friendly program with therapy integration at Banjara Hills. Serving Jubilee Hills, Gachibowli, Madhapur.",
+    "seoKeywords": "autism daycare Hyderabad, special needs daycare Hyderabad, daycare for autism Banjara Hills, sensory-friendly daycare Hyderabad, autism care center Hyderabad, special education daycare, daycare near me Hyderabad, autism daycare Jubilee Hills, daycare Gachibowli",
+    "localAreas": "Banjara Hills, Jubilee Hills, Gachibowli, Madhapur, Kondapur, Kukatpally, HITEC City, Financial District, Begumpet, Somajiguda"
+}

@@ -1,0 +1,68 @@
+{
+    "id": "primary-education",
+    "title": "Primary Education",
+    "slug": "primary-education",
+    "shortDescription": "Specialized primary education for children with autism in Hyderabad. Concept-based learning, CBSE curriculum adaptation, and individualized education at our Banjara Hills school.",
+    "description": "Maryam Child Development Studio provides specialized primary education in Hyderabad for children with autism and learning disabilities. Our concept-based curriculum at Banjara Hills adapts CBSE/ICSE standards with individualized teaching methods, small class sizes, and integrated therapy support. We prepare children for mainstream education while addressing their unique learning needs, serving families across Hyderabad including Jubilee Hills, Gachibowli, Madhapur, and Kondapur.",
+    "image": "/images/services/education-1.jpg",
+    "icon": "/images/icon/sr2-5.svg",
+    "benefits": [
+        "Individualized Education Plans (IEPs) for each child in Hyderabad",
+        "Small class sizes (maximum 6-8 students)",
+        "CBSE/ICSE curriculum adaptation for special needs",
+        "Integrated therapy during school hours",
+        "Concept-based learning approach",
+        "Preparation for mainstream schools in Hyderabad",
+        "Focus on functional academics and life skills",
+        "Regular parent-teacher communication"
+    ],
+    "approach": [
+        {
+            "title": "Concept-Based Learning",
+            "description": "Teaching fundamental concepts through hands-on activities, visual aids, and experiential learning tailored for children with autism in Hyderabad."
+        },
+        {
+            "title": "Individualized Education Plans",
+            "description": "Customized learning goals and teaching strategies based on each child's strengths, needs, and learning style in our Hyderabad school."
+        },
+        {
+            "title": "Multi-Sensory Teaching",
+            "description": "Engaging multiple senses (visual, auditory, kinesthetic) to enhance learning and retention for children with diverse learning needs."
+        },
+        {
+            "title": "Functional Academics",
+            "description": "Teaching practical skills like money management, time-telling, and daily living alongside academic subjects for real-world success in Hyderabad."
+        }
+    ],
+    "whoBenefits": [
+        "Children with autism spectrum disorder in Hyderabad",
+        "Children with learning disabilities",
+        "Children with ADHD and attention difficulties",
+        "Children needing small group instruction",
+        "Children aged 6-12 years",
+        "Children transitioning to mainstream schools in Hyderabad",
+        "Children needing individualized academic support"
+    ],
+    "faqs": [
+        {
+            "question": "What curriculum do you follow in Hyderabad?",
+            "answer": "We follow an adapted CBSE/ICSE curriculum at our Banjara Hills school, modified to meet the individual learning needs of children with autism and special needs. Our concept-based approach ensures deep understanding."
+        },
+        {
+            "question": "What is the class size at your Hyderabad school?",
+            "answer": "We maintain small class sizes of 6-8 students maximum, ensuring personalized attention and individualized instruction for each child at our Hyderabad center."
+        },
+        {
+            "question": "Do you help children transition to mainstream schools?",
+            "answer": "Yes, our primary education program in Hyderabad prepares children for mainstream schools through academic skill building, social skills training, and gradual integration support."
+        },
+        {
+            "question": "Are therapies included in the school program?",
+            "answer": "Yes, occupational therapy, speech therapy, and behavioral support are integrated into the school day at our Hyderabad center, ensuring holistic development."
+        }
+    ],
+    "seoTitle": "Special Education Primary School in Hyderabad | Maryam Studio Banjara Hills",
+    "seoDescription": "Specialized primary education for children with autism in Hyderabad. CBSE curriculum adaptation, small classes, integrated therapy at Banjara Hills. Serving Jubilee Hills, Gachibowli.",
+    "seoKeywords": "special education Hyderabad, autism school Hyderabad, primary education for autism Banjara Hills, special needs school Hyderabad, CBSE special education, autism education Hyderabad, special school near me, autism school Jubilee Hills, special education Gachibowli",
+    "localAreas": "Banjara Hills, Jubilee Hills, Gachibowli, Madhapur, Kondapur, Kukatpally, HITEC City, Financial District, Begumpet, Somajiguda"
+}

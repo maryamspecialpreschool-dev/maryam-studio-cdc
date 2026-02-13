@@ -78,7 +78,7 @@ Version: 1.0.0
 /*------------------- 1.2. Function -------------------*/
 /*------------------- 1.3. Variable-------------------*/
 :root {
-  --theme-color: #6d1b6d;
+  --theme-color: #9C29B2;
   --secondary-color: #88c90d;
   --title-color: #103741;
   --body-color: #74787c;
@@ -13588,3 +13588,45 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+/* Fix for Mission Section */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.mission-section .service-box {
+  background-color: var(--white-color);
+  border-radius: 30px;
+  overflow: hidden;
+  padding: 40px;
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.08);
+  height: 100%;
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+.mission-section .service-box:hover {
+  transform: translateY(-10px);
+}
+
+.mission-section .service-box .service-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Ensure text is readable on overlay */
+.mission-section .service-box[data-overlay] .service-title,
+.mission-section .service-box[data-overlay] .service-text {
+  color: var(--white-color);
+}
+
+/* Adjust sec-title in mission section */
+.mission-section .sec-title {
+  margin-bottom: 50px;
+}
+

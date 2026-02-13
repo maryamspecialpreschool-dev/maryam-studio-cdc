@@ -1,6 +1,68 @@
 {
+    "id": "speech-therapy",
     "title": "Speech Therapy",
-    "image": "/images/service/s-4.jpg",
-    "description": "Improving communication skills, articulation, and expressive language.",
-    "content": "\n            <p><strong>Unlock the power of your child’s voice with expert Speech-Language Pathology services in Hyderabad.</strong></p>\n            <p>Communication is the bridge to the world. For children with autism and developmental delays, difficulties in speaking, understanding, or social interaction can be frustrating. At Maryam Child Development Studio, our Speech Therapy program effectively addresses these challenges, helping children express their wants, needs, thoughts, and feelings with confidence.</p>\n\n            <h3 class=\"h3 mt-4\">What is Speech & Language Therapy?</h3>\n            <p>Speech therapy involves the assessment and treatment of communication disorders. It is not just about teaching a child to talk; it is about teaching them to <em>communicate</em>. This includes expanding vocabulary, improving sentence structure, correcting pronunciation (articulation), and enhancing social communication rules (pragmatics).</p>\n\n            <h3 class=\"h3 mt-4\">Our Approach</h3>\n            <p>We use a play-based, child-centered approach. We believe that children learn best when they are engaged and having fun. Our certified speech therapists use evidence-based techniques to target specific goals.</p>\n\n            <h4 class=\"h4 mt-3\">Target Areas:</h4>\n            <div class=\"check-list style-4\">\n                <ul>\n                    <li><strong>Receptive Language:</strong> Improving the understanding of words, instructions, and questions.</li>\n                    <li><strong>Expressive Language:</strong> Encouraging the use of words, gestures, or pictures to express needs and ideas.</li>\n                    <li><strong>Articulation & Phonology:</strong> Correcting sound errors to make speech clearer and more understandable.</li>\n                    <li><strong>Social Pragmatics:</strong> Teaching the rules of conversation, such as eye contact, turn-taking, and staying on topic.</li>\n                    <li><strong>Fluency:</strong> Addressing stuttering or cluttering issues.</li>\n                    <li><strong>Oral Motor Skills:</strong> Strengthening the muscles of the mouth for better speech and feeding.</li>\n                </ul>\n            </div>\n\n            <h3 class=\"h3 mt-4\">Specialized Techniques</h3>\n            <p>In addition to traditional therapy, we specialize in:</p>\n            <ul>\n                <li><strong>AAC (Augmentative and Alternative Communication):</strong> For non-verbal children, we introduce tools like PECS (Picture Exchange Communication System) or communication apps/devices to give them a voice.</li>\n                <li><strong>PROMPT Therapy:</strong> A tactile-kinesthetic approach to help reshape oral movements for speech production.</li>\n                <li><strong>Social Stories:</strong> Using visual narratives to explain social situations and expected responses.</li>\n            </ul>\n\n            <p class=\"mt-4\">Our Speech Therapy sessions are tailored to your child's interests, making learning natural and motivating. Whether your child is non-verbal, has a speech delay, or struggles with social nuances, our expert team is here to guide them toward effective communication.</p>\n        "
+    "slug": "speech-therapy",
+    "shortDescription": "Expert speech and language therapy for children in Hyderabad. Specialized communication skills development, articulation therapy, and language intervention at our Banjara Hills center.",
+    "description": "Maryam Child Development Studio offers comprehensive speech and language therapy services in Hyderabad for children with autism, speech delays, articulation disorders, and communication challenges. Our certified speech-language pathologists (SLPs) in Banjara Hills use evidence-based techniques including PECS, AAC devices, and oral motor therapy to help children communicate effectively. Proudly serving families across Hyderabad including Jubilee Hills, Gachibowli, Madhapur, Kondapur, and surrounding neighborhoods.",
+    "image": "/images/services/speech-1.jpg",
+    "icon": "/images/icon/sr2-2.svg",
+    "benefits": [
+        "Improved speech clarity and articulation for Hyderabad children",
+        "Enhanced expressive and receptive language skills",
+        "Better communication through verbal and non-verbal methods",
+        "Increased vocabulary and language comprehension",
+        "Improved social communication skills for school success",
+        "Better feeding and swallowing abilities (oral motor therapy)",
+        "Enhanced pragmatic language and conversation skills",
+        "AAC device training for non-verbal children in Hyderabad"
+    ],
+    "approach": [
+        {
+            "title": "Articulation & Phonology Therapy",
+            "description": "Targeted therapy to improve speech sound production, helping children in Hyderabad speak clearly and be understood by peers and teachers."
+        },
+        {
+            "title": "Language Development",
+            "description": "Building vocabulary, grammar, and sentence formation skills through play-based activities tailored for children in Hyderabad schools."
+        },
+        {
+            "title": "Augmentative & Alternative Communication (AAC)",
+            "description": "Training with PECS, communication boards, and AAC devices for non-verbal children with autism in Hyderabad."
+        },
+        {
+            "title": "Oral Motor Therapy",
+            "description": "Exercises to strengthen oral muscles for better speech production and feeding skills, addressing common challenges in Hyderabad children."
+        }
+    ],
+    "whoBenefits": [
+        "Children with autism and communication delays in Hyderabad",
+        "Non-verbal children needing AAC support",
+        "Children with articulation and speech sound disorders",
+        "Children with language delays and disorders",
+        "Children with stuttering or fluency disorders",
+        "Children with feeding and swallowing difficulties",
+        "Children preparing for mainstream schools in Hyderabad"
+    ],
+    "faqs": [
+        {
+            "question": "What is speech therapy for children in Hyderabad?",
+            "answer": "Speech therapy helps children improve communication skills, speech clarity, language development, and social interaction. At our Banjara Hills center, we specialize in treating children with autism, speech delays, and communication disorders using evidence-based methods."
+        },
+        {
+            "question": "How often should my child attend speech therapy in Hyderabad?",
+            "answer": "Most children benefit from 2-4 speech therapy sessions per week at our Hyderabad center. The frequency depends on your child's specific needs and goals. We serve families from Jubilee Hills, Gachibowli, and across Hyderabad."
+        },
+        {
+            "question": "Do you provide AAC devices for non-verbal children in Hyderabad?",
+            "answer": "Yes, we provide training with various AAC systems including PECS, communication boards, and electronic AAC devices. Our speech therapists in Hyderabad help families choose and implement the best communication system for their child."
+        },
+        {
+            "question": "What age children do you serve for speech therapy?",
+            "answer": "We provide speech and language therapy for children aged 18 months to 16 years at our Hyderabad center, with specialized programs for toddlers, preschoolers, and school-age children."
+        }
+    ],
+    "seoTitle": "Speech Therapy for Children in Hyderabad | Maryam Studio Banjara Hills",
+    "seoDescription": "Best speech and language therapy for children in Hyderabad. Expert SLP services for autism, speech delays, communication disorders at Banjara Hills. Serving Jubilee Hills, Gachibowli.",
+    "seoKeywords": "speech therapy Hyderabad, speech therapist Hyderabad, language therapy Hyderabad, speech therapy for autism Hyderabad, pediatric speech therapy Banjara Hills, SLP Hyderabad, speech delay therapy, AAC therapy Hyderabad, speech therapy near me, speech therapy Jubilee Hills, speech therapy Gachibowli, communication therapy Hyderabad",
+    "localAreas": "Banjara Hills, Jubilee Hills, Gachibowli, Madhapur, Kondapur, Kukatpally, HITEC City, Financial District, Begumpet, Somajiguda"
 }

@@ -1,0 +1,594 @@
+/* Custom overrides for Maryam Child Development Studio */
+/* Primary Color: #6d1b6d (Purple) */
+/* Secondary/Accent Color: #6d1b6d (Purple - Monochromatic) */
+
+/* ========================================
+   GLOBAL COLOR REPLACEMENTS
+   Replace ALL theme colors with #6d1b6d
+   ======================================== */
+
+/* Buttons */
+.vs-btn,
+.wave-btn,
+.icon-btn,
+.price-btn,
+button[class*="btn"] {
+    background-color: #6d1b6d !important;
+    border-color: #6d1b6d !important;
+}
+
+.vs-btn:hover,
+.wave-btn:hover,
+.icon-btn:hover {
+    background-color: #5a165a !important;
+    border-color: #5a165a !important;
+}
+
+/* Links and Hover States */
+a:hover,
+.menu-item a:hover,
+.sub-menu a:hover {
+    color: #6d1b6d !important;
+}
+
+/* Theme Color Classes */
+.theme-color,
+.text-theme,
+.color-theme {
+    color: #6d1b6d !important;
+}
+
+.bg-theme,
+.theme-bg {
+    background-color: #6d1b6d !important;
+}
+
+.border-theme {
+    border-color: #6d1b6d !important;
+}
+
+/* Service Icons and Elements */
+.service-icon,
+.feature-icon,
+.counter-icon {
+    background-color: #6d1b6d !important;
+}
+
+/* Service Boxes */
+.service-box-two,
+.service-card,
+.feature-box-two {
+    border-color: #6d1b6d !important;
+}
+
+.service-box-two:hover,
+.service-card:hover {
+    border-color: #6d1b6d !important;
+}
+
+/* Headings and Titles */
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover,
+.service-title a:hover,
+.class-title a:hover {
+    color: #6d1b6d !important;
+}
+
+/* Navigation Active States */
+.main-menu>ul>li.active>a,
+.main-menu>ul>li:hover>a,
+.vs-mobile-menu li.active>a {
+    color: #6d1b6d !important;
+}
+
+/* Sub-title and Accents */
+.sub-title,
+.hero-subtitle,
+.section-subtitle {
+    color: #6d1b6d !important;
+}
+
+/* Icons */
+.fal,
+.far,
+.fas,
+.fab {
+    color: inherit;
+}
+
+.header-links a:hover i,
+.footer-info i {
+    color: #6d1b6d !important;
+}
+
+/* Counter Section - Use Primary Purple as requested */
+.counter-section,
+.counter-section-two,
+.counter-box,
+.stats-section,
+.stats-bg {
+    background-color: #6d1b6d !important;
+}
+
+/* Remove design above images (decorative overlays) */
+.service-img:before,
+.service-img:after,
+.service-box-two:before,
+.service-box-two:after {
+    display: none !important;
+    content: none !important;
+    background: none !important;
+}
+
+.counter-section .counter-icon,
+.counter-section .counter-number,
+.counter-section .counter-text {
+    color: #fff !important;
+}
+
+/* Replace ALL green colors */
+.bg-green,
+.bg-success,
+[style*="background: #8bc34a"],
+[style*="background-color: #8bc34a"],
+[style*="background: #7cb342"],
+[style*="background-color: #7cb342"],
+[style*="background: #4caf50"],
+[style*="background-color: #4caf50"],
+[style*="background: rgb(139, 195, 74)"],
+[style*="background: rgb(124, 179, 66)"],
+[style*="background: rgb(76, 175, 80)"] {
+    background-color: #6d1b6d !important;
+}
+
+.text-green,
+[style*="color: #8bc34a"],
+[style*="color: #7cb342"],
+[style*="color: #4caf50"],
+[style*="color: rgb(139, 195, 74)"],
+[style*="color: rgb(124, 179, 66)"],
+[style*="color: rgb(76, 175, 80)"] {
+    color: #6d1b6d !important;
+}
+
+[style*="border-color: #8bc34a"],
+[style*="border-color: #7cb342"],
+[style*="border-color: #4caf50"],
+[style*="border-color: rgb(139, 195, 74)"],
+[style*="border-color: rgb(124, 179, 66)"],
+[style*="border-color: rgb(76, 175, 80)"] {
+    border-color: #6d1b6d !important;
+}
+
+/* Replace any other common theme colors */
+[style*="background: #ff6b6b"],
+[style*="background-color: #ff6b6b"],
+[style*="background: #f39c12"],
+[style*="background-color: #f39c12"] {
+    background-color: #6d1b6d !important;
+}
+
+/* Pagination */
+.pagination .active a,
+.pagination a:hover {
+    background-color: #6d1b6d !important;
+    border-color: #6d1b6d !important;
+}
+
+/* Forms */
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #6d1b6d !important;
+}
+
+/* Checkboxes and Radio Buttons */
+input[type="checkbox"]:checked,
+input[type="radio"]:checked {
+    background-color: #6d1b6d !important;
+    border-color: #6d1b6d !important;
+}
+
+/* Progress Bars */
+.progress-bar {
+    background-color: #6d1b6d !important;
+}
+
+/* Badges and Labels */
+.badge,
+.label {
+    background-color: #6d1b6d !important;
+}
+
+/* Social Icons */
+.header-social a:hover,
+.footer-social a:hover,
+.multi-social a:hover {
+    background-color: #6d1b6d !important;
+    border-color: #6d1b6d !important;
+}
+
+/* Slick Slider Arrows and Dots */
+.slick-prev:hover,
+.slick-next:hover,
+.slick-dots li.slick-active button {
+    background-color: #6d1b6d !important;
+}
+
+/* Accordion */
+.accordion-button:not(.collapsed) {
+    background-color: #6d1b6d !important;
+    color: #fff !important;
+}
+
+/* Tabs */
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-link:hover {
+    border-color: #6d1b6d !important;
+    color: #6d1b6d !important;
+}
+
+/* ========================================
+   MODAL STYLES
+   ======================================== */
+
+.booking-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.booking-modal.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.booking-modal-content {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 600px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.booking-modal-close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #aaa;
+    cursor: pointer;
+    background: none;
+    border: none;
+    line-height: 1;
+}
+
+.booking-modal-close:hover {
+    color: #000;
+}
+
+.booking-form-title {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #6d1b6d;
+}
+
+.booking-form-subtitle {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.booking-form .form-group {
+    margin-bottom: 20px;
+}
+
+.booking-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border-color 0.3s;
+}
+
+.booking-form input:focus,
+.booking-form select:focus,
+.booking-form textarea:focus {
+    outline: none;
+    border-color: #6d1b6d !important;
+}
+
+.booking-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.booking-form .vs-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    margin-top: 10px;
+    background-color: #6d1b6d !important;
+}
+
+.booking-form .vs-btn:hover {
+    background-color: #5a165a !important;
+}
+
+/* ========================================
+   UTILITY CLASSES
+   ======================================== */
+
+/* Hide search icon from header */
+.header-search,
+.search-icon,
+.vs-search,
+.searchBoxToggler {
+    display: none !important;
+}
+
+/* Service images fix */
+.service-img img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Check list items */
+.check-list li::before {
+    color: #6d1b6d !important;
+}
+
+/* Widget active states */
+.widget_categories li.active a,
+.widget_categories li a:hover {
+    color: #6d1b6d !important;
+}
+
+/* ========================================
+   RESPONSIVE ADJUSTMENTS
+   ======================================== */
+
+@media (max-width: 768px) {
+    .booking-modal-content {
+        padding: 30px 20px;
+    }
+
+    .booking-form-title {
+        font-size: 24px;
+    }
+}
+
+/* ========================================
+   IMPORTANT OVERRIDES
+   Force #6d1b6d on all theme elements
+   ======================================== */
+
+/* Override any inline styles */
+*[class*="theme"],
+*[class*="primary"],
+*[class*="accent"] {
+    color: #6d1b6d !important;
+}
+
+*[class*="bg-theme"],
+*[class*="bg-primary"],
+*[class*="bg-accent"] {
+    background-color: #6d1b6d !important;
+}
+
+/* Ensure no other colors are used for accents */
+.hero-wrapper::before,
+.section::before,
+.overlay::before {
+    background-color: rgba(109, 27, 109, 0.1) !important;
+}
+
+/* ========================================
+   FOOTER TEXT FIXES
+   Force all text to be white
+   ======================================== */
+
+.footer-wrapper,
+.footer-wrapper h1,
+.footer-wrapper h2,
+.footer-wrapper h3,
+.footer-wrapper h4,
+.footer-wrapper h5,
+.footer-wrapper h6,
+.footer-wrapper p,
+.footer-wrapper span,
+.footer-wrapper li,
+.footer-wrapper i,
+.widget_title,
+.footer-info,
+.copyright {
+    color: #ffffff !important;
+}
+
+.footer-wrapper a {
+    color: #ffffff !important;
+}
+
+.footer-wrapper a:hover {
+    color: #e0e0e0 !important;
+    /* Slightly off-white for hover */
+    text-decoration: none;
+}
+
+/* Specific fix for footer links that might be overridden */
+.widget_nav_menu li a,
+.menu-all-pages-container li a,
+.footer-widget .menu li a {
+    color: #ffffff !important;
+}
+
+.recent-post-meta a,
+.post-title a {
+    color: #ffffff !important;
+}
+
+/* Footer Social Icons */
+.footer-widget .multi-social a,
+.footer-widget .header-social a {
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+}
+
+.footer-widget .multi-social a:hover,
+.footer-widget .header-social a:hover {
+    background-color: #ffffff !important;
+    color: #6d1b6d !important;
+    /* Primary purple on hover */
+}
+
+/* ========================================
+   DROPDOWN MENU FIXES
+   ======================================== */
+
+/* Ensure submenu is visible on hover for desktop */
+@media (min-width: 992px) {
+    .main-menu ul li.menu-item-has-children {
+        position: relative;
+    }
+
+    .main-menu ul li.menu-item-has-children:hover>ul.sub-menu {
+        visibility: visible !important;
+        opacity: 1 !important;
+        display: block !important;
+        top: 100%;
+        transform: translateY(0);
+    }
+
+    .main-menu ul.sub-menu {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 110%;
+        /* Start slightly lower for animation effect */
+        background-color: #fff;
+        min-width: 220px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        padding: 10px 0;
+        z-index: 99;
+        border-radius: 0 0 5px 5px;
+        transition: all 0.3s ease-in-out;
+        border-top: 3px solid #6d1b6d;
+    }
+
+    .main-menu ul.sub-menu li {
+        display: block;
+        margin: 0;
+        padding: 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .main-menu ul.sub-menu li:last-child {
+        border-bottom: none;
+    }
+
+    .main-menu ul.sub-menu li a {
+        display: block;
+        padding: 10px 20px;
+        color: #333 !important;
+        font-weight: 500;
+        text-transform: capitalize;
+    }
+
+    .main-menu ul.sub-menu li a:hover {
+        color: #6d1b6d !important;
+        padding-left: 25px;
+        /* Slight movement on hover */
+        background-color: #f9f9f9;
+    }
+}
+
+/* ========================================
+   MOBILE MENU FIXES
+   ======================================== */
+
+.vs-menu-wrapper {
+    transition: all 0.4s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    left: -100%;
+    /* Ensure it's off-screen */
+}
+
+.vs-menu-wrapper.vs-body-visible {
+    opacity: 1 !important;
+    visibility: visible !important;
+    left: 0 !important;
+}
+
+.vs-mobile-menu ul li {
+    position: relative;
+    display: block;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.vs-mobile-menu .expander {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    background-color: transparent;
+    color: #333;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    z-index: 5;
+}
+
+.vs-mobile-menu .expander i {
+    transition: all 0.3s ease;
+}
+
+.vs-mobile-menu .expander:hover {
+    color: #6d1b6d;
+}
+
+.vs-mobile-menu .sub-menu {
+    display: none;
+    /* Hidden by default */
+    padding-left: 20px;
+    background-color: #f9f9f9;
+}
+
+.vs-mobile-menu .sub-menu li {
+    border-bottom: none;
+}
+
+.vs-mobile-menu .sub-menu li a {
+    padding: 10px 0;
+    font-size: 14px;
+}

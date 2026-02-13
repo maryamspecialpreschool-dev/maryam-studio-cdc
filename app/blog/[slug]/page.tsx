@@ -138,56 +138,9 @@ export default async function BlogDetailsPage({ params }: { params: Promise<{ sl
                                             <p className="author-text mb-0">Dedicated to supporting children with autism across Hyderabad and beyond.</p>
                                         </div>
                                     </div>
-
-                                    {/* Comments Section */}
-                                    <div className="vs-comment-wrap wow fadeInUp" data-wow-delay="0.1s">
-                                        <h3 className="blog-inner-title">{post.comments} Comments</h3>
-                                        <ul className="comment-list">
-                                            <li className="vs-comment">
-                                                <div className="vs-post-comment">
-                                                    <div className="comment-avater"><img src="/images/blog/author-2.jpg" alt="Comment Author" /></div>
-                                                    <div className="comment-content">
-                                                        <span className="commented-on">22 April, 2024</span>
-                                                        <h4 className="name">Parent One</h4>
-                                                        <p className="text">This article was very helpful, thank you for sharing!</p>
-                                                        <div className="reply_and_edit">
-                                                            <a href="#commentForm" className="reply-btn">Reply</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-
-                                    {/* Comment Form */}
-                                    <div className="vs-comment-form wow fadeInUp" data-wow-delay="0.1s">
-                                        <div className="form-title">
-                                            <h3 className="blog-inner-title">Leave a Comment</h3>
-                                            <p className="form-text">Your email address will not be published. Required fields are marked *</p>
-                                        </div>
-                                        <div className="row">
-                                            <div className="col-12 form-group">
-                                                <textarea placeholder="Write a Comment" id="commentForm" className="form-control style2"></textarea>
-                                                <i className="far fa-pencil-alt"></i>
-                                            </div>
-                                            <div className="col-md-6 form-group">
-                                                <input type="text" placeholder="Your Name" className="form-control style2" />
-                                                <i className="fal fa-user"></i>
-                                            </div>
-                                            <div className="col-md-6 form-group">
-                                                <input type="text" placeholder="Your Email" className="form-control style2" />
-                                                <i className="fal fa-envelope"></i>
-                                            </div>
-                                            <div className="col-12 form-group">
-                                                <button className="vs-btn"><i className="fal fa-paper-plane"></i> Post Comment</button>
-                                            </div>
-                                        </div>
-                                    </div>
-
                                 </div>
                             </div>
                         </div>
-
                         {/* Sidebar */}
                         <div className="col-xl-4 col-lg-5">
                             <BlogSidebar />

@@ -1,0 +1,68 @@
+{
+    "id": "physiotherapy",
+    "title": "Physiotherapy",
+    "slug": "physiotherapy",
+    "shortDescription": "Specialized pediatric physiotherapy in Hyderabad. Expert gross motor skills development, balance training, and movement therapy for children with autism and developmental delays.",
+    "description": "Maryam Child Development Studio provides expert pediatric physiotherapy services in Hyderabad for children with autism, cerebral palsy, developmental delays, and motor coordination challenges. Our licensed physiotherapists in Banjara Hills use evidence-based techniques to improve gross motor skills, strength, balance, and mobility. We serve families across Hyderabad including Jubilee Hills, Gachibowli, Madhapur, Kondapur, and surrounding areas with specialized equipment and therapeutic exercises.",
+    "image": "/images/services/physio-1.jpg",
+    "icon": "/images/icon/sr2-3.svg",
+    "benefits": [
+        "Improved gross motor skills - walking, running, jumping for Hyderabad children",
+        "Enhanced balance and coordination abilities",
+        "Increased muscle strength and endurance",
+        "Better posture and body awareness",
+        "Improved mobility and independence",
+        "Enhanced sports and playground participation",
+        "Better gait and walking patterns",
+        "Reduced risk of falls and injuries for children in Hyderabad"
+    ],
+    "approach": [
+        {
+            "title": "Gross Motor Development",
+            "description": "Targeted exercises to improve large muscle movements, coordination, and physical abilities essential for children in Hyderabad schools and playgrounds."
+        },
+        {
+            "title": "Balance & Coordination Training",
+            "description": "Specialized activities using balance boards, therapy balls, and obstacle courses to enhance stability and motor planning."
+        },
+        {
+            "title": "Strength & Conditioning",
+            "description": "Age-appropriate exercises to build muscle strength, endurance, and physical fitness for children with developmental delays in Hyderabad."
+        },
+        {
+            "title": "Gait Training",
+            "description": "Corrective techniques to improve walking patterns, posture, and movement efficiency for better mobility and confidence."
+        }
+    ],
+    "whoBenefits": [
+        "Children with autism and motor delays in Hyderabad",
+        "Children with cerebral palsy",
+        "Children with developmental coordination disorder",
+        "Children with low muscle tone (hypotonia)",
+        "Children with balance and coordination difficulties",
+        "Children recovering from injuries",
+        "Children with gross motor skill delays"
+    ],
+    "faqs": [
+        {
+            "question": "What is pediatric physiotherapy in Hyderabad?",
+            "answer": "Pediatric physiotherapy helps children improve gross motor skills, strength, balance, and mobility. At our Banjara Hills center, we specialize in treating children with autism, cerebral palsy, and developmental delays using therapeutic exercises and specialized equipment."
+        },
+        {
+            "question": "How long are physiotherapy sessions at Maryam Studio?",
+            "answer": "Physiotherapy sessions in Hyderabad are typically 45-60 minutes, conducted 2-3 times per week. We serve families from Jubilee Hills, Gachibowli, Madhapur, and across Hyderabad."
+        },
+        {
+            "question": "Do you have specialized equipment for physiotherapy?",
+            "answer": "Yes, our Hyderabad center has specialized pediatric physiotherapy equipment including therapy balls, balance boards, climbing structures, and mobility aids to support your child's development."
+        },
+        {
+            "question": "What age children benefit from physiotherapy?",
+            "answer": "We provide physiotherapy services for children aged 1-16 years at our Hyderabad center, with programs tailored for infants, toddlers, preschoolers, and school-age children."
+        }
+    ],
+    "seoTitle": "Pediatric Physiotherapy in Hyderabad | Maryam Studio Banjara Hills",
+    "seoDescription": "Best pediatric physiotherapy for children in Hyderabad. Expert PT services for autism, cerebral palsy, motor delays at Banjara Hills. Serving Jubilee Hills, Gachibowli, Madhapur.",
+    "seoKeywords": "physiotherapy Hyderabad, pediatric physiotherapy Hyderabad, child physiotherapy Banjara Hills, physiotherapy for autism Hyderabad, PT for kids Hyderabad, gross motor therapy, physiotherapy near me Hyderabad, physiotherapy Jubilee Hills, physiotherapy Gachibowli, pediatric PT Hyderabad",
+    "localAreas": "Banjara Hills, Jubilee Hills, Gachibowli, Madhapur, Kondapur, Kukatpally, HITEC City, Financial District, Begumpet, Somajiguda"
+}

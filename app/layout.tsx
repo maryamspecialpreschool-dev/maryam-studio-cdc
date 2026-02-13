@@ -3,6 +3,7 @@ import Script from 'next/script';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ScriptLoader from '@/components/ScriptLoader';
+import BookingModal from '@/components/BookingModal';
 import "./globals.css";
 
 // We keep the exact detailed SEO based on the user request
@@ -44,10 +45,149 @@ export default function RootLayout({
         <link rel="stylesheet" href="/css/magnific-popup.min.css" />
         <link rel="stylesheet" href="/css/slick.min.css" />
         <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/custom.css?v=2" />
 
         {/* Favicon */}
-        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
-        <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="/favicon.ico?v=3" type="image/x-icon" />
+        <link rel="icon" href="/favicon.ico?v=3" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="/images/favicon.ico?v=3" />
+
+        {/* Schema.org Structured Data - LocalBusiness */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "@id": "https://maryamstudio.com",
+              "name": "Maryam Child Development Studio",
+              "alternateName": "Maryam Studio",
+              "description": "Multidisciplinary child development center in Hyderabad offering occupational therapy, speech therapy, physiotherapy, ABA therapy, and special education for children with autism and developmental delays.",
+              "url": "https://maryamstudio.com",
+              "telephone": "+919876543210",
+              "email": "info@maryamstudio.com",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Hyderabad",
+                "addressLocality": "Hyderabad",
+                "addressRegion": "Telangana",
+                "postalCode": "500001",
+                "addressCountry": "IN"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "17.385044",
+                "longitude": "78.486671"
+              },
+              "areaServed": [
+                {
+                  "@type": "City",
+                  "name": "Hyderabad",
+                  "containedInPlace": {
+                    "@type": "State",
+                    "name": "Telangana"
+                  }
+                }
+              ],
+              "servesCuisine": null,
+              "priceRange": "$$",
+              "openingHoursSpecification": [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                  "opens": "09:00",
+                  "closes": "18:00"
+                }
+              ],
+              "sameAs": [
+                "https://www.instagram.com/maryamstudio",
+                "https://www.linkedin.com/company/maryamstudio"
+              ]
+            })
+          }}
+        />
+
+        {/* Schema.org Structured Data - MedicalBusiness */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "MedicalBusiness",
+              "name": "Maryam Child Development Studio",
+              "description": "Specialized child development center providing therapy services for children with autism and developmental delays in Hyderabad.",
+              "url": "https://maryamstudio.com",
+              "telephone": "+919876543210",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Hyderabad",
+                "addressRegion": "Telangana",
+                "addressCountry": "IN"
+              },
+              "medicalSpecialty": [
+                "Occupational Therapy",
+                "Speech Therapy",
+                "Physiotherapy",
+                "Behavioral Therapy",
+                "Special Education"
+              ],
+              "availableService": [
+                {
+                  "@type": "MedicalTherapy",
+                  "name": "Occupational Therapy",
+                  "description": "Pediatric occupational therapy for sensory processing and motor skills"
+                },
+                {
+                  "@type": "MedicalTherapy",
+                  "name": "Speech Therapy",
+                  "description": "Speech and language therapy for communication disorders"
+                },
+                {
+                  "@type": "MedicalTherapy",
+                  "name": "Physiotherapy",
+                  "description": "Pediatric physiotherapy for gross motor development"
+                },
+                {
+                  "@type": "MedicalTherapy",
+                  "name": "ABA Therapy",
+                  "description": "Applied Behavior Analysis for autism spectrum disorder"
+                }
+              ]
+            })
+          }}
+        />
+
+        {/* Schema.org Structured Data - Organization */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Maryam Child Development Studio",
+              "url": "https://maryamstudio.com",
+              "logo": "https://maryamstudio.com/images/logo.jpeg",
+              "description": "Leading child development center in Hyderabad specializing in autism therapy and special education",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Hyderabad",
+                "addressRegion": "Telangana",
+                "addressCountry": "IN"
+              },
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+917702426362",
+                "contactType": "customer service",
+                "areaServed": "IN",
+                "availableLanguage": ["English", "Hindi", "Telugu"]
+              },
+              "sameAs": [
+                "https://www.instagram.com/maryamstudio",
+                "https://www.linkedin.com/company/maryamstudio"
+              ]
+            })
+          }}
+        />
       </head>
       <body>
         <ScriptLoader />
@@ -56,6 +196,8 @@ export default function RootLayout({
         {children}
 
         <Footer />
+        <BookingModal />
+
 
         {/* JavaScript Assets */}
         {/* Load jQuery first */}
