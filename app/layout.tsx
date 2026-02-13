@@ -48,9 +48,7 @@ export default function RootLayout({
         <link rel="stylesheet" href="/css/custom.css?v=2" />
 
         {/* Favicon */}
-        <link rel="shortcut icon" href="/favicon.ico?v=3" type="image/x-icon" />
-        <link rel="icon" href="/favicon.ico?v=3" type="image/x-icon" />
-        <link rel="apple-touch-icon" href="/images/favicon.ico?v=3" />
+        <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
 
         {/* Schema.org Structured Data - LocalBusiness */}
         <script
