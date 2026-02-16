@@ -33,11 +33,7 @@ export default function ServicesPage() {
             {/* Service Section */}
             <section className="service-section space">
                 <div className="container">
-                    <div className="title-area text-center wow fadeInUp" data-wow-delay="0.1s">
-                        <span className="sub-title">Our Services</span>
-                        <h2 className="sec-title">Autism Therapy & Full-Day Programs in Hyderabad</h2>
-                        <p className="mb-4">At Maryam Studio CDC, we provide comprehensive autism support services designed to address every developmental area.</p>
-                    </div>
+
                     <div className="row gy-30 justify-content-center">
                         {Object.entries(servicesData).map(([slug, service], index) => (
                             <div key={slug} className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay={`${0.1 * (index + 1)}s`}>
@@ -50,7 +46,7 @@ export default function ServicesPage() {
                                             <img src={`/images/icon/sr-${(index % 6) + 1}.png`} alt="icon" />
                                         </div>
                                         <h3 className="service-title"><Link href={`/services/${slug}`}>{service.title}</Link></h3>
-                                        <p className="service-text">{service.description}</p>
+                                        <p className="service-text">{service.description.substring(0, 100)}{service.description.length > 100 ? '...' : ''}</p>
                                         <Link href={`/services/${slug}`} className="vs-btn style-2">See Details</Link>
                                     </div>
                                 </div>
@@ -65,7 +61,7 @@ export default function ServicesPage() {
                 <div className="container text-center z-index-common">
                     <div className="title-area mb-35 wow fadeInUp" data-wow-delay="0.1s">
                         <span className="sub-title text-white">Enrollment Open</span>
-                        <h2 className="sec-title text-white">Start Your Child's Journey Today <a className="d-block text-inherit" href="tel:+910000000000">+91 (000) 000 0000</a></h2>
+                        <h2 className="sec-title text-white">Start Your Child's Journey Today <a className="d-block text-inherit" href="tel:+917702426362">+91 77024 26362</a></h2>
                     </div>
                     <Link href="/contact" className="vs-btn wave-btn">Schedule Assessment</Link>
                 </div>

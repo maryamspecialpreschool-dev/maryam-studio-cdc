@@ -13630,3 +13630,8 @@ span.select2-selection.select2-selection--single:focus {
   margin-bottom: 50px;
 }
 
+
+/* Custom Sticky Header Shadow */
+.sticky-wrapper.sticky {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}

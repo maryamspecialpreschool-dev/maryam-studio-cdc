@@ -31,7 +31,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="no-js">
+    <html lang="en" className="no-js" suppressHydrationWarning>
       <head>
         {/* Google Fonts */}
         <link

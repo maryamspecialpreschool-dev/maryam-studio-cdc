@@ -79,9 +79,11 @@ export default async function ServiceDetailsPage({ params }: { params: Promise<{
                                 <div className="service-img">
                                     <img src={service.image} alt={service.title} />
                                 </div>
-                                <h2 className="single-title">{service.title}</h2>
+                                <h2 className="single-title">{service.title} in Hyderabad</h2>
                                 <div className="service-content">
                                     <p className="mb-30">{service.description}</p>
+
+                                    <div className="service-body-content mb-30" dangerouslySetInnerHTML={{ __html: service.content || '' }}></div>
 
                                     {service.quote && (
                                         <blockquote className="block-quote style-left-icon">
@@ -92,7 +94,7 @@ export default async function ServiceDetailsPage({ params }: { params: Promise<{
 
                                     {service.whoBenefits && service.whoBenefits.length > 0 && (
                                         <>
-                                            <h3 className="h3 mt-35">Who Can Benefit?</h3>
+                                            <h3 className="h3 mt-35">Who Can Benefit from {service.title}?</h3>
                                             <p>Our program is designed to support children with various developmental needs, including:</p>
                                             <div className="check-list style-4 mt-20 mb-35">
                                                 <ul>
@@ -119,7 +121,7 @@ export default async function ServiceDetailsPage({ params }: { params: Promise<{
 
                                     {service.approach && service.approach.length > 0 && (
                                         <>
-                                            <h3 className="h3 mt-35">Our Approach</h3>
+                                            <h3 className="h3 mt-35">Our Approach to {service.title}</h3>
                                             <div className="accordion accordion-style1" id="accordionApproach">
                                                 {service.approach.map((item: any, index: number) => (
                                                     <div className="accordion-item" key={index}>
@@ -160,6 +162,12 @@ export default async function ServiceDetailsPage({ params }: { params: Promise<{
                                             </div>
                                         </>
                                     )}
+
+                                    <div className="text-center mt-50">
+                                        <h3>Ready to start?</h3>
+                                        <p>Contact us today to schedule a consultation with our experts in Hyderabad.</p>
+                                        <Link href="/contact" className="vs-btn wave-btn">Book a Visit</Link>
+                                    </div>
 
                                 </div>
                             </div>

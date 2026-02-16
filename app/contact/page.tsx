@@ -1,7 +1,52 @@
+'use client';
+
+import { useState } from 'react';
 import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 
 export default function ContactPage() {
+    const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        message: ''
+    });
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+        });
+    };
+
+    const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault();
+        setStatus('submitting');
+
+        try {
+            const response = await fetch("https://formspree.io/f/mvzbrpzp", {
+                method: "POST",
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            });
+
+            if (response.ok) {
+                setStatus('success');
+                setFormData({ name: '', email: '', message: '' });
+                // Reset success message after 5 seconds
+                setTimeout(() => setStatus('idle'), 5000);
+            } else {
+                setStatus('error');
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            setStatus('error');
+        }
+    };
+
     return (
         <main>
             <Breadcrumb title="Contact Us" />
@@ -13,25 +58,59 @@ export default function ContactPage() {
                             <div className="contact-form-box">
                                 <h2 className="contact-title">Leave a Message</h2>
                                 <p className="mb-35">We are here to help. Send us your query and we will get back to you as soon as possible.</p>
-                                <form className="contact-form ajax-contact">
+
+                                <form className="contact-form ajax-contact" onSubmit={handleSubmit}>
                                     <div className="row">
                                         <div className="form-group col-12">
                                             <label htmlFor="name" className="form-label">Your Name*</label>
-                                            <input type="text" className="form-control" name="name" id="name" placeholder="Name..." required />
+                                            <input
+                                                type="text"
+                                                className="form-control"
+                                                name="name"
+                                                id="name"
+                                                placeholder="Name..."
+                                                value={formData.name}
+                                                onChange={handleChange}
+                                                required
+                                            />
                                         </div>
                                         <div className="form-group col-12">
                                             <label htmlFor="email" className="form-label">Your Email*</label>
-                                            <input type="email" className="form-control" name="email" id="email" placeholder="Email..." required />
+                                            <input
+                                                type="email"
+                                                className="form-control"
+                                                name="email"
+                                                id="email"
+                                                placeholder="Email..."
+                                                value={formData.email}
+                                                onChange={handleChange}
+                                                required
+                                            />
                                         </div>
                                         <div className="form-group col-12">
                                             <label htmlFor="message" className="form-label">Your Message*</label>
-                                            <textarea className="form-control" name="message" id="message" placeholder="Describe Your Inquiry" required></textarea>
+                                            <textarea
+                                                className="form-control"
+                                                name="message"
+                                                id="message"
+                                                placeholder="Describe Your Inquiry"
+                                                value={formData.message}
+                                                onChange={handleChange}
+                                                required
+                                            ></textarea>
                                         </div>
                                         <div className="form-group col-12">
-                                            <button type="submit" className="vs-btn wave-btn">Send Now</button>
+                                            <button type="submit" className="vs-btn wave-btn" disabled={status === 'submitting'}>
+                                                {status === 'submitting' ? 'Sending...' : 'Send Now'}
+                                            </button>
                                         </div>
                                     </div>
-                                    <p className="form-messages mb-0 mt-3"></p>
+                                    {status === 'success' && (
+                                        <p className="form-messages mb-0 mt-3 text-success">Thank you! Your message has been sent successfully.</p>
+                                    )}
+                                    {status === 'error' && (
+                                        <p className="form-messages mb-0 mt-3 text-danger">Oops! Something went wrong. Please try again.</p>
+                                    )}
                                 </form>
                             </div>
                         </div>
@@ -54,7 +133,7 @@ export default function ContactPage() {
                                     </div>
                                     <div className="media-body">
                                         <h4 className="info-title">Call Us For Help:</h4>
-                                        <p className="info-text"><a href="tel:+919876543210">+91 98765 43210</a></p>
+                                        <p className="info-text"><a href="tel:+917702426362">+91 77024 26362</a></p>
                                     </div>
                                 </div>
                                 <div className="info-media">
@@ -63,7 +142,7 @@ export default function ContactPage() {
                                     </div>
                                     <div className="media-body">
                                         <h4 className="info-title">Mail info:</h4>
-                                        <p className="info-text"><a href="mailto:info@maryamcdc.com">info@maryamcdc.com</a></p>
+                                        <p className="info-text"><a href="mailto:maryamspecialpreschool@gmail.com">maryamspecialpreschool@gmail.com</a></p>
                                     </div>
                                 </div>
                                 <div className="contact-location">

@@ -184,8 +184,8 @@ export default function DaycarePage() {
                                         <h3 className="widget_title">Contact Us</h3>
                                         <div className="contact-info">
                                             <p><i className="fal fa-map-marker-alt"></i> Hyderabad, Telangana, India</p>
-                                            <p><i className="fal fa-phone"></i> <a href="tel:+919876543210">+91 98765 43210</a></p>
-                                            <p><i className="fal fa-envelope"></i> <a href="mailto:info@maryamstudio.com">info@maryamstudio.com</a></p>
+                                            <p><i className="fal fa-phone"></i> <a href="tel:+917702426362">+91 77024 26362</a></p>
+                                            <p><i className="fal fa-envelope"></i> <a href="mailto:maryamspecialpreschool@gmail.com">maryamspecialpreschool@gmail.com</a></p>
                                         </div>
                                     </div>
 

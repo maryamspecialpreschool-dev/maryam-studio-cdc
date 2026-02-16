@@ -73,7 +73,7 @@ export default function Footer() {
                                     <h3 className="widget_title">Contact Us</h3>
                                     <div className="vs-widget-contact">
                                         <p className="footer-info"><i className="fas fa-map-marker-alt"></i>Hyderabad, Telangana, India</p>
-                                        <p className="footer-info"><i className="fas fa-envelope"></i><a href="mailto:info@maryamcdc.com">info@maryamcdc.com</a></p>
+                                        <p className="footer-info"><i className="fas fa-envelope"></i><a href="mailto:maryamspecialpreschool@gmail.com">maryamspecialpreschool@gmail.com</a></p>
                                         <p className="footer-info"><i className="fas fa-phone-alt"></i><a href="tel:+917702426362">+91 77024 26362</a></p>
                                         <p className="footer-info"><i className="fas fa-clock"></i>Monday - Saturday: 8:30 AM to 4:00 PM</p>
                                     </div>

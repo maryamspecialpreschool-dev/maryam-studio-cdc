@@ -1,7 +1,21 @@
+'use client';
+
+import { useState } from 'react';
 import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 
+const galleryItems = [
+    { id: 1, src: '/images/project/p-1.jpg', category: 'cat-1' },
+    { id: 2, src: '/images/project/p-2.jpg', category: 'cat-2' },
+    { id: 3, src: '/images/project/p-3.jpg', category: 'cat-3' },
+    { id: 4, src: '/images/project/p-4.jpg', category: 'cat-1 cat-2' },
+    { id: 5, src: '/images/project/p-5.jpg', category: 'cat-2' },
+    { id: 6, src: '/images/project/p-6.jpg', category: 'cat-3' },
+];
+
 export default function GalleryPage() {
+    const [activeFilter, setActiveFilter] = useState('*');
+
     return (
         <main>
             <Breadcrumb title="Gallery" />
@@ -13,62 +27,22 @@ export default function GalleryPage() {
                         <p className="fs-md mb-40">Our gallery showcases our classrooms, therapy rooms, group activities, and parent workshops that create a nurturing environment for children with special needs.</p>
                     </div>
                     <div className="project-menu text-center mb-40 filter-menu-active">
-                        <button data-filter="*" className="active">All Zone <img className="btn-bg" src="/images/bg/btn-bg.png" alt="btn-bg" /><img className="btn-active-bg" src="/images/bg/btn-bg-active.png" alt="btn-active-bg" /></button>
-                        <button data-filter=".cat-1">Therapy <img className="btn-bg" src="/images/bg/btn-bg.png" alt="btn-bg" /><img className="btn-active-bg" src="/images/bg/btn-bg-active.png" alt="btn-active-bg" /></button>
-                        <button data-filter=".cat-2">Activities <img className="btn-bg" src="/images/bg/btn-bg.png" alt="btn-bg" /><img className="btn-active-bg" src="/images/bg/btn-bg-active.png" alt="btn-active-bg" /></button>
-                        <button data-filter=".cat-3">Events <img className="btn-bg" src="/images/bg/btn-bg.png" alt="btn-bg" /><img className="btn-active-bg" src="/images/bg/btn-bg-active.png" alt="btn-active-bg" /></button>
+                        <button className={activeFilter === '*' ? 'active' : ''} onClick={() => setActiveFilter('*')}>All Zone <img className="btn-bg" src="/images/bg/btn-bg.png" alt="btn-bg" /><img className="btn-active-bg" src="/images/bg/btn-bg-active.png" alt="btn-active-bg" /></button>
+                        <button className={activeFilter === 'cat-1' ? 'active' : ''} onClick={() => setActiveFilter('cat-1')}>Therapy <img className="btn-bg" src="/images/bg/btn-bg.png" alt="btn-bg" /><img className="btn-active-bg" src="/images/bg/btn-bg-active.png" alt="btn-active-bg" /></button>
+                        <button className={activeFilter === 'cat-2' ? 'active' : ''} onClick={() => setActiveFilter('cat-2')}>Activities <img className="btn-bg" src="/images/bg/btn-bg.png" alt="btn-bg" /><img className="btn-active-bg" src="/images/bg/btn-bg-active.png" alt="btn-active-bg" /></button>
+                        <button className={activeFilter === 'cat-3' ? 'active' : ''} onClick={() => setActiveFilter('cat-3')}>Events <img className="btn-bg" src="/images/bg/btn-bg.png" alt="btn-bg" /><img className="btn-active-bg" src="/images/bg/btn-bg-active.png" alt="btn-active-bg" /></button>
                     </div>
                     <div className="row g-20 justify-content-center filter-active">
-                        {/* Gallery Items */}
-                        <div className="col-xl-3 col-lg-4 col-sm-6 filter-item cat-1">
-                            <div className="project-card">
-                                <div className="project-img">
-                                    <img src="/images/project/p-1.jpg" alt="project-img" />
+                        {galleryItems.filter(item => activeFilter === '*' || item.category.includes(activeFilter)).map((item) => (
+                            <div key={item.id} className={`col-xl-3 col-lg-4 col-sm-6 filter-item ${item.category}`}>
+                                <div className="project-card">
+                                    <div className="project-img">
+                                        <img src={item.src} alt="project-img" />
+                                    </div>
+                                    <a href={item.src} className="plus-btn popup-image">+</a>
                                 </div>
-                                <a href="/images/project/p-1.jpg" className="plus-btn popup-image">+</a>
                             </div>
-                        </div>
-                        <div className="col-xl-3 col-lg-4 col-sm-6 filter-item cat-2">
-                            <div className="project-card">
-                                <div className="project-img">
-                                    <img src="/images/project/p-2.jpg" alt="project-img" />
-                                </div>
-                                <a href="/images/project/p-2.jpg" className="plus-btn popup-image">+</a>
-                            </div>
-                        </div>
-                        <div className="col-xl-3 col-lg-4 col-sm-6 filter-item cat-3">
-                            <div className="project-card">
-                                <div className="project-img">
-                                    <img src="/images/project/p-3.jpg" alt="project-img" />
-                                </div>
-                                <a href="/images/project/p-3.jpg" className="plus-btn popup-image">+</a>
-                            </div>
-                        </div>
-                        <div className="col-xl-3 col-lg-4 col-sm-6 filter-item cat-1 cat-2">
-                            <div className="project-card">
-                                <div className="project-img">
-                                    <img src="/images/project/p-4.jpg" alt="project-img" />
-                                </div>
-                                <a href="/images/project/p-4.jpg" className="plus-btn popup-image">+</a>
-                            </div>
-                        </div>
-                        {/* Additional Items to match legacy count generally */}
-                        <div className="col-xl-3 col-lg-4 col-sm-6 filter-item cat-2">
-                            <div className="project-card">
-                                <div className="project-img">
-                                    <img src="/images/project/p-5.jpg" alt="project-img" />
-                                </div>
-                                <a href="/images/project/p-5.jpg" className="plus-btn popup-image">+</a>
-                            </div>
-                        </div>
-                        <div className="col-xl-3 col-lg-4 col-sm-6 filter-item cat-3">
-                            <div className="project-card">
-                                <div className="project-img">
-                                    <img src="/images/project/p-6.jpg" alt="project-img" />
-                                </div>
-                                <a href="/images/project/p-6.jpg" className="plus-btn popup-image">+</a>
-                            </div>
-                        </div>
+                        ))}
                     </div>
                 </div>
                 <div className="shape-after"><img src="/images/shape/after-shape-5.png" alt="shape" /></div>

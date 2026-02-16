@@ -143,26 +143,25 @@ export default function Home() {
               </div>
             </div>
             <div className="row vs-carousel" data-slide-show="3" data-lg-slide-show="3" data-md-slide-show="2" id="sbox2">
-              {services.slice(0, 6).map((service) => {
-                return (
-                  <div key={service.slug} className="col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="0.1s">
-                    <div className="service-box-two">
-                      <div className="service-img">
-                        <img src={service.image} alt={service.title} />
-
-                      </div>
-                      <div className="service-content">
-                        <h3 className="service-title h4"><Link href={`/${service.slug}`}>{service.title}</Link></h3>
-                        <p className="service-text">{service.description.substring(0, 100)}...</p>
-                        <Link href={`/${service.slug}`} className="vs-btn style-2 wave-btn">See Details</Link>
+              {services.map((service) => (
+                <div key={service.slug} className="col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="0.1s">
+                  <div className="service-box-two">
+                    <div className="service-img">
+                      <img src={service.image} alt={service.title} />
+                      <div className="service-icon">
+                        <img src={service.icon || '/images/icon/sr2-1.svg'} alt="icon" />
                       </div>
                     </div>
+                    <div className="service-content">
+                      <h3 className="service-title h4"><Link href={`/services/${service.slug}`}>{service.title}</Link></h3>
+                      <p className="service-text">{service.description.substring(0, 100)}...</p>
+                      <Link href={`/services/${service.slug}`} className="vs-btn style-2 wave-btn">See Details</Link>
+                    </div>
                   </div>
-                );
-              })}
+                </div>
+              ))}
             </div>
           </div>
-
         </section>
 
         {/* About Section - Index-4 Style */}
@@ -312,7 +311,7 @@ export default function Home() {
           <div className="letter shapePulse d-none d-lg-block"><img src="/images/shape/letter.png" alt="shapes" /></div>
         </section>
 
-        {/* Why Section - Index-4 Style (Tabs) */}
+        {/* Why Choose Us - Index-4 Style (Tabs) */}
         <section className="why-section-two space pt-0">
           <div className="container">
             <div className="row">
@@ -321,54 +320,53 @@ export default function Home() {
                   <div className="content-box-two">
                     <span className="sub-title">Why Choose Us</span>
                     <h2 className="sec-title">Why Parents Trust Maryam Studio</h2>
-                    <p className="mb-50">Choosing the right center is one of the most important decisions you will make. Here is why families in Hyderabad choose us for their child's autism therapy.</p>
+                    <p className="mb-50">Choosing the right center is one of the most important decisions you will make. Here is why families in Hyderabad choose us for their child's therapy.</p>
                   </div>
                   <img src="/images/normal/why2-1.jpg" alt="photo" />
                 </div>
               </div>
-              <div className="col-xl-6 col-lg-12 wow fadeInRight" data-wow-delay="0.1s">
+              <div className="col-xl-6 col-lg-12 text-center text-lg-start wow fadeInRight" data-wow-delay="0.1s">
                 <div className="nav nav-tabs choose-tab justify-content-center justify-content-lg-start" id="choose-tab" role="tablist">
-                  <button className="choose-btn active" id="choose-one-tab" data-bs-toggle="tab" data-bs-target="#choose-one" type="button" role="tab" aria-controls="choose-one" aria-selected="true">Consistent Routine</button>
-                  <button className="choose-btn" id="choose-two-tab" data-bs-toggle="tab" data-bs-target="#choose-two" type="button" role="tab" aria-controls="choose-two" aria-selected="false">Integrated Care</button>
-                  <button className="choose-btn" id="choose-three-tab" data-bs-toggle="tab" data-bs-target="#choose-three" type="button" role="tab" aria-controls="choose-three" aria-selected="false">Safety First</button>
+                  <button className="choose-btn active" id="choose-one-tab" data-bs-toggle="tab" data-bs-target="#choose-one" type="button" role="tab" aria-controls="choose-one" aria-selected="true">Our Approach</button>
+                  <button className="choose-btn" id="choose-two-tab" data-bs-toggle="tab" data-bs-target="#choose-two" type="button" role="tab" aria-controls="choose-two" aria-selected="false">Our Team</button>
+                  <button className="choose-btn" id="choose-three-tab" data-bs-toggle="tab" data-bs-target="#choose-three" type="button" role="tab" aria-controls="choose-three" aria-selected="false">Our Facility</button>
                 </div>
                 <div className="tab-content choose-content" id="choose-tabContent">
                   <div className="tab-pane fade show active" id="choose-one" role="tabpanel" aria-labelledby="choose-one-tab">
                     <div className="content-box">
-                      <h3 className="title">Predictability Breeds Confidence</h3>
-                      <p>Our full-day program runs on a structured schedule that children can rely on. This reduces anxiety and behavioral issues, creating a fertile ground for learning.</p>
+                      <h3 className="title">Integrated & Data-Driven Care</h3>
+                      <p>We combine multiple therapies (ABA, Speech, OT) into a unified full-day program, ensuring consistent learning. Our methods are strictly evidence-based and we track data daily to measure progress transparently.</p>
                       <div className="check-list">
                         <ul>
-                          <li>Visual Schedules</li>
-                          <li>Consistent Transitions</li>
-                          <li>Daily Rituals</li>
-                          <li>Regulated Sensory Breaks</li>
+                          <li>Full-Day Integrated Programs</li>
+                          <li>Data-Driven Progress Tracking</li>
+                          <li>Structured Routines</li>
                         </ul>
                       </div>
                     </div>
                   </div>
                   <div className="tab-pane fade" id="choose-two" role="tabpanel" aria-labelledby="choose-two-tab">
                     <div className="content-box">
-                      <h3 className="title">All Therapies Under One Roof</h3>
-                      <p>Stop driving all over Hyderabad. We integrate Speech, OT, and Behavioral Therapy into the school day, ensuring your child gets comprehensive support without the burnout.</p>
+                      <h3 className="title">Certified & Caring Professionals</h3>
+                      <p>Our team consists of certified BCBAs, Speech Therapists, and Occupational Therapists. Founded by parents who understand your journey, we offer a supportive community that treats every child like family.</p>
                       <div className="check-list">
                         <ul>
-                          <li>Multi-disciplinary Team</li>
-                          <li>Collaborative IEPs</li>
-                          <li>Holistic Development</li>
+                          <li>Certified Professionals</li>
+                          <li>Parent-Led Philosophy</li>
+                          <li>Compassionate Care</li>
                         </ul>
                       </div>
                     </div>
                   </div>
                   <div className="tab-pane fade" id="choose-three" role="tabpanel" aria-labelledby="choose-three-tab">
                     <div className="content-box">
-                      <h3 className="title">A Safe, Sensory-Friendly Space</h3>
-                      <p>Our facility is designed specifically for children with sensory needs. From calming corners to safe play equipment, every detail prioritizes your child's physical and emotional safety.</p>
+                      <h3 className="title">Safe & Convenient Environment</h3>
+                      <p>Located centrally in Hyderabad with easy access to Banjara Hills & Jubilee Hills. Our state-of-the-art center is designed to be sensory-friendly, safe, and calming for children with processing needs.</p>
                       <div className="check-list">
                         <ul>
-                          <li>Secure Facility</li>
-                          <li>Trained Staff</li>
-                          <li>Sensory Gym</li>
+                          <li>Sensory-Friendly Facility</li>
+                          <li>Convenient Location</li>
+                          <li>Safe Play Areas</li>
                         </ul>
                       </div>
                     </div>
@@ -379,6 +377,25 @@ export default function Home() {
           </div>
           <div className="glob shapePulse d-none d-lg-block"><img src="/images/shape/glob.png" alt="shapes" /></div>
           <div className="star rotate d-none d-lg-block"><img src="/images/shape/star.png" alt="shapes" /></div>
+        </section>
+
+        {/* Classes Section Three (CTA Style from index-4.html) */}
+        <section className="classes-section-three" data-bg-src="/images/bg/counter-bg.png">
+          <div className="container">
+            <div className="row align-items-center wow fadeInUp" data-wow-delay="0.1s">
+              <div className="col-lg-6">
+                <div className="title-area text-center text-lg-start mb-0 wow fadeInUp" data-wow-delay="0.1s">
+                  <span className="sub-title">Start Your Journey</span>
+                  <h2 className="sec-title">Call To Enroll Your Child<br />
+                    <a className="text-inherit" href="tel:+917702426362">+91 770 242 6362</a></h2>
+                </div>
+              </div>
+              <div className="col-auto ms-auto">
+                <button onClick={() => (window as any).openBookingModal?.()} className="link-btn-two vs-btn style-2 wave-btn">Get Free Consultation</button>
+              </div>
+            </div>
+          </div>
+          <div className="grass d-none d-lg-block"><img src="/images/shape/grass.png" alt="shapes" /></div>
         </section>
 
 

@@ -58,7 +58,7 @@ export default function Header() {
                         <h3 className="widget_title">Contact Us</h3>
                         <div className="vs-widget-contact">
                             <p className="footer-info"><i className="fas fa-map-marker-alt"></i>Hyderabad, India</p>
-                            <p className="footer-info"><i className="fas fa-envelope"></i><a href="mailto:info@maryamcdc.com">info@maryamcdc.com</a></p>
+                            <p className="footer-info"><i className="fas fa-envelope"></i><a href="mailto:maryamspecialpreschool@gmail.com">maryamspecialpreschool@gmail.com</a></p>
                             <p className="footer-info"><i className="fas fa-phone-alt"></i><a href="tel:+917702426362">+91 77024 26362</a></p>
                         </div>
                     </div>
@@ -107,7 +107,7 @@ export default function Header() {
                                 </ul>
                             </li>
                             <li><Link href="/gallery">Gallery</Link></li>
-                            <li><Link href="/blog">Blog</Link></li>
+                            {/* <li><Link href="/blog">Blog</Link></li> */}
                             <li><Link href="/contact">Contact</Link></li>
                         </ul>
                     </div>
@@ -166,7 +166,7 @@ export default function Header() {
                                                     <li><Link href="/about">About Us</Link></li>
                                                     <li className="menu-item-has-children">
                                                         <Link href="/services">Services</Link>
-                                                        <ul className="sub-menu">
+                                                        <ul className="sub-menu" style={{ minWidth: '260px' }}>
                                                             <li><Link href="/services/occupational-therapy">Occupational Therapy</Link></li>
                                                             <li><Link href="/services/speech-therapy">Speech Therapy</Link></li>
                                                             <li><Link href="/services/physiotherapy">Physiotherapy</Link></li>
@@ -177,9 +177,9 @@ export default function Header() {
                                                         </ul>
                                                     </li>
                                                     <li><Link href="/gallery">Gallery</Link></li>
-                                                    <li>
+                                                    {/* <li>
                                                         <Link href="/blog">Blog</Link>
-                                                    </li>
+                                                    </li> */}
                                                     <li>
                                                         <Link href="/contact">Contact</Link>
                                                     </li>
@@ -189,7 +189,7 @@ export default function Header() {
                                         </div>
                                         <div className="col-auto d-none d-xl-block">
                                             <div className="header-button">
-                                                <button type="button" onClick={() => (window as any).openBookingModal?.()} className="vs-btn wave-btn">Book a visit</button>
+                                                <button type="button" onClick={() => (window as any).openBookingModal?.()} className="vs-btn wave-btn">Get Quote</button>
                                                 <button type="button" className="sideMenuToggler icon-btn"><i className="fal fa-bars"></i></button>
                                             </div>
                                         </div>

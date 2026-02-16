@@ -25,22 +25,39 @@ export default function BookingModal() {
         });
     };
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        // Here you can add your form submission logic
-        console.log('Form submitted:', formData);
-        alert('Thank you! We will contact you soon.');
-        closeModal();
-        setFormData({
-            parentName: '',
-            childName: '',
-            childAge: '',
-            phone: '',
-            email: '',
-            service: '',
-            preferredDate: '',
-            message: ''
-        });
+
+        try {
+            const response = await fetch("https://formspree.io/f/mvzbrpzp", {
+                method: "POST",
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            });
+
+            if (response.ok) {
+                alert('Thank you! We will contact you soon.');
+                closeModal();
+                setFormData({
+                    parentName: '',
+                    childName: '',
+                    childAge: '',
+                    phone: '',
+                    email: '',
+                    service: '',
+                    preferredDate: '',
+                    message: ''
+                });
+            } else {
+                alert('Oops! There was a problem submitting your form');
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            alert('Oops! There was a problem submitting your form');
+        }
     };
 
     // Expose openModal function globally
