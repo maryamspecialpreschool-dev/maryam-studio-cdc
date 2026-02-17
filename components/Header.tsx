@@ -32,55 +32,6 @@ export default function Header() {
                     <button type="submit"><i className="fal fa-search"></i></button>
                 </form>
             </div>
-
-            {/* Side menu start */}
-            <div className="sidemenu-wrapper">
-                <div className="sidemenu-content">
-                    <button className="closeButton sideMenuCls"><i className="far fa-times"></i></button>
-                    <div className="widget footer-widget">
-                        <div className="vs-widget-about">
-                            <div className="about-logo">
-                                <Link href="/">
-                                    <img src="/images/logo.png" alt="Maryam Child Development Studio" style={{ maxHeight: '60px' }} />
-                                </Link>
-                            </div>
-                            <p className="about-text">Maryam Child Development Studio & Research for Autism offers specialized therapy and educational programs for children with autism.</p>
-                            <div className="multi-social">
-                                <Link href="#"><i className="fab fa-facebook-f"></i></Link>
-                                <Link href="#"><i className="fab fa-twitter"></i></Link>
-                                <Link href="#"><i className="fab fa-instagram"></i></Link>
-                                <Link href="#"><i className="fab fa-linkedin-in"></i></Link>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="widget footer-widget">
-                        <h3 className="widget_title">Contact Us</h3>
-                        <div className="vs-widget-contact">
-                            <p className="footer-info"><i className="fas fa-map-marker-alt"></i>Hyderabad, India</p>
-                            <p className="footer-info"><i className="fas fa-envelope"></i><a href="mailto:maryamspecialpreschool@gmail.com">maryamspecialpreschool@gmail.com</a></p>
-                            <p className="footer-info"><i className="fas fa-phone-alt"></i><a href="tel:+917702426362">+91 77024 26362</a></p>
-                        </div>
-                    </div>
-
-                    <div className="widget footer-widget">
-                        <h4 className="widget_title">News Feed</h4>
-                        <div className="recent-post-wrap">
-                            <div className="recent-post">
-                                <div className="media-img">
-                                    <Link href="/blog/why-full-day-autism-programs-show-better-results"><img src="/images/blog/blog-thumb-1.jpg" alt="Blog Image" /></Link>
-                                </div>
-                                <div className="media-body">
-                                    <div className="recent-post-meta"><Link href="/blog"><i className="fal fa-calendar-alt"></i> Oct 25, 2024</Link></div>
-                                    <h4 className="post-title"><Link href="/blog/why-full-day-autism-programs-show-better-results">Full Day Autism Programs</Link></h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {/* Side menu end */}
-
             {/* vs-mobile-menu start */}
             <div className="vs-menu-wrapper">
                 <div className="vs-menu-area">
@@ -107,7 +58,7 @@ export default function Header() {
                                 </ul>
                             </li>
                             <li><Link href="/gallery">Gallery</Link></li>
-                            {/* <li><Link href="/blog">Blog</Link></li> */}
+                            <li><Link href="/blog">Blog</Link></li>
                             <li><Link href="/contact">Contact</Link></li>
                         </ul>
                     </div>
@@ -177,9 +128,7 @@ export default function Header() {
                                                         </ul>
                                                     </li>
                                                     <li><Link href="/gallery">Gallery</Link></li>
-                                                    {/* <li>
-                                                        <Link href="/blog">Blog</Link>
-                                                    </li> */}
+                                                    <li><Link href="/blog">Blog</Link></li>
                                                     <li>
                                                         <Link href="/contact">Contact</Link>
                                                     </li>
@@ -190,7 +139,7 @@ export default function Header() {
                                         <div className="col-auto d-none d-xl-block">
                                             <div className="header-button">
                                                 <button type="button" onClick={() => (window as any).openBookingModal?.()} className="vs-btn wave-btn">Get Quote</button>
-                                                <button type="button" className="sideMenuToggler icon-btn"><i className="fal fa-bars"></i></button>
+
                                             </div>
                                         </div>
                                     </div>

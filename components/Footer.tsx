@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function Footer() {
     return (
         <>
-            <footer className="footer-wrapper footer-layout4" style={{ backgroundImage: "url('/images/bg/footer-3.png')", color: '#ffffff' }}>
+            <footer className="footer-wrapper footer-layout4" style={{ position: 'relative', backgroundImage: "url('/images/bg/footer-3.png')", color: '#ffffff' }}>
                 <div className="footer-overlay" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', backgroundColor: 'rgba(109, 27, 109, 0.85)', zIndex: 0 }}></div>
                 <div className="widget-area" style={{ position: 'relative', zIndex: 1, color: '#ffffff' }}>
                     <div className="container">
@@ -42,28 +42,14 @@ export default function Footer() {
 
                             {/* Footer Widget */}
                             <div className="col-xl-auto col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                                <div className="widget footer-widget">
-                                    <h4 className="widget_title">News Feed</h4>
-                                    <div className="recent-post-wrap">
-                                        <div className="recent-post">
-                                            <div className="media-img">
-                                                <Link href="/blog/why-full-day-autism-programs-show-better-results"><img src="/images/blog/blog-thumb-1.jpg" alt="Blog Image" /></Link>
-                                            </div>
-                                            <div className="media-body">
-                                                <div className="recent-post-meta"><Link href="/blog"><i className="fal fa-calendar-alt"></i> Oct 25, 2024</Link></div>
-                                                <h4 className="post-title"><Link href="/blog/why-full-day-autism-programs-show-better-results">Full Day Autism Programs</Link></h4>
-                                            </div>
-                                        </div>
-                                        <div className="recent-post">
-                                            <div className="media-img">
-                                                <Link href="/blog/understanding-autism-early-childhood"><img src="/images/blog/blog-thumb-2.jpg" alt="Blog Image" /></Link>
-                                            </div>
-                                            <div className="media-body">
-                                                <div className="recent-post-meta"><Link href="/blog"><i className="fal fa-calendar-alt"></i> Oct 15, 2024</Link></div>
-                                                <h4 className="post-title"><Link href="/blog/understanding-autism-early-childhood">Early Signs of Autism</Link></h4>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div className="widget footer-widget widget_nav_menu">
+                                    <h4 className="widget_title">Our Services</h4>
+                                    <ul className="menu">
+                                        <li><Link href="/services/occupational-therapy">Occupational Therapy</Link></li>
+                                        <li><Link href="/services/speech-therapy">Speech Therapy</Link></li>
+                                        <li><Link href="/services/physiotherapy">Physiotherapy</Link></li>
+                                        <li><Link href="/services/aba-therapy">ABA Therapy</Link></li>
+                                    </ul>
                                 </div>
                             </div>
 

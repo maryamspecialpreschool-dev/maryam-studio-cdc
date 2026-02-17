@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
+import Counter from '@/components/Counter';
 
 export default function AboutPage() {
     return (
@@ -50,7 +51,7 @@ export default function AboutPage() {
                                     <img src="/images/icon/counter-1.png" alt="icon" />
                                 </div>
                                 <div className="counter-info">
-                                    <h2 className="counter-number">45</h2>
+                                    <h2 className="counter-title"><Counter end={45} /></h2>
                                     <p className="counter-text">Qualified Staff</p>
                                 </div>
                             </div>
@@ -62,9 +63,7 @@ export default function AboutPage() {
                                     <img src="/images/icon/counter-2.png" alt="icon" />
                                 </div>
                                 <div className="counter-info">
-                                    <h2 className="counter-number">
-                                        <span className="counter">20</span>
-                                    </h2>
+                                    <h2 className="counter-title"><Counter end={20} suffix="+" /></h2>
                                     <p className="counter-text">Years Experience</p>
                                 </div>
                             </div>
@@ -76,9 +75,7 @@ export default function AboutPage() {
                                     <img src="/images/icon/counter-3.png" alt="icon" />
                                 </div>
                                 <div className="counter-info">
-                                    <h2 className="counter-number">
-                                        <span className="counter">565</span>
-                                    </h2>
+                                    <h2 className="counter-title"><Counter end={565} suffix="+" /></h2>
                                     <p className="counter-text">Students Enrolled</p>
                                 </div>
                             </div>
@@ -90,9 +87,7 @@ export default function AboutPage() {
                                     <img src="/images/icon/counter-4.png" alt="icon" />
                                 </div>
                                 <div className="counter-info">
-                                    <h2 className="counter-number">
-                                        <span className="counter">15</span>
-                                    </h2>
+                                    <h2 className="counter-title"><Counter end={15} suffix="+" /></h2>
                                     <p className="counter-text">Groups of Students</p>
                                 </div>
                             </div>
@@ -185,163 +180,37 @@ export default function AboutPage() {
                         </div>
                     </div>
                     <div className="row gy-30 justify-content-center">
-                        <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
-                            <div className="service-box" data-overlay="title" data-opacity="6">
-                                <div className="service-content text-center">
-                                    <h3 className="service-title">Our Mission</h3>
-                                    <p className="service-text">To provide structured, research-based, and compassionate autism support services that help children develop communication, independence, and social skills within a safe and inclusive environment.</p>
+                        <div className="col-xl-5 col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
+                            <div className="mission-box text-center p-4 p-md-5 bg-white shadow-sm rounded-3 h-100 position-relative overflow-hidden group">
+                                <div className="mission-icon mb-4">
+                                    <span className="d-inline-flex align-items-center justify-content-center bg-theme text-white rounded-circle" style={{ width: '80px', height: '80px', fontSize: '32px', boxShadow: '0 10px 20px rgba(109, 27, 109, 0.2)' }}>
+                                        <i className="fas fa-bullseye"></i>
+                                    </span>
+                                </div>
+                                <h3 className="h4 mb-3 text-theme">Our Mission</h3>
+                                <p className="mb-0">To provide structured, research-based, and compassionate autism support services that help children develop communication, independence, and social skills within a safe and inclusive environment.</p>
+                                <div className="shape-mockup z-index-0 opacity-10" style={{ right: '-20px', bottom: '-20px', fontSize: '100px', color: '#6d1b6d', transform: 'rotate(-15deg)' }}>
+                                    <i className="fas fa-bullseye"></i>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                            <div className="service-box" data-overlay="title" data-opacity="6">
-                                <div className="service-content text-center">
-                                    <h3 className="service-title">Our Vision</h3>
-                                    <p className="service-text">To become Hyderabad’s most trusted autism school and child development center by combining education, therapy, and research under one roof.</p>
+                        <div className="col-xl-5 col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                            <div className="mission-box text-center p-4 p-md-5 bg-white shadow-sm rounded-3 h-100 position-relative overflow-hidden group">
+                                <div className="mission-icon mb-4">
+                                    <span className="d-inline-flex align-items-center justify-content-center bg-theme text-white rounded-circle" style={{ width: '80px', height: '80px', fontSize: '32px', boxShadow: '0 10px 20px rgba(109, 27, 109, 0.2)' }}>
+                                        <i className="fas fa-eye"></i>
+                                    </span>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* Team Section */}
-            <section className="team-section bg-smoke space-extra-top space-bottom-shape-min">
-                <div className="container">
-                    <div className="row text-center justify-content-center wow fadeInUp" data-wow-delay="0.1s">
-                        <div className="col-xl-6 col-lg-7 col-md-8 col-sm-9">
-                            <div className="title-area">
-                                <span className="sub-title">Our Therapists</span>
-                                <h2 className="sec-title">Dedicated Professionals</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row vs-carousel" data-slide-show="3" data-lg-slide-show="2" data-arrows="true">
-                        {/* Team Members */}
-                        <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                            <div className="team-card">
-                                <div className="team-img" data-mask-src="/images/team/t-mask.png">
-                                    <img src="/images/team/t-1.jpg" alt="team" />
-                                    <div className="team-content">
-                                        <p className="team-text">Specializing in early intervention and behavioral therapy.</p>
-                                        <div className="multi-social">
-                                            <Link href="#"><i className="fab fa-facebook-f"></i></Link>
-                                            <Link href="#"><i className="fab fa-twitter"></i></Link>
-                                            <Link href="#"><i className="fab fa-linkedin-in"></i></Link>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="team-info">
-                                    <h4 className="team-title"><Link href="/team">Sarah Johnson</Link></h4>
-                                    <span className="team-desig">Senior Therapist</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                            <div className="team-card">
-                                <div className="team-img" data-mask-src="/images/team/t-mask.png">
-                                    <img src="/images/team/t-2.jpg" alt="team" />
-                                    <div className="team-content">
-                                        <p className="team-text">Experienced in speech therapy and communication strategies.</p>
-                                        <div className="multi-social">
-                                            <Link href="#"><i className="fab fa-facebook-f"></i></Link>
-                                            <Link href="#"><i className="fab fa-twitter"></i></Link>
-                                            <Link href="#"><i className="fab fa-linkedin-in"></i></Link>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="team-info">
-                                    <h4 className="team-title"><Link href="/team">Michael Smith</Link></h4>
-                                    <span className="team-desig">Speech Therapist</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                            <div className="team-card">
-                                <div className="team-img" data-mask-src="/images/team/t-mask.png">
-                                    <img src="/images/team/t-3.jpg" alt="team" />
-                                    <div className="team-content">
-                                        <p className="team-text">Expert in occupational therapy and sensory integration.</p>
-                                        <div className="multi-social">
-                                            <Link href="#"><i className="fab fa-facebook-f"></i></Link>
-                                            <Link href="#"><i className="fab fa-twitter"></i></Link>
-                                            <Link href="#"><i className="fab fa-linkedin-in"></i></Link>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="team-info">
-                                    <h4 className="team-title"><Link href="/team">Emily Davis</Link></h4>
-                                    <span className="team-desig">Occupational Therapist</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="shape-before"><img src="/images/shape/before-shape-5.png" alt="shape" /></div>
-                <div className="shape-after"><img src="/images/shape/after-shape-5.png" alt="shape" /></div>
-
-                <div className="shape-mockup movingX d-none d-hd-block" data-top="12%" data-left="6%"><img src="/images/icon/doll-1.png" alt="shapes" /></div>
-                <div className="shape-mockup movingX d-none d-hd-block" data-bottom="9%" data-left="5%"><img src="/images/icon/shoe-1.png" alt="shapes" /></div>
-                <div className="shape-mockup shapePulse d-none d-hd-block" data-top="12%" data-right="5%"><img src="/images/icon/dog-2.png" alt="shapes" /></div>
-                <div className="shape-mockup movingX d-none d-hd-block" data-bottom="12%" data-right="3%"><img src="/images/icon/plane-1.png" alt="shapes" /></div>
-            </section>
-
-            {/* Testimonial Section */}
-            <section className="testimonial-section space-top-shape2-plus space-bottom-shape-plus">
-                <div className="container">
-                    <div className="row gy-30 align-items-center">
-                        <div className="col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-                            <div className="text-center text-lg-start">
-                                <span className="sub-title">Parent Testimonial</span>
-                                <h2 className="sec-title">Positive Parents Review Of Us</h2>
-                                <p className="mb-30">Our parents trust us with their children's development and well-being. Read what they have to say about their experience with Maryam Child Development Studio.</p>
-                                <Link href="/contact" className="vs-btn wave-btn style-1">View All Reviews</Link>
-                            </div>
-                        </div>
-                        <div className="col-lg-8">
-                            <div className="testi-slider-area">
-                                <div className="row testi-slider vs-carousel" id="testi1" data-slide-show="2">
-                                    {/* Single Item */}
-                                    <div className="col-md-6">
-                                        <div className="testi-box">
-                                            <div className="testi-avater">
-                                                <img src="/images/testimonial/avator-1.jpg" alt="testimonial" />
-                                                <i className="fa-solid fa-quote-left"></i>
-                                            </div>
-                                            <h4 className="testi-title">They Are Amazing</h4>
-                                            <p className="testi-text">The progress my son has made in just 6 months is unbelievable. The therapists are so dedicated.</p>
-                                            <div className="testi-author">
-                                                <h5 className="name">Ayesha Khan</h5>
-                                                <span className="desig">Parent</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    {/* Single Item */}
-                                    <div className="col-md-6">
-                                        <div className="testi-box">
-                                            <div className="testi-avater">
-                                                <img src="/images/testimonial/avator-2.jpg" alt="testimonial" />
-                                                <i className="fa-solid fa-quote-left"></i>
-                                            </div>
-                                            <h4 className="testi-title">Like Family</h4>
-                                            <p className="testi-text">The environment is so supportive. We feel like we are part of a big family here.</p>
-                                            <div className="testi-author">
-                                                <h5 className="name">Rahul Reddy</h5>
-                                                <span className="desig">Parent</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="vs-icon-box testi-1 d-none d-xl-block">
-                                    <button data-slick-prev="#testi1" className="icon-btn style-3 arrow-left mb-15"><i className="far fa-arrow-left"></i></button>
-                                    <button data-slick-next="#testi1" className="icon-btn style-3 arrow-right"><i className="far fa-arrow-right"></i></button>
+                                <h3 className="h4 mb-3 text-theme">Our Vision</h3>
+                                <p className="mb-0">To become Hyderabad’s most trusted autism school and child development center by combining education, therapy, and research under one roof.</p>
+                                <div className="shape-mockup z-index-0 opacity-10" style={{ right: '-20px', bottom: '-20px', fontSize: '100px', color: '#6d1b6d', transform: 'rotate(-15deg)' }}>
+                                    <i className="fas fa-eye"></i>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-
         </main>
     );
 }

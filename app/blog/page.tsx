@@ -81,16 +81,7 @@ export default function BlogPage() {
                                 </div>
                             ))}
 
-                            {/* Pagination */}
-                            <div className="vs-pagination mt-60 mb-30 mb-lg-0 wow fadeInUp" data-wow-delay="0.1s">
-                                <ul>
-                                    <li><a href="#"><i className="fas fa-chevron-left"></i></a></li>
-                                    <li><a href="#" className="active">1</a></li>
-                                    <li><a href="#">2</a></li>
-                                    <li><a href="#">3</a></li>
-                                    <li><a href="#"><i className="fas fa-chevron-right"></i></a></li>
-                                </ul>
-                            </div>
+
                         </div>
 
                         {/* Sidebar */}
