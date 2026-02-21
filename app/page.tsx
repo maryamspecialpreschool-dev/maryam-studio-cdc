@@ -19,7 +19,7 @@ const faqSchema = {
       "name": "Where is the best child development center in Hyderabad?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Maryam Child Development Studio is a leading multidisciplinary child development center in Hyderabad, serving families from Banjara Hills, Jubilee Hills, Gachibowli, Madhapur, Kukatpally, and Kondapur."
+        "text": "Maryam Child Development Studio is a leading multidisciplinary child development center in Hyderabad, serving families from Tolichowki, Manikonda, Jubilee Hills, Gachibowli, Madhapur, Kukatpally, and Kondapur."
       }
     },
     {
@@ -35,7 +35,7 @@ const faqSchema = {
       "name": "What areas of Hyderabad do you serve?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We serve families across Hyderabad including Banjara Hills, Jubilee Hills, Gachibowli, Kukatpally, Madhapur, Kondapur, and surrounding neighborhoods in Telangana."
+        "text": "We serve families across Hyderabad including Tolichowki, Manikonda, Jubilee Hills, Gachibowli, Kukatpally, Madhapur, Kondapur, and surrounding neighborhoods in Telangana."
       }
     }
   ]
@@ -148,7 +148,6 @@ export default function Home() {
                   <div className="service-box-two">
                     <div className="service-img">
                       <img src={service.image} alt={service.title} />
-                      <span className="service-img-label">{service.title}</span>
                     </div>
                     <div className="service-content">
                       <h3 className="service-title h4"><Link href={`/services/${service.slug}`}>{service.title}</Link></h3>
@@ -307,7 +306,7 @@ export default function Home() {
                   <div className="tab-pane fade" id="choose-three" role="tabpanel" aria-labelledby="choose-three-tab">
                     <div className="content-box">
                       <h3 className="title">Safe & Convenient Environment</h3>
-                      <p>Located centrally in Hyderabad with easy access to Banjara Hills & Jubilee Hills. Our state-of-the-art center is designed to be sensory-friendly, safe, and calming for children with processing needs.</p>
+                      <p>Located centrally in Hyderabad with easy access to Tolichowki & Manikonda. Our state-of-the-art center is designed to be sensory-friendly, safe, and calming for children with processing needs.</p>
                       <div className="check-list">
                         <ul>
                           <li>Sensory-Friendly Facility</li>
