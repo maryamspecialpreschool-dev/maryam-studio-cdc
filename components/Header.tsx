@@ -1,10 +1,15 @@
 'use client';
 
 import Link from 'next/link';
-
-
+import { usePathname } from 'next/navigation';
 
 export default function Header() {
+    const pathname = usePathname();
+
+    const isActive = (href: string) => {
+        if (href === '/') return pathname === '/';
+        return pathname === href || pathname.startsWith(href + '/');
+    };
     return (
         <>
             {/* Preloader */}
@@ -41,25 +46,30 @@ export default function Header() {
                     </div>
                     <div className="vs-mobile-menu">
                         <ul>
-                            <li>
+                            <li className={isActive('/') ? 'active' : ''}>
                                 <Link href="/">Home</Link>
                             </li>
-                            <li><Link href="/about">About Us</Link></li>
-                            <li className="menu-item-has-children">
+                            <li className={isActive('/about') ? 'active' : ''}><Link href="/about">About Us</Link></li>
+                            <li className={`menu-item-has-children${isActive('/services') ? ' active' : ''}`}>
                                 <Link href="/services">Services</Link>
                                 <ul className="sub-menu">
                                     <li><Link href="/services/occupational-therapy">Occupational Therapy</Link></li>
                                     <li><Link href="/services/speech-therapy">Speech Therapy</Link></li>
                                     <li><Link href="/services/physiotherapy">Physiotherapy</Link></li>
                                     <li><Link href="/services/aba-therapy">ABA & Behavioural Therapy</Link></li>
+                                    <li><Link href="/services/behavioral-therapy">Behavioral Therapy</Link></li>
                                     <li><Link href="/services/daycare">Daycare Program</Link></li>
                                     <li><Link href="/services/primary-education">Primary Education</Link></li>
                                     <li><Link href="/services/living-skills">Living Skills Training</Link></li>
+                                    <li><Link href="/services/full-day-autism-program">Full-Day Autism Program</Link></li>
+                                    <li><Link href="/services/individual-education-planning">Individual Education Planning</Link></li>
+                                    <li><Link href="/services/parent-training">Parent Training & Home Programs</Link></li>
+                                    <li><Link href="/services/research-based-intervention">Research-Based Intervention</Link></li>
                                 </ul>
                             </li>
-                            <li><Link href="/gallery">Gallery</Link></li>
-                            <li><Link href="/blog">Blog</Link></li>
-                            <li><Link href="/contact">Contact</Link></li>
+                            <li className={isActive('/gallery') ? 'active' : ''}><Link href="/gallery">Gallery</Link></li>
+                            <li className={isActive('/blog') ? 'active' : ''}><Link href="/blog">Blog</Link></li>
+                            <li className={isActive('/contact') ? 'active' : ''}><Link href="/contact">Contact</Link></li>
                         </ul>
                     </div>
                 </div>
@@ -111,25 +121,30 @@ export default function Header() {
                                         <div className="col-auto">
                                             <nav className="main-menu menu-style1 d-none d-lg-inline-block">
                                                 <ul>
-                                                    <li>
+                                                    <li className={isActive('/') ? 'active' : ''}>
                                                         <Link href="/">Home</Link>
                                                     </li>
-                                                    <li><Link href="/about">About Us</Link></li>
-                                                    <li className="menu-item-has-children">
+                                                    <li className={isActive('/about') ? 'active' : ''}><Link href="/about">About Us</Link></li>
+                                                    <li className={`menu-item-has-children${isActive('/services') ? ' active' : ''}`}>
                                                         <Link href="/services">Services</Link>
-                                                        <ul className="sub-menu" style={{ minWidth: '260px' }}>
+                                                        <ul className="sub-menu vs-dropdown-2col">
                                                             <li><Link href="/services/occupational-therapy">Occupational Therapy</Link></li>
                                                             <li><Link href="/services/speech-therapy">Speech Therapy</Link></li>
                                                             <li><Link href="/services/physiotherapy">Physiotherapy</Link></li>
                                                             <li><Link href="/services/aba-therapy">ABA & Behavioural Therapy</Link></li>
+                                                            <li><Link href="/services/behavioral-therapy">Behavioral Therapy</Link></li>
                                                             <li><Link href="/services/daycare">Daycare Program</Link></li>
                                                             <li><Link href="/services/primary-education">Primary Education</Link></li>
                                                             <li><Link href="/services/living-skills">Living Skills Training</Link></li>
+                                                            <li><Link href="/services/full-day-autism-program">Full-Day Autism Program</Link></li>
+                                                            <li><Link href="/services/individual-education-planning">Individual Education Planning</Link></li>
+                                                            <li><Link href="/services/parent-training">Parent Training & Home Programs</Link></li>
+                                                            <li><Link href="/services/research-based-intervention">Research-Based Intervention</Link></li>
                                                         </ul>
                                                     </li>
-                                                    <li><Link href="/gallery">Gallery</Link></li>
-                                                    <li><Link href="/blog">Blog</Link></li>
-                                                    <li>
+                                                    <li className={isActive('/gallery') ? 'active' : ''}><Link href="/gallery">Gallery</Link></li>
+                                                    <li className={isActive('/blog') ? 'active' : ''}><Link href="/blog">Blog</Link></li>
+                                                    <li className={isActive('/contact') ? 'active' : ''}>
                                                         <Link href="/contact">Contact</Link>
                                                     </li>
                                                 </ul>

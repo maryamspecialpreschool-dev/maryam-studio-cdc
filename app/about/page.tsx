@@ -51,8 +51,8 @@ export default function AboutPage() {
                                     <img src="/images/icon/counter-1.png" alt="icon" />
                                 </div>
                                 <div className="counter-info">
-                                    <h2 className="counter-title"><Counter end={45} /></h2>
-                                    <p className="counter-text">Qualified Staff</p>
+                                    <h2 className="counter-title" style={{ color: '#fff' }}><Counter end={45} /></h2>
+                                    <p className="counter-text" style={{ color: '#fff' }}>Qualified Staff</p>
                                 </div>
                             </div>
                         </div>
@@ -63,8 +63,8 @@ export default function AboutPage() {
                                     <img src="/images/icon/counter-2.png" alt="icon" />
                                 </div>
                                 <div className="counter-info">
-                                    <h2 className="counter-title"><Counter end={20} suffix="+" /></h2>
-                                    <p className="counter-text">Years Experience</p>
+                                    <h2 className="counter-title" style={{ color: '#fff' }}><Counter end={20} suffix="+" /></h2>
+                                    <p className="counter-text" style={{ color: '#fff' }}>Years Experience</p>
                                 </div>
                             </div>
                         </div>
@@ -75,8 +75,8 @@ export default function AboutPage() {
                                     <img src="/images/icon/counter-3.png" alt="icon" />
                                 </div>
                                 <div className="counter-info">
-                                    <h2 className="counter-title"><Counter end={565} suffix="+" /></h2>
-                                    <p className="counter-text">Students Enrolled</p>
+                                    <h2 className="counter-title" style={{ color: '#fff' }}><Counter end={565} suffix="+" /></h2>
+                                    <p className="counter-text" style={{ color: '#fff' }}>Students Enrolled</p>
                                 </div>
                             </div>
                         </div>
@@ -87,8 +87,8 @@ export default function AboutPage() {
                                     <img src="/images/icon/counter-4.png" alt="icon" />
                                 </div>
                                 <div className="counter-info">
-                                    <h2 className="counter-title"><Counter end={15} suffix="+" /></h2>
-                                    <p className="counter-text">Groups of Students</p>
+                                    <h2 className="counter-title" style={{ color: '#fff' }}><Counter end={15} suffix="+" /></h2>
+                                    <p className="counter-text" style={{ color: '#fff' }}>Groups of Students</p>
                                 </div>
                             </div>
                         </div>

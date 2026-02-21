@@ -148,9 +148,7 @@ export default function Home() {
                   <div className="service-box-two">
                     <div className="service-img">
                       <img src={service.image} alt={service.title} />
-                      <div className="service-icon">
-                        <img src={service.icon || '/images/icon/sr2-1.svg'} alt="icon" />
-                      </div>
+                      <span className="service-img-label">{service.title}</span>
                     </div>
                     <div className="service-content">
                       <h3 className="service-title h4"><Link href={`/services/${service.slug}`}>{service.title}</Link></h3>
@@ -208,58 +206,6 @@ export default function Home() {
           <div className="tadi shapePulse d-none d-lg-block" data-bottom="23%" data-right="6%"><img src="/images/icon/tadi.png" alt="shapes" /></div>
         </section>
 
-        {/* Counter Section - Index-4 Style */}
-        <section className="counter-section-two space" style={{ backgroundColor: '#6d1b6d', backgroundImage: 'none' }}>
-          <div className="container">
-            <div className="row gy-30 justify-content-between">
-              <div className="col-xl-auto col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div className="counter-box-two">
-                  <div className="counter-icon">
-                    <img src="/images/icon/counter2-1.png" alt="icon" />
-                  </div>
-                  <div className="counter-info">
-                    <h2 className="counter-number"><span className="counter">8</span></h2>
-                    <p className="counter-text">Specialists</p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xl-auto col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div className="counter-box-two">
-                  <div className="counter-icon">
-                    <img src="/images/icon/counter2-2.png" alt="icon" />
-                  </div>
-                  <div className="counter-info">
-                    <h2 className="counter-number"><span className="counter">5</span></h2>
-                    <p className="counter-text">Years of Experience</p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xl-auto col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div className="counter-box-two">
-                  <div className="counter-icon">
-                    <img src="/images/icon/counter2-3.png" alt="icon" />
-                  </div>
-                  <div className="counter-info">
-                    <h2 className="counter-number"><span className="counter">50</span>+</h2>
-                    <p className="counter-text">Families Supported</p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xl-auto col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div className="counter-box-two">
-                  <div className="counter-icon">
-                    <img src="/images/icon/counter2-3.png" alt="icon" />
-                  </div>
-                  <div className="counter-info">
-                    <h2 className="counter-number"><span className="counter">48</span></h2>
-                    <p className="counter-text">Hours Weekly Therapy</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="grass d-none d-lg-block"><img src="/images/shape/grass.png" alt="shapes" /></div>
-        </section>
 
         {/* Simple Section - Philosophy */}
         <section className="simple-section space">

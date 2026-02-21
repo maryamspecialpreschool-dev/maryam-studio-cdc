@@ -48,7 +48,15 @@ export default function Footer() {
                                         <li><Link href="/services/occupational-therapy">Occupational Therapy</Link></li>
                                         <li><Link href="/services/speech-therapy">Speech Therapy</Link></li>
                                         <li><Link href="/services/physiotherapy">Physiotherapy</Link></li>
-                                        <li><Link href="/services/aba-therapy">ABA Therapy</Link></li>
+                                        <li><Link href="/services/aba-therapy">ABA & Behavioural Therapy</Link></li>
+                                        <li><Link href="/services/behavioral-therapy">Behavioral Therapy</Link></li>
+                                        <li><Link href="/services/daycare">Daycare Program</Link></li>
+                                        <li><Link href="/services/primary-education">Primary Education</Link></li>
+                                        <li><Link href="/services/living-skills">Living Skills Training</Link></li>
+                                        <li><Link href="/services/full-day-autism-program">Full-Day Autism Program</Link></li>
+                                        <li><Link href="/services/individual-education-planning">Individual Education Planning</Link></li>
+                                        <li><Link href="/services/parent-training">Parent Training & Home Programs</Link></li>
+                                        <li><Link href="/services/research-based-intervention">Research-Based Intervention</Link></li>
                                     </ul>
                                 </div>
                             </div>

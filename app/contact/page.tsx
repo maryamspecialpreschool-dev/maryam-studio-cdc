@@ -148,10 +148,14 @@ export default function ContactPage() {
                                 <div className="contact-location">
                                     {/* Hyderabad Map Placeholder */}
                                     <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15224.997548777978!2d78.4746363!3d17.4482937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb90c76ac9695b%3A0x6b86c2576b2f7636!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.301598260443!2d78.41348067462718!3d17.3973080025203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb970029f31d09%3A0x54949668e3cdba90!2sMaryam%20Studio%20CDC%20and%20Research%20for%20Autism!5e0!3m2!1sen!2sin!4v1771663506969!5m2!1sen!2sin"
+                                        width="100%"
+                                        height="450"
+                                        style={{ border: 0 }}
                                         allowFullScreen
-                                        loading="lazy">
-                                    </iframe>
+                                        loading="lazy"
+                                        referrerPolicy="no-referrer-when-downgrade"
+                                    ></iframe>
                                 </div>
                             </div>
                         </div>

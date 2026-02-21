@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
-import BlogSidebar from '@/components/BlogSidebar';
-import { blogPosts, BlogPost } from '@/lib/blogData';
+import { blogPosts } from '@/lib/blogData';
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 
@@ -74,24 +73,13 @@ export default async function BlogDetailsPage({ params }: { params: Promise<{ sl
 
             <section className="vs-blog-wrapper blog-details space-page">
                 <div className="container">
-                    <div className="row gx-60">
-                        <div className="col-xl-8 col-lg-7">
+                    <div className="row justify-content-center">
+                        <div className="col-xl-8 col-lg-10">
                             <div className="vs-blog blog-single wow fadeInUp" data-wow-delay="0.1s">
-                                {/* Media Handling */}
-                                {post.video ? (
+                                {/* Image */}
+                                {post.image && (
                                     <div className="blog-img">
-                                        <img src={post.image || '/images/blog/blog-single.jpg'} alt="Blog Img" />
-                                        <a href={post.video} className="popup-video play-btn style-1"><i className="fas fa-play"></i></a>
-                                    </div>
-                                ) : post.images ? (
-                                    <div className="blog-img vs-carousel" data-slide-show="1" data-md-slide-show="1">
-                                        {post.images.map((img, i) => (
-                                            <img key={i} src={img} alt="Blog Img" />
-                                        ))}
-                                    </div>
-                                ) : (
-                                    <div className="blog-img">
-                                        <img src={post.image || '/images/blog/blog-single.jpg'} alt="Blog Img" />
+                                        <img src={post.image} alt={post.title} />
                                     </div>
                                 )}
 
@@ -99,24 +87,14 @@ export default async function BlogDetailsPage({ params }: { params: Promise<{ sl
                                     <div className="blog-meta">
                                         <span><i className="fal fa-calendar-alt"></i><Link href="#">{post.date}</Link></span>
                                         <span><i className="fal fa-user-tag"></i>by <Link href="#">{post.author}</Link></span>
-                                        <span><i className="fal fa-folder-open"></i><Link href="#">Kids</Link><Link href="#">Education</Link></span>
-                                        <span><i className="fal fa-comments"></i><Link href="#">{post.comments} Comments</Link></span>
                                     </div>
-                                    <h2 className="blog-title">{post.title}</h2>
+                                    <h1 className="blog-title">{post.title}</h1>
 
                                     <div dangerouslySetInnerHTML={{ __html: post.content }} />
 
                                     <div className="share-links clearfix wow fadeInUp" data-wow-delay="0.1s">
-                                        <div className="row justify-content-between">
+                                        <div className="row justify-content-between align-items-center">
                                             <div className="col-md-auto">
-                                                <span className="share-links-title">Tags: </span>
-                                                <div className="tagcloud">
-                                                    <Link href="/blog">Education</Link>
-                                                    <Link href="/blog">Kids</Link>
-                                                    <Link href="/blog">Therapy</Link>
-                                                </div>
-                                            </div>
-                                            <div className="col-md-auto text-md-end">
                                                 <span className="share-links-title">Share Now:</span>
                                                 <ul className="multi-social">
                                                     <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
@@ -124,6 +102,9 @@ export default async function BlogDetailsPage({ params }: { params: Promise<{ sl
                                                     <li><a href="#"><i className="fab fa-linkedin-in"></i></a></li>
                                                     <li><a href="#"><i className="fab fa-instagram"></i></a></li>
                                                 </ul>
+                                            </div>
+                                            <div className="col-md-auto text-md-end">
+                                                <Link href="/blog" className="vs-btn style-2">← Back to Blog</Link>
                                             </div>
                                         </div>
                                     </div>
@@ -140,10 +121,6 @@ export default async function BlogDetailsPage({ params }: { params: Promise<{ sl
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        {/* Sidebar */}
-                        <div className="col-xl-4 col-lg-5">
-                            <BlogSidebar />
                         </div>
                     </div>
                 </div>

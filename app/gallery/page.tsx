@@ -5,12 +5,15 @@ import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 
 const galleryItems = [
-    { id: 1, src: '/images/project/p-1.jpg', category: 'cat-1' },
-    { id: 2, src: '/images/project/p-2.jpg', category: 'cat-2' },
-    { id: 3, src: '/images/project/p-3.jpg', category: 'cat-3' },
-    { id: 4, src: '/images/project/p-4.jpg', category: 'cat-1 cat-2' },
-    { id: 5, src: '/images/project/p-5.jpg', category: 'cat-2' },
-    { id: 6, src: '/images/project/p-6.jpg', category: 'cat-3' },
+    { id: 1, src: '/images/project/clinic-1.jpg', category: 'cat-4', alt: 'Maryam CDC Clinic - General Area' },
+    { id: 2, src: '/images/project/clinic-2.jpg', category: 'cat-4', alt: 'Maryam CDC Clinic - Waiting Area' },
+    { id: 3, src: '/images/project/clinic-3.jpg', category: 'cat-4', alt: 'Maryam CDC Clinic - Consultation Room' },
+    { id: 4, src: '/images/project/p-1.jpg', category: 'cat-1', alt: 'Therapy Session' },
+    { id: 5, src: '/images/project/p-2.jpg', category: 'cat-2', alt: 'Group Activity' },
+    { id: 6, src: '/images/project/p-3.jpg', category: 'cat-3', alt: 'Event' },
+    { id: 7, src: '/images/project/p-4.jpg', category: 'cat-1 cat-2', alt: 'Therapy Activity' },
+    { id: 8, src: '/images/project/p-5.jpg', category: 'cat-2', alt: 'Group Activity' },
+    { id: 9, src: '/images/project/p-6.jpg', category: 'cat-3', alt: 'Event' },
 ];
 
 export default function GalleryPage() {
@@ -28,6 +31,7 @@ export default function GalleryPage() {
                     </div>
                     <div className="project-menu text-center mb-40 filter-menu-active">
                         <button className={activeFilter === '*' ? 'active' : ''} onClick={() => setActiveFilter('*')}>All Zone <img className="btn-bg" src="/images/bg/btn-bg.png" alt="btn-bg" /><img className="btn-active-bg" src="/images/bg/btn-bg-active.png" alt="btn-active-bg" /></button>
+                        <button className={activeFilter === 'cat-4' ? 'active' : ''} onClick={() => setActiveFilter('cat-4')}>Clinic & Facility <img className="btn-bg" src="/images/bg/btn-bg.png" alt="btn-bg" /><img className="btn-active-bg" src="/images/bg/btn-bg-active.png" alt="btn-active-bg" /></button>
                         <button className={activeFilter === 'cat-1' ? 'active' : ''} onClick={() => setActiveFilter('cat-1')}>Therapy <img className="btn-bg" src="/images/bg/btn-bg.png" alt="btn-bg" /><img className="btn-active-bg" src="/images/bg/btn-bg-active.png" alt="btn-active-bg" /></button>
                         <button className={activeFilter === 'cat-2' ? 'active' : ''} onClick={() => setActiveFilter('cat-2')}>Activities <img className="btn-bg" src="/images/bg/btn-bg.png" alt="btn-bg" /><img className="btn-active-bg" src="/images/bg/btn-bg-active.png" alt="btn-active-bg" /></button>
                         <button className={activeFilter === 'cat-3' ? 'active' : ''} onClick={() => setActiveFilter('cat-3')}>Events <img className="btn-bg" src="/images/bg/btn-bg.png" alt="btn-bg" /><img className="btn-active-bg" src="/images/bg/btn-bg-active.png" alt="btn-active-bg" /></button>
@@ -37,7 +41,7 @@ export default function GalleryPage() {
                             <div key={item.id} className={`col-xl-3 col-lg-4 col-sm-6 filter-item ${item.category}`}>
                                 <div className="project-card">
                                     <div className="project-img">
-                                        <img src={item.src} alt="project-img" />
+                                        <img src={item.src} alt={item.alt} />
                                     </div>
                                     <a href={item.src} className="plus-btn popup-image">+</a>
                                 </div>
