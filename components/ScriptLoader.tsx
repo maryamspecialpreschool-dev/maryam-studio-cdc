@@ -196,17 +196,26 @@ export default function ScriptLoader() {
                 });
 
                 // Dropdown Toggle for Mobile
-                if ($('.vs-mobile-menu .menu-item-has-children > span.expander').length === 0) {
-                    $('.vs-mobile-menu .menu-item-has-children').each(function (this: any) {
-                        $(this).prepend('<span class="expander"><i class="fal fa-plus"></i></span>');
-                    });
-                }
-
                 $('.vs-mobile-menu').off('click', '.expander').on('click', '.expander', function (this: any, e: any) {
                     e.preventDefault();
-                    $(this).parent().children('.sub-menu').slideToggle();
+                    const $parent = $(this).closest('li');
+                    $parent.children('.sub-menu').slideToggle();
                     $(this).find('i').toggleClass('fa-plus fa-minus');
-                    $(this).parent().toggleClass('active');
+                    $parent.toggleClass('active');
+                });
+
+                // Allow clicking the parent link text to also toggle the menu if it has children (mobile only)
+                $('.vs-mobile-menu .menu-item-has-children > a').off('click').on('click', function (this: any, e: any) {
+                    if ($(window).width() < 992) {
+                        e.preventDefault();
+                        const $expander = $(this).siblings('.expander');
+                        if ($expander.length > 0) {
+                            $expander.trigger('click');
+                        } else {
+                            $(this).siblings('.sub-menu').slideToggle();
+                            $(this).parent().toggleClass('active');
+                        }
+                    }
                 });
 
                 // 8. Data Mask Src

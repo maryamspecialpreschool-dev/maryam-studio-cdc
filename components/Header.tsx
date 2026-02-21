@@ -52,6 +52,7 @@ export default function Header() {
                             <li className={isActive('/about') ? 'active' : ''}><Link href="/about">About Us</Link></li>
                             <li className={`menu-item-has-children${isActive('/services') ? ' active' : ''}`}>
                                 <Link href="/services">Services</Link>
+                                <span className="expander"><i className="fal fa-plus"></i></span>
                                 <ul className="sub-menu">
                                     <li><Link href="/services/occupational-therapy">Occupational Therapy</Link></li>
                                     <li><Link href="/services/speech-therapy">Speech Therapy</Link></li>
@@ -127,7 +128,7 @@ export default function Header() {
                                                     <li className={isActive('/about') ? 'active' : ''}><Link href="/about">About Us</Link></li>
                                                     <li className={`menu-item-has-children${isActive('/services') ? ' active' : ''}`}>
                                                         <Link href="/services">Services</Link>
-                                                        <ul className="sub-menu vs-dropdown-2col">
+                                                        <ul className="sub-menu vs-simple-dropdown">
                                                             <li><Link href="/services/occupational-therapy">Occupational Therapy</Link></li>
                                                             <li><Link href="/services/speech-therapy">Speech Therapy</Link></li>
                                                             <li><Link href="/services/physiotherapy">Physiotherapy</Link></li>
