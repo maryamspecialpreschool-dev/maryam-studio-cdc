@@ -307,7 +307,15 @@ export default function Home() {
                     <div className="content-box">
                       <h3 className="title">Safe & Convenient Environment</h3>
                       <p>Located centrally in Hyderabad with easy access to Tolichowki & Manikonda. Our state-of-the-art center is designed to be sensory-friendly, safe, and calming for children with processing needs.</p>
-                      <div className="check-list">
+                      <div className="row g-10 mt-3">
+                        <div className="col-6">
+                          <img src="/images/project/clinic1.jpeg" alt="Clinic Interior" className="rounded-3 w-100" style={{ height: '120px', objectFit: 'cover' }} />
+                        </div>
+                        <div className="col-6">
+                          <img src="/images/project/clinic2.jpeg" alt="Therapy Room" className="rounded-3 w-100" style={{ height: '120px', objectFit: 'cover' }} />
+                        </div>
+                      </div>
+                      <div className="check-list mt-20">
                         <ul>
                           <li>Sensory-Friendly Facility</li>
                           <li>Convenient Location</li>
@@ -322,6 +330,45 @@ export default function Home() {
           </div>
           <div className="glob shapePulse d-none d-lg-block"><img src="/images/shape/glob.png" alt="shapes" /></div>
           <div className="star rotate d-none d-lg-block"><img src="/images/shape/star.png" alt="shapes" /></div>
+        </section>
+
+        {/* Gallery Preview Section */}
+        <section className="gallery-section space-bottom">
+          <div className="container">
+            <div className="row justify-content-center text-center">
+              <div className="col-xl-6 col-lg-8 wow fadeInUp" data-wow-delay="0.1s">
+                <div className="title-area">
+                  <span className="sub-title">Our Facility</span>
+                  <h2 className="sec-title">Explore Our Clinic Environment</h2>
+                  <p className="mb-40">Take a virtual tour of our state-of-the-art child development center in Hyderabad, designed to be sensory-friendly and nurturing.</p>
+                </div>
+              </div>
+            </div>
+            <div className="row g-20 justify-content-center">
+              {[
+                { src: 'clinic1.jpeg', alt: 'Modern Facility' },
+                { src: 'clinic2.jpeg', alt: 'Therapy Zone' },
+                { src: 'clinic3.jpeg', alt: 'Play Area' },
+                { src: 'clinic4.jpeg', alt: 'Occupational Therapy' },
+                { src: 'clinic5.jpeg', alt: 'Sensory Room' },
+                { src: 'clinic-1.jpg', alt: 'Clinical Assessment' },
+                { src: 'clinic-2.jpg', alt: 'Speech Therapy' },
+                { src: 'clinic-3.jpg', alt: 'Physical Therapy' },
+                { src: 'clinic10.jpeg', alt: 'Learning Space' }
+              ].map((img, index) => (
+                <div key={index} className="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay={`${0.1 * (index + 1)}s`}>
+                  <div className="project-card">
+                    <div className="project-img">
+                      <img src={`/images/project/${img.src}`} alt={img.alt} className="w-100" style={{ height: '280px', objectFit: 'cover', borderRadius: '15px' }} />
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="text-center mt-40">
+              <Link href="/gallery" className="vs-btn wave-btn">View Full Gallery</Link>
+            </div>
+          </div>
         </section>
 
         {/* Classes Section Three (CTA Style from index-4.html) */}

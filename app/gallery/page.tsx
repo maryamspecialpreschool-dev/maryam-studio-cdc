@@ -5,15 +5,22 @@ import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 
 const galleryItems = [
-    { id: 1, src: '/images/project/clinic1.jpeg', category: 'cat-4', alt: 'Maryam CDC Clinic - Modern Facility' },
-    { id: 2, src: '/images/project/clinic2.jpeg', category: 'cat-4', alt: 'Maryam CDC Clinic - Therapy Zone' },
-    { id: 3, src: '/images/project/clinic3.jpeg', category: 'cat-4', alt: 'Maryam CDC Clinic - Play Area' },
-    { id: 4, src: '/images/project/p-1.jpg', category: 'cat-1', alt: 'Therapy Session' },
-    { id: 5, src: '/images/project/p-2.jpg', category: 'cat-2', alt: 'Group Activity' },
-    { id: 6, src: '/images/project/p-3.jpg', category: 'cat-3', alt: 'Event' },
-    { id: 7, src: '/images/project/p-4.jpg', category: 'cat-1 cat-2', alt: 'Therapy Activity' },
-    { id: 8, src: '/images/project/p-5.jpg', category: 'cat-2', alt: 'Group Activity' },
-    { id: 9, src: '/images/project/p-6.jpg', category: 'cat-3', alt: 'Event' },
+    { id: 1, src: '/images/project/clinic1.jpeg', category: 'cat-4', alt: 'Maryam CDC Clinic - Modern Facility Exterior' },
+    { id: 2, src: '/images/project/clinic2.jpeg', category: 'cat-4', alt: 'Maryam CDC Clinic - Inner Reception Area' },
+    { id: 3, src: '/images/project/clinic3.jpeg', category: 'cat-4', alt: 'Maryam CDC Clinic - Therapy Hallway' },
+    { id: 4, src: '/images/project/clinic4.jpeg', category: 'cat-4', alt: 'Maryam CDC Clinic - Occupational Therapy Zone' },
+    { id: 5, src: '/images/project/clinic5.jpeg', category: 'cat-4', alt: 'Maryam CDC Clinic - Sensory Play Area' },
+    { id: 6, src: '/images/project/clinic6.jpeg', category: 'cat-4', alt: 'Maryam CDC Clinic - Individual Therapy Room' },
+    { id: 7, src: '/images/project/clinic7.jpeg', category: 'cat-4', alt: 'Maryam CDC Clinic - Group Activity Hall' },
+    { id: 8, src: '/images/project/clinic8.jpeg', category: 'cat-4', alt: 'Maryam CDC Clinic - Child-Safe Furniture & Environment' },
+    { id: 9, src: '/images/project/clinic9.jpeg', category: 'cat-4', alt: 'Maryam CDC Clinic - Learning & Development Corner' },
+    { id: 10, src: '/images/project/clinic10.jpeg', category: 'cat-4', alt: 'Maryam CDC Clinic - Multidisciplinary Support Zone' },
+    { id: 11, src: '/images/project/clinic-1.jpg', category: 'cat-4', alt: 'Maryam CDC Clinic - Clinical Assessment Room' },
+    { id: 12, src: '/images/project/clinic-2.jpg', category: 'cat-4', alt: 'Maryam CDC Clinic - Speech Therapy Station' },
+    { id: 13, src: '/images/project/clinic-3.jpg', category: 'cat-4', alt: 'Maryam CDC Clinic - Physical Therapy Equipment' },
+    { id: 14, src: '/images/project/p-4.jpg', category: 'cat-1 cat-2', alt: 'Therapy Activity - Developing Motor Skills' },
+    { id: 15, src: '/images/project/p-5.jpg', category: 'cat-2', alt: 'Activity Zone - Creative Engagement' },
+    { id: 16, src: '/images/project/p-6.jpg', category: 'cat-3', alt: 'Event - Parent-Teacher Interaction' },
 ];
 
 export default function GalleryPage() {

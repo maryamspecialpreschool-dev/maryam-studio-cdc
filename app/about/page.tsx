@@ -13,8 +13,8 @@ export default function AboutPage() {
                     <div className="row align-items-center gy-30">
                         <div className="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
                             <div className="img-box-2">
-                                <img src="/images/normal/square-1.jpg" alt="photo" className="big-img" />
-                                <img src="/images/normal/square-2.jpg" alt="photo" className="small-img" />
+                                <img src="/images/project/clinic1.jpeg" alt="Maryam CDC Clinic Facility" className="big-img" />
+                                <img src="/images/project/clinic2.jpeg" alt="Therapy Room" className="small-img" />
                             </div>
                         </div>
                         <div className="col-lg-5 wow fadeInRight" data-wow-delay="0.1s">
