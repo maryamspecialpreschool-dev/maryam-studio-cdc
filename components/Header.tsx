@@ -95,7 +95,7 @@ export default function Header() {
                             <div className="col-lg-auto text-center">
                                 <div className="header-social">
                                     <ul>
-                                        <li><Link href="https://www.instagram.com/maryamspecialpre/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></Link></li>
+                                        <li><Link href="https://www.instagram.com/maryamstudiocdc" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></Link></li>
                                         <li><Link href="https://www.linkedin.com/company/maryam-special-studio/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin-in"></i></Link></li>
                                     </ul>
                                 </div>

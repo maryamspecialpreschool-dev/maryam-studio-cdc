@@ -8,14 +8,16 @@ Sitemap: https://maryamstudio.com/sitemap.xml
 Disallow: /admin/
 Disallow: /api/
 Disallow: /_next/
+Disallow: /static/
 
-# Allow all service pages
-Allow: /occupational-therapy
-Allow: /speech-therapy
-Allow: /physiotherapy
-Allow: /aba-therapy
-Allow: /daycare
-Allow: /primary-education
-Allow: /living-skills
+# Optimize for search engines
+Crawl-delay: 10
+
+# Allow all major sections
+Allow: /blog/
+Allow: /services/
 Allow: /about
 Allow: /contact
+Allow: /gallery
+Allow: /team
+Allow: /daycare

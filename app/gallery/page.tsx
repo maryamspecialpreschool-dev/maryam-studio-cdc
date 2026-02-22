@@ -5,9 +5,9 @@ import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 
 const galleryItems = [
-    { id: 1, src: '/images/project/clinic-1.jpg', category: 'cat-4', alt: 'Maryam CDC Clinic - General Area' },
-    { id: 2, src: '/images/project/clinic-2.jpg', category: 'cat-4', alt: 'Maryam CDC Clinic - Waiting Area' },
-    { id: 3, src: '/images/project/clinic-3.jpg', category: 'cat-4', alt: 'Maryam CDC Clinic - Consultation Room' },
+    { id: 1, src: '/images/project/clinic1.jpeg', category: 'cat-4', alt: 'Maryam CDC Clinic - Modern Facility' },
+    { id: 2, src: '/images/project/clinic2.jpeg', category: 'cat-4', alt: 'Maryam CDC Clinic - Therapy Zone' },
+    { id: 3, src: '/images/project/clinic3.jpeg', category: 'cat-4', alt: 'Maryam CDC Clinic - Play Area' },
     { id: 4, src: '/images/project/p-1.jpg', category: 'cat-1', alt: 'Therapy Session' },
     { id: 5, src: '/images/project/p-2.jpg', category: 'cat-2', alt: 'Group Activity' },
     { id: 6, src: '/images/project/p-3.jpg', category: 'cat-3', alt: 'Event' },

@@ -4,6 +4,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ScriptLoader from '@/components/ScriptLoader';
 import BookingModal from '@/components/BookingModal';
+import FloatingSocials from '@/components/FloatingSocials';
 import "./globals.css";
 
 // We keep the exact detailed SEO based on the user request
@@ -195,6 +196,7 @@ export default function RootLayout({
 
         <Footer />
         <BookingModal />
+        <FloatingSocials />
 
 
         {/* JavaScript Assets */}

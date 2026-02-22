@@ -19,7 +19,7 @@ export default function Footer() {
                                         </div>
                                         <p className="about-text">Maryam Child Development Studio & Research for Autism offers specialized therapy and educational programs for children with autism.</p>
                                         <div className="multi-social">
-                                            <Link href="https://www.instagram.com/maryamspecialpre/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></Link>
+                                            <Link href="https://www.instagram.com/maryamstudiocdc" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></Link>
                                             <Link href="https://www.linkedin.com/company/maryam-special-studio/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin-in"></i></Link>
                                         </div>
                                     </div>
@@ -87,7 +87,7 @@ export default function Footer() {
 
                 <div className="footer-copyright" style={{ position: 'relative', zIndex: 1 }}>
                     <div className="container">
-                        <p className="copyright">&copy; Copyright 2024 Maryam Child Development Studio. All Rights Reserved.</p>
+                        <p className="copyright">&copy; Copyright 2026 Maryam Child Development Studio. All Rights Reserved.</p>
                     </div>
                 </div>
             </footer>
