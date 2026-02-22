@@ -6,7 +6,7 @@ import { servicesData } from '@/lib/servicesData';
 export const dynamic = 'force-static';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://maryamstudio.com';
+    const baseUrl = 'https://maryamstudiocdc.in';
 
     // Static routes
     const routes = [

@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://maryamstudio.com/sitemap.xml
+Sitemap: https://maryamstudiocdc.in/sitemap.xml
 
 # Disallow admin and private areas
 Disallow: /admin/

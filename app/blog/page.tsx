@@ -28,7 +28,7 @@ export default function BlogPage() {
                 '@type': 'Person',
                 name: post.author
             },
-            url: `https://maryamcdc.com/blog/${post.slug}`
+            url: `https://maryamstudiocdc.in/blog/${post.slug}`
         }))
     };
 

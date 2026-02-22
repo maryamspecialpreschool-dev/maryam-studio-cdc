@@ -9,7 +9,7 @@ import "./globals.css";
 
 // We keep the exact detailed SEO based on the user request
 export const metadata: Metadata = {
-  metadataBase: new URL('https://maryamstudio.com'),
+  metadataBase: new URL('https://maryamstudiocdc.in'),
   title: {
     default: "Maryam Child Development Studio | Best Autism Therapy Center in Hyderabad",
     template: "%s | Maryam Child Development Studio Hyderabad"
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_IN',
-    url: 'https://maryamstudio.com',
+    url: 'https://maryamstudiocdc.in',
     siteName: 'Maryam Child Development Studio',
     title: 'Maryam Child Development Studio | Best Autism Therapy Center in Hyderabad',
     description: 'Expert child development and autism therapy services in Hyderabad. Specialized care for children with developmental delays.',
@@ -87,13 +87,13 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
-              "@id": "https://maryamstudio.com",
+              "@id": "https://maryamstudiocdc.in",
               "name": "Maryam Child Development Studio",
               "alternateName": "Maryam Studio",
               "description": "Multidisciplinary child development center in Hyderabad offering occupational therapy, speech therapy, physiotherapy, ABA therapy, and special education for children with autism and developmental delays.",
-              "url": "https://maryamstudio.com",
+              "url": "https://maryamstudiocdc.in",
               "telephone": "+919876543210",
-              "email": "info@maryamstudio.com",
+              "email": "info@maryamstudiocdc.in",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Hyderabad",
@@ -128,8 +128,8 @@ export default function RootLayout({
                 }
               ],
               "sameAs": [
-                "https://www.instagram.com/maryamstudio",
-                "https://www.linkedin.com/company/maryamstudio"
+                "https://www.instagram.com/maryamstudiocdc",
+                "https://www.linkedin.com/company/maryam-special-studio/"
               ]
             })
           }}
@@ -144,7 +144,7 @@ export default function RootLayout({
               "@type": "MedicalBusiness",
               "name": "Maryam Child Development Studio",
               "description": "Specialized child development center providing therapy services for children with autism and developmental delays in Hyderabad.",
-              "url": "https://maryamstudio.com",
+              "url": "https://maryamstudiocdc.in",
               "telephone": "+919876543210",
               "address": {
                 "@type": "PostalAddress",
@@ -193,8 +193,8 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Organization",
               "name": "Maryam Child Development Studio",
-              "url": "https://maryamstudio.com",
-              "logo": "https://maryamstudio.com/images/logo.jpeg",
+              "url": "https://maryamstudiocdc.in",
+              "logo": "https://maryamstudiocdc.in/images/logo.jpeg",
               "description": "Leading child development center in Hyderabad specializing in autism therapy and special education",
               "address": {
                 "@type": "PostalAddress",
@@ -210,8 +210,8 @@ export default function RootLayout({
                 "availableLanguage": ["English", "Hindi", "Telugu"]
               },
               "sameAs": [
-                "https://www.instagram.com/maryamstudio",
-                "https://www.linkedin.com/company/maryamstudio"
+                "https://www.instagram.com/maryamstudiocdc",
+                "https://www.linkedin.com/company/maryam-special-studio/"
               ]
             })
           }}

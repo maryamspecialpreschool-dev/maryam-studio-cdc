@@ -19,7 +19,7 @@ export default function ServicesPage() {
         itemListElement: Object.entries(servicesData).map(([slug, service], index) => ({
             '@type': 'ListItem',
             position: index + 1,
-            url: `https://maryamcdc.com/services/${slug}`,
+            url: `https://maryamstudiocdc.in/services/${slug}`,
             name: service.title,
             description: service.description,
             image: service.image
