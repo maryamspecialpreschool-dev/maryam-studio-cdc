@@ -4,8 +4,12 @@ import { blogPosts, BlogPost } from '@/lib/blogData';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Autism & Child Development Blog | Maryam Studio',
-    description: 'Read the latest insights, tips, and research on autism, speech therapy, and child development from our experts.',
+    title: 'Autism & Child Development Blog Hyderabad | Parenting Tips & Research',
+    description: 'Insights and expert advice on autism, speech therapy, and child development in Hyderabad. Stay updated with the latest research and parenting tips.',
+    keywords: 'autism blog Hyderabad, child development tips, speech therapy resources, parenting autistic children Hyderabad',
+    alternates: {
+        canonical: '/blog',
+    },
 };
 
 export default function BlogPage() {
@@ -34,7 +38,7 @@ export default function BlogPage() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
             />
-            <Breadcrumb title="Our Blog" />
+            <Breadcrumb title="Autism & Child Development Blog Hyderabad" />
 
             <section className="vs-blog-wrapper space-page">
                 <div className="container">

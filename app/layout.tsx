@@ -9,11 +9,40 @@ import "./globals.css";
 
 // We keep the exact detailed SEO based on the user request
 export const metadata: Metadata = {
-  title: "Maryam Child Development Studio & Research for Autism | Hyderabad",
-  description: "Maryam Child Development Studio in Hyderabad offers specialized autism therapy, special needs education, and sensory-friendly programs for child development.",
-  keywords: "autism school in Hyderabad, child development center, autism therapy in Hyderabad, special needs school, sensory-friendly school, full-day autism program, autism support services",
+  metadataBase: new URL('https://maryamstudio.com'),
+  title: {
+    default: "Maryam Child Development Studio | Best Autism Therapy Center in Hyderabad",
+    template: "%s | Maryam Child Development Studio Hyderabad"
+  },
+  description: "Maryam Child Development Studio is the best autism therapy center in Hyderabad. We offer specialized ABA therapy, speech therapy, occupational therapy, and special education for children.",
+  keywords: "autism center Hyderabad, best autism school Hyderabad, ABA therapy Hyderabad, speech therapy for kids Hyderabad, occupational therapy Hyderabad, special education Hyderabad, child development center Hyderabad",
   authors: [{ name: "Maryam Child Development Studio" }],
   robots: "index, follow",
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'en_IN',
+    url: 'https://maryamstudio.com',
+    siteName: 'Maryam Child Development Studio',
+    title: 'Maryam Child Development Studio | Best Autism Therapy Center in Hyderabad',
+    description: 'Expert child development and autism therapy services in Hyderabad. Specialized care for children with developmental delays.',
+    images: [
+      {
+        url: '/images/logo.jpeg',
+        width: 1200,
+        height: 630,
+        alt: 'Maryam Child Development Studio Hyderabad',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Maryam Child Development Studio | Best Autism Therapy Center in Hyderabad',
+    description: 'Expert child development and autism therapy services in Hyderabad.',
+    images: ['/images/logo.jpeg'],
+  },
 };
 
 export const viewport: Viewport = {

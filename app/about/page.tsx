@@ -1,6 +1,16 @@
 import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 import Counter from '@/components/Counter';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'About Us | Maryam Child Development Studio Hyderabad',
+    description: 'Learn about Maryam Child Development Studio, a parent-led autism center in Hyderabad. Discover our journey, mission, and how we support children with developmental delays.',
+    keywords: 'about Maryam Studio, autism center Hyderabad, parent-led autism school, child development specialists Hyderabad',
+    alternates: {
+        canonical: '/about',
+    },
+};
 
 export default function AboutPage() {
     return (

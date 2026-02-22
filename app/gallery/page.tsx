@@ -15,9 +15,9 @@ const galleryItems = [
     { id: 8, src: '/images/project/clinic8.jpeg', category: 'cat-4', alt: 'Maryam CDC Clinic - Child-Safe Furniture & Environment' },
     { id: 9, src: '/images/project/clinic9.jpeg', category: 'cat-4', alt: 'Maryam CDC Clinic - Learning & Development Corner' },
     { id: 10, src: '/images/project/clinic10.jpeg', category: 'cat-4', alt: 'Maryam CDC Clinic - Multidisciplinary Support Zone' },
-    { id: 11, src: '/images/project/clinic-1.jpg', category: 'cat-4', alt: 'Maryam CDC Clinic - Clinical Assessment Room' },
-    { id: 12, src: '/images/project/clinic-2.jpg', category: 'cat-4', alt: 'Maryam CDC Clinic - Speech Therapy Station' },
-    { id: 13, src: '/images/project/clinic-3.jpg', category: 'cat-4', alt: 'Maryam CDC Clinic - Physical Therapy Equipment' },
+    { id: 11, src: '/images/project/clinic-1.jpg', category: 'cat-3', alt: 'Maryam CDC Clinic - Clinical Assessment Room' },
+    { id: 12, src: '/images/project/clinic-2.jpg', category: 'cat-3', alt: 'Maryam CDC Clinic - Speech Therapy Station' },
+    { id: 13, src: '/images/project/clinic-3.jpg', category: 'cat-1', alt: 'Maryam CDC Clinic - Physical Therapy Equipment' },
     { id: 14, src: '/images/project/p-4.jpg', category: 'cat-1 cat-2', alt: 'Therapy Activity - Developing Motor Skills' },
     { id: 15, src: '/images/project/p-5.jpg', category: 'cat-2', alt: 'Activity Zone - Creative Engagement' },
     { id: 16, src: '/images/project/p-6.jpg', category: 'cat-3', alt: 'Event - Parent-Teacher Interaction' },
@@ -28,7 +28,7 @@ export default function GalleryPage() {
 
     return (
         <main>
-            <Breadcrumb title="Gallery" />
+            <Breadcrumb title="Our Therapy Facility in Hyderabad" />
 
             <section className="project-section bg-smoke space-top space-extra-bottom">
                 <div className="container pb-10">

@@ -4,8 +4,12 @@ import { servicesData } from '@/lib/servicesData';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Autism Therapy Services Hyderabad | Full-Day Programs',
-    description: 'Explore our comprehensive range of autism therapy services in Hyderabad, including Full-Day Programs, Speech Therapy, Occupational Therapy, and Behavioral Therapy.',
+    title: 'Autism Therapy Services Hyderabad | Best Full-Day Programs',
+    description: 'Comprehensive autism therapy services in Hyderabad. Our programs include ABA therapy, Speech therapy, Occupational therapy, and full-day developmental support.',
+    keywords: 'autism services Hyderabad, therapy for autistic children Hyderabad, best child development services Hyderabad, specialized autism treatment Hyderabad',
+    alternates: {
+        canonical: '/services',
+    },
 };
 
 export default function ServicesPage() {
@@ -28,7 +32,7 @@ export default function ServicesPage() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
             />
-            <Breadcrumb title="Services" />
+            <Breadcrumb title="Autism Therapy Services in Hyderabad" />
 
             {/* Service Section */}
             <section className="service-section space">
