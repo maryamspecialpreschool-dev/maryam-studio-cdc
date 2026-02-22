@@ -3,6 +3,8 @@ import { MetadataRoute } from 'next';
 import { blogPosts } from '@/lib/blogData';
 import { servicesData } from '@/lib/servicesData';
 
+export const dynamic = 'force-static';
+
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = 'https://maryamstudio.com';
 
