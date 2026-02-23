@@ -232,18 +232,20 @@ export default function RootLayout({
         {/* Load jQuery first */}
         <Script src="/js/jquery-3.5.0.min.js" strategy="beforeInteractive" />
 
-        {/* Load other libs */}
+        {/* Load critical carousel early */}
         <Script src="/js/slick.min.js" strategy="afterInteractive" />
         <Script src="/js/bootstrap.min.js" strategy="afterInteractive" />
+
+        {/* Load libraries used by main.js and ScriptLoader */}
         <Script src="/js/jquery.magnific-popup.min.js" strategy="afterInteractive" />
         <Script src="/js/imagesloaded.pkgd.min.js" strategy="afterInteractive" />
         <Script src="/js/isotope.pkgd.min.js" strategy="afterInteractive" />
         <Script src="/js/jquery.counterup.min.js" strategy="afterInteractive" />
-        <Script src="/js/parallax.min.js" strategy="afterInteractive" />
+        <Script src="/js/parallax.min.js" strategy="lazyOnload" />
         <Script src="/js/vscustom-carousel.min.js" strategy="afterInteractive" />
-        <Script src="/js/jquery-ui.min.js" strategy="afterInteractive" />
+        <Script src="/js/jquery-ui.min.js" strategy="lazyOnload" />
         <Script src="/js/wow.min.js" strategy="afterInteractive" />
-        <Script src="/js/ajax-mail.js" strategy="afterInteractive" />
+        <Script src="/js/ajax-mail.js" strategy="lazyOnload" />
 
         {/* Main JS - responsible for initializing everything */}
         <Script src="/js/main.js" strategy="afterInteractive" />

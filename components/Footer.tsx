@@ -1,9 +1,17 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
     return (
         <>
-            <footer className="footer-wrapper footer-layout4" style={{ position: 'relative', backgroundImage: "url('/images/bg/footer-3.png')", color: '#ffffff' }}>
+            <footer className="footer-wrapper footer-layout4 position-relative overflow-hidden" style={{ color: '#ffffff' }}>
+                <Image
+                    src="/images/bg/footer-3.png"
+                    alt="Footer Background"
+                    fill
+                    style={{ objectFit: 'cover', zIndex: -1 }}
+                    quality={75}
+                />
                 <div className="footer-overlay" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', backgroundColor: 'rgba(109, 27, 109, 0.85)', zIndex: 0 }}></div>
                 <div className="widget-area" style={{ position: 'relative', zIndex: 1, color: '#ffffff' }}>
                     <div className="container">
@@ -14,7 +22,7 @@ export default function Footer() {
                                     <div className="vs-widget-about">
                                         <div className="about-logo">
                                             <Link href="/">
-                                                <img src="/images/logo.png" alt="Maryam Child Development Studio" style={{ maxHeight: '60px' }} />
+                                                <Image src="/images/logo.png" alt="Maryam Child Development Studio" width={180} height={60} style={{ objectFit: 'contain' }} />
                                             </Link>
                                         </div>
                                         <p className="about-text">Maryam Child Development Studio & Research for Autism offers specialized therapy and educational programs for children with autism.</p>
@@ -77,13 +85,23 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="shape-mockup movingX d-none d-hd-block" style={{ top: '7%', left: '5%' }} data-top="7%" data-left="5%"><img src="/images/icon/sun-3.png" alt="shapes" /></div>
-                <div className="shape-mockup movingX d-none d-hd-block" style={{ bottom: '56%', left: '33%' }} data-bottom="56%" data-left="33%"><img src="/images/icon/butterfly.png" alt="shapes" /></div>
-                <div className="shape-mockup moving d-none d-hd-block" style={{ top: '49%', right: '30%' }} data-top="49%" data-right="30%"><img src="/images/icon/butterfly-sm.png" alt="shapes" /></div>
+                <div className="shape-mockup movingX d-none d-hd-block" style={{ top: '7%', left: '5%' }} data-top="7%" data-left="5%">
+                    <Image src="/images/icon/sun-3.png" alt="shapes" width={120} height={120} />
+                </div>
+                <div className="shape-mockup movingX d-none d-hd-block" style={{ bottom: '56%', left: '33%' }} data-bottom="56%" data-left="33%">
+                    <Image src="/images/icon/butterfly.png" alt="shapes" width={80} height={80} />
+                </div>
+                <div className="shape-mockup moving d-none d-hd-block" style={{ top: '49%', right: '30%' }} data-top="49%" data-right="30%">
+                    <Image src="/images/icon/butterfly-sm.png" alt="shapes" width={60} height={60} />
+                </div>
 
                 {/* Additional shapes from index-4.html footer */}
-                <div className="shape-mockup movingX-reverse d-none d-hd-block" style={{ top: '18%', right: '3%' }} data-top="18%" data-right="3%"><img src="/images/icon/f-i-3-5.png" alt="shapes" /></div>
-                <div className="shape-mockup movingX d-none d-hd-block" style={{ top: '62%', right: '6%' }} data-top="62%" data-right="6%"><img src="/images/icon/f-i-3-6.png" alt="shapes" /></div>
+                <div className="shape-mockup movingX-reverse d-none d-hd-block" style={{ top: '18%', right: '3%' }} data-top="18%" data-right="3%">
+                    <Image src="/images/icon/f-i-3-5.png" alt="shapes" width={100} height={100} />
+                </div>
+                <div className="shape-mockup movingX d-none d-hd-block" style={{ top: '62%', right: '6%' }} data-top="62%" data-right="6%">
+                    <Image src="/images/icon/f-i-3-6.png" alt="shapes" width={100} height={100} />
+                </div>
 
                 <div className="footer-copyright" style={{ position: 'relative', zIndex: 1 }}>
                     <div className="container">

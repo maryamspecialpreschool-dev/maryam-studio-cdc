@@ -61,8 +61,12 @@ export default function AboutPage() {
                         </div>
                     </div>
                 </div>
-                <div className="shape-mockup shapePulse d-none d-hd-block" data-bottom="40%" data-left="6%"><img src="/images/icon/dog.png" alt="shapes" /></div>
-                <div className="shape-mockup rotate d-none d-md-block" data-bottom="40%" data-right="6%"><img src="/images/icon/star.png" alt="shapes" /></div>
+                <div className="shape-mockup shapePulse d-none d-hd-block" data-bottom="40%" data-left="6%">
+                    <Image src="/images/icon/dog.png" alt="shapes" width={100} height={100} />
+                </div>
+                <div className="shape-mockup rotate d-none d-md-block" data-bottom="40%" data-right="6%">
+                    <Image src="/images/icon/star.png" alt="shapes" width={80} height={80} />
+                </div>
             </section>
 
             {/* Counter Section */}
@@ -125,11 +129,19 @@ export default function AboutPage() {
                         </div>
                     </div>
                 </div>
-                <div className="section-before style-2"><img src="/images/shape/counter-before-1.png" alt="shape" /></div>
-                <div className="section-after style-2"><img src="/images/shape/counter-after-1.png" alt="shape" /></div>
+                <div className="section-before style-2">
+                    <Image src="/images/shape/counter-before-1.png" alt="shape" width={200} height={100} />
+                </div>
+                <div className="section-after style-2">
+                    <Image src="/images/shape/counter-after-1.png" alt="shape" width={200} height={100} />
+                </div>
 
-                <div className="shape-mockup z-index-3 shapePulse d-none d-hd-block" data-bottom="23%" data-left="7%"><img src="/images/icon/egg.png" alt="shapes" /></div>
-                <div className="shape-mockup z-index-3 d-none d-hd-block" data-bottom="-9%" data-right="7%"><img src="/images/shape/line-3.png" alt="shapes" /></div>
+                <div className="shape-mockup z-index-3 shapePulse d-none d-hd-block" data-bottom="23%" data-left="7%">
+                    <Image src="/images/icon/egg.png" alt="shapes" width={100} height={100} />
+                </div>
+                <div className="shape-mockup z-index-3 d-none d-hd-block" data-bottom="-9%" data-right="7%">
+                    <Image src="/images/shape/line-3.png" alt="shapes" width={200} height={200} />
+                </div>
             </section>
 
             {/* Process Section */}
@@ -194,7 +206,9 @@ export default function AboutPage() {
                                 </div>
                             </div>
                         </div>
-                        <div className="process-line"><img src="/images/shape/dashed-line-1.png" alt="shape" /></div>
+                        <div className="process-line">
+                            <Image src="/images/shape/dashed-line-1.png" alt="shape" width={1000} height={50} />
+                        </div>
                     </div>
                 </div>
             </section>

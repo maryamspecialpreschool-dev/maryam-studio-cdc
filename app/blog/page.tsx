@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import Breadcrumb from '@/components/Breadcrumb';
 import { blogPosts, BlogPost } from '@/lib/blogData';
 import { Metadata } from 'next';
@@ -47,9 +48,14 @@ export default function BlogPage() {
                             <div key={post.slug} className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay={`${0.1 * (index % 3 + 1)}s`}>
                                 <div className="vs-blog blog-single">
                                     {post.image && (
-                                        <div className="blog-img">
+                                        <div className="blog-img position-relative" style={{ height: '220px' }}>
                                             <Link href={`/blog/${post.slug}`}>
-                                                <img src={post.image} alt={post.title} />
+                                                <Image
+                                                    src={post.image}
+                                                    alt={post.title}
+                                                    fill
+                                                    style={{ objectFit: 'cover' }}
+                                                />
                                             </Link>
                                         </div>
                                     )}

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import BlogBreadcrumb from '@/components/BlogBreadcrumb';
 import BlogProgress from '@/components/BlogProgress';
 import TableOfContents from '@/components/TableOfContents';
@@ -137,7 +138,13 @@ export default async function BlogDetailsPage({ params }: { params: Promise<{ sl
                                         {relatedPosts.map((rp, idx) => (
                                             <div key={idx} className="rp-item d-flex gap-3 mb-3 pb-3 border-bottom last-border-0 transition-all">
                                                 <div className="rp-img flex-shrink-0" style={{ width: '70px', height: '70px' }}>
-                                                    <img src={rp.image} alt={rp.title} className="rounded-3 w-100 h-100 object-fit-cover shadow-sm transition-all" />
+                                                    <Image
+                                                        src={rp.image || '/images/logo.jpeg'}
+                                                        alt={rp.title}
+                                                        fill
+                                                        style={{ objectFit: 'cover' }}
+                                                        className="rounded-3 shadow-sm"
+                                                    />
                                                 </div>
                                                 <div className="rp-body">
                                                     <h5 className="h6 mb-1 rp-title">

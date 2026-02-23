@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface BlogBreadcrumbProps {
     title: string;
@@ -9,12 +10,15 @@ export default function BlogBreadcrumb({ title, bgImage }: BlogBreadcrumbProps) 
     const backgroundUrl = bgImage || '/images/bg/breadcrumb-bg-1.jpg';
 
     return (
-        <div
-            className="breadcumb-wrapper blog-breadcrumb-style"
-            style={{
-                backgroundImage: `url('${backgroundUrl}')`
-            }}
-        >
+        <div className="breadcumb-wrapper blog-breadcrumb-style position-relative overflow-hidden">
+            <Image
+                src={backgroundUrl}
+                alt="Background"
+                fill
+                priority
+                style={{ objectFit: 'cover', zIndex: -1 }}
+                quality={75}
+            />
             <div className="container">
                 <div className="breadcumb-content">
                     <h2 className="breadcumb-title">{title}</h2>

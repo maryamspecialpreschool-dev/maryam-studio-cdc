@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import Breadcrumb from '@/components/Breadcrumb';
 
 export default function ContactPage() {
@@ -118,43 +119,43 @@ export default function ContactPage() {
                             <div className="contact-info-box">
                                 <h1 className="contact-title h2">Contact the Leading Autism School in Hyderabad</h1>
                                 <p className="mb-35">Looking for professional autism therapy in Hyderabad? Visit Maryam Child Development Studio & Research for Autism.</p>
-                                <div className="info-media">
+                                <div className="info-media border-bottom pb-4 mb-4">
                                     <div className="media-icon">
-                                        <img src="/images/icon/location.png" alt="icon" />
+                                        <Image src="/images/icon/location.png" alt="location icon" width={60} height={60} />
                                     </div>
                                     <div className="media-body">
                                         <h4 className="info-title">Office Address:</h4>
                                         <p className="info-text">Maryam Child Development Studio<br />Hyderabad, India</p>
                                     </div>
                                 </div>
-                                <div className="info-media">
+                                <div className="info-media border-bottom pb-4 mb-4">
                                     <div className="media-icon">
-                                        <img src="/images/icon/phone.png" alt="icon" />
+                                        <Image src="/images/icon/phone.png" alt="phone icon" width={60} height={60} />
                                     </div>
                                     <div className="media-body">
                                         <h4 className="info-title">Call Us For Help:</h4>
-                                        <p className="info-text"><a href="tel:+917702426362">+91 77024 26362</a></p>
+                                        <p className="info-text"><a href="tel:+917702426362" className="text-inherit">+91 77024 26362</a></p>
                                     </div>
                                 </div>
-                                <div className="info-media">
+                                <div className="info-media pb-4">
                                     <div className="media-icon">
-                                        <img src="/images/icon/email.png" alt="icon" />
+                                        <Image src="/images/icon/email.png" alt="email icon" width={60} height={60} />
                                     </div>
                                     <div className="media-body">
                                         <h4 className="info-title">Mail info:</h4>
-                                        <p className="info-text"><a href="mailto:maryamspecialpreschool@gmail.com">maryamspecialpreschool@gmail.com</a></p>
+                                        <p className="info-text"><a href="mailto:maryamspecialpreschool@gmail.com" className="text-inherit">maryamspecialpreschool@gmail.com</a></p>
                                     </div>
                                 </div>
-                                <div className="contact-location">
-                                    {/* Hyderabad Map Placeholder */}
+                                <div className="contact-location mt-40">
                                     <iframe
                                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.301598260443!2d78.41348067462718!3d17.3973080025203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb970029f31d09%3A0x54949668e3cdba90!2sMaryam%20Studio%20CDC%20and%20Research%20for%20Autism!5e0!3m2!1sen!2sin!4v1771663506969!5m2!1sen!2sin"
                                         width="100%"
                                         height="450"
-                                        style={{ border: 0 }}
+                                        style={{ border: 0, borderRadius: '15px' }}
                                         allowFullScreen
                                         loading="lazy"
                                         referrerPolicy="no-referrer-when-downgrade"
+                                        title="Google Maps - Maryam Child Development Studio Hyderabad"
                                     ></iframe>
                                 </div>
                             </div>

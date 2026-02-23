@@ -110,6 +110,7 @@ export default function Home() {
             alt="Hero Background"
             fill
             priority
+            quality={75}
             style={{ objectFit: 'cover', zIndex: -1 }}
             className="hero-bg-image"
           />
@@ -130,7 +131,7 @@ export default function Home() {
           <div className="shape-mockup movingBottomLeft" data-bottom="20%" data-left="0%"><img src="/images/icon/ballon-3.png" alt="shapes" /></div>
           <div className="shape-mockup moving z-index-3 d-none d-xl-block" data-bottom="2%" data-right="2%"><img src="/images/icon/hero-icon1.png" alt="shapes" /></div>
           <div className="section-after style-2 d-none d-md-block">
-            <img src="/images/shape/hero-shep.png" alt="shape" />
+            <Image src="/images/shape/hero-shep.png" alt="shape" width={1920} height={200} />
           </div>
         </section>
 
@@ -155,7 +156,7 @@ export default function Home() {
               {services.map((service) => (
                 <div key={service.slug} className="col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="0.1s">
                   <div className="service-box-two">
-                    <div className="service-img position-relative" style={{ height: '240px' }}>
+                    <div className="service-img position-relative" style={{ height: '400px' }}>
                       <Image
                         src={service.image}
                         alt={service.title}
@@ -188,11 +189,11 @@ export default function Home() {
               <div className="col-xl-5 col-lg-12 wow fadeInLeft" data-wow-delay="0.1s">
                 <div className="about-img text-center text-lg-start">
                   <div className="position-relative d-inline-block">
-                    <img className="image-one" src="/images/normal/about2-1.jpg" alt="about" />
-                    <img className="image" src="/images/normal/about2-2.jpg" alt="about" />
+                    {/* <Image className="image-one" src="/images/normal/about2-1.jpg" alt="about" width={370} height={450} /> */}
+                    <Image className="image" src="/images/normal/about2-2.jpg" alt="about" width={270} height={350} />
                   </div>
                   <div className="anim-image">
-                    <img className="image-three" src="/images/shape/circle2-2.png" alt="about" />
+                    <Image className="image-three" src="/images/shape/circle2-2.png" alt="about" width={500} height={500} />
                   </div>
                 </div>
               </div>
@@ -232,7 +233,9 @@ export default function Home() {
               className="optimized-icon"
             />
           </div>
-          <div className="tadi shapePulse d-none d-lg-block" data-bottom="23%" data-right="6%"><img src="/images/icon/tadi.png" alt="shapes" /></div>
+          <div className="tadi shapePulse d-none d-lg-block" data-bottom="23%" data-right="6%">
+            <Image src="/images/icon/tadi.png" alt="shapes" width={150} height={150} />
+          </div>
         </section>
 
 
@@ -289,8 +292,12 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="wave shapePulse d-none d-lg-block"><img src="/images/shape/wave.png" alt="shapes" /></div>
-          <div className="letter shapePulse d-none d-lg-block"><img src="/images/shape/letter.png" alt="shapes" /></div>
+          <div className="wave shapePulse d-none d-lg-block">
+            <Image src="/images/shape/wave.png" alt="shapes" width={100} height={100} />
+          </div>
+          <div className="letter shapePulse d-none d-lg-block">
+            <Image src="/images/shape/letter.png" alt="shapes" width={100} height={100} />
+          </div>
         </section>
 
         {/* Why Choose Us - Index-4 Style (Tabs) */}
@@ -376,8 +383,12 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="glob shapePulse d-none d-lg-block"><img src="/images/shape/glob.png" alt="shapes" /></div>
-          <div className="star rotate d-none d-lg-block"><img src="/images/shape/star.png" alt="shapes" /></div>
+          <div className="glob shapePulse d-none d-lg-block">
+            <Image src="/images/shape/glob.png" alt="shapes" width={100} height={100} />
+          </div>
+          <div className="star rotate d-none d-lg-block">
+            <Image src="/images/shape/star.png" alt="shapes" width={80} height={80} />
+          </div>
         </section>
 
         {/* Gallery Preview Section */}
@@ -447,7 +458,9 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="grass d-none d-lg-block"><img src="/images/shape/grass.png" alt="shapes" /></div>
+          <div className="grass d-none d-lg-block">
+            <Image src="/images/shape/grass.png" alt="shapes" width={1920} height={150} />
+          </div>
         </section>
 
 

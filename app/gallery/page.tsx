@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import Breadcrumb from '@/components/Breadcrumb';
 
 const galleryItems = [
@@ -37,18 +38,43 @@ export default function GalleryPage() {
                         <p className="fs-md mb-40">Our gallery showcases our classrooms, therapy rooms, group activities, and parent workshops that create a nurturing environment for children with special needs.</p>
                     </div>
                     <div className="project-menu text-center mb-40 filter-menu-active">
-                        <button className={activeFilter === '*' ? 'active' : ''} onClick={() => setActiveFilter('*')}>All Zone <img className="btn-bg" src="/images/bg/btn-bg.png" alt="btn-bg" /><img className="btn-active-bg" src="/images/bg/btn-bg-active.png" alt="btn-active-bg" /></button>
-                        <button className={activeFilter === 'cat-4' ? 'active' : ''} onClick={() => setActiveFilter('cat-4')}>Clinic & Facility <img className="btn-bg" src="/images/bg/btn-bg.png" alt="btn-bg" /><img className="btn-active-bg" src="/images/bg/btn-bg-active.png" alt="btn-active-bg" /></button>
-                        <button className={activeFilter === 'cat-1' ? 'active' : ''} onClick={() => setActiveFilter('cat-1')}>Therapy <img className="btn-bg" src="/images/bg/btn-bg.png" alt="btn-bg" /><img className="btn-active-bg" src="/images/bg/btn-bg-active.png" alt="btn-active-bg" /></button>
-                        <button className={activeFilter === 'cat-2' ? 'active' : ''} onClick={() => setActiveFilter('cat-2')}>Activities <img className="btn-bg" src="/images/bg/btn-bg.png" alt="btn-bg" /><img className="btn-active-bg" src="/images/bg/btn-bg-active.png" alt="btn-active-bg" /></button>
-                        <button className={activeFilter === 'cat-3' ? 'active' : ''} onClick={() => setActiveFilter('cat-3')}>Events <img className="btn-bg" src="/images/bg/btn-bg.png" alt="btn-bg" /><img className="btn-active-bg" src="/images/bg/btn-bg-active.png" alt="btn-active-bg" /></button>
+                        <button className={activeFilter === '*' ? 'active' : ''} onClick={() => setActiveFilter('*')}>
+                            All Zone
+                            <Image className="btn-bg" src="/images/bg/btn-bg.png" alt="btn-bg" width={150} height={50} />
+                            <Image className="btn-active-bg" src="/images/bg/btn-bg-active.png" alt="btn-active-bg" width={150} height={50} />
+                        </button>
+                        <button className={activeFilter === 'cat-4' ? 'active' : ''} onClick={() => setActiveFilter('cat-4')}>
+                            Clinic & Facility
+                            <Image className="btn-bg" src="/images/bg/btn-bg.png" alt="btn-bg" width={150} height={50} />
+                            <Image className="btn-active-bg" src="/images/bg/btn-bg-active.png" alt="btn-active-bg" width={150} height={50} />
+                        </button>
+                        <button className={activeFilter === 'cat-1' ? 'active' : ''} onClick={() => setActiveFilter('cat-1')}>
+                            Therapy
+                            <Image className="btn-bg" src="/images/bg/btn-bg.png" alt="btn-bg" width={150} height={50} />
+                            <Image className="btn-active-bg" src="/images/bg/btn-bg-active.png" alt="btn-active-bg" width={150} height={50} />
+                        </button>
+                        <button className={activeFilter === 'cat-2' ? 'active' : ''} onClick={() => setActiveFilter('cat-2')}>
+                            Activities
+                            <Image className="btn-bg" src="/images/bg/btn-bg.png" alt="btn-bg" width={150} height={50} />
+                            <Image className="btn-active-bg" src="/images/bg/btn-bg-active.png" alt="btn-active-bg" width={150} height={50} />
+                        </button>
+                        <button className={activeFilter === 'cat-3' ? 'active' : ''} onClick={() => setActiveFilter('cat-3')}>
+                            Events
+                            <Image className="btn-bg" src="/images/bg/btn-bg.png" alt="btn-bg" width={150} height={50} />
+                            <Image className="btn-active-bg" src="/images/bg/btn-bg-active.png" alt="btn-active-bg" width={150} height={50} />
+                        </button>
                     </div>
                     <div className="row g-20 justify-content-center filter-active">
                         {galleryItems.filter(item => activeFilter === '*' || item.category.includes(activeFilter)).map((item) => (
                             <div key={item.id} className={`col-xl-3 col-lg-4 col-sm-6 filter-item ${item.category}`}>
                                 <div className="project-card">
-                                    <div className="project-img">
-                                        <img src={item.src} alt={item.alt} />
+                                    <div className="project-img position-relative" style={{ height: '250px' }}>
+                                        <Image
+                                            src={item.src}
+                                            alt={item.alt}
+                                            fill
+                                            style={{ objectFit: 'cover' }}
+                                        />
                                     </div>
                                     <a href={item.src} className="plus-btn popup-image">+</a>
                                 </div>
@@ -56,11 +82,21 @@ export default function GalleryPage() {
                         ))}
                     </div>
                 </div>
-                <div className="shape-after"><img src="/images/shape/after-shape-5.png" alt="shape" /></div>
-                <div className="shape-mockup movingX d-none d-hd-block" data-top="15%" data-left="9%"><img src="/images/icon/duck.png" alt="shapes" /></div>
-                <div className="shape-mockup movingX d-none d-hd-block" data-bottom="15%" data-left="9%"><img src="/images/icon/butterfly-5.png" alt="shapes" /></div>
-                <div className="shape-mockup shapePulse d-none d-hd-block" data-top="14%" data-right="7%"><img src="/images/icon/sun-3.png" alt="shapes" /></div>
-                <div className="shape-mockup moving d-none d-sm-block" data-bottom="17%" data-right="6%"><img src="/images/icon/leaves.png" alt="shapes" /></div>
+                <div className="shape-after">
+                    <Image src="/images/shape/after-shape-5.png" alt="shape" width={1920} height={150} />
+                </div>
+                <div className="shape-mockup movingX d-none d-hd-block" data-top="15%" data-left="9%">
+                    <Image src="/images/icon/duck.png" alt="shapes" width={100} height={100} />
+                </div>
+                <div className="shape-mockup movingX d-none d-hd-block" data-bottom="15%" data-left="9%">
+                    <Image src="/images/icon/butterfly-5.png" alt="shapes" width={80} height={80} />
+                </div>
+                <div className="shape-mockup shapePulse d-none d-hd-block" data-top="14%" data-right="7%">
+                    <Image src="/images/icon/sun-3.png" alt="shapes" width={120} height={120} />
+                </div>
+                <div className="shape-mockup moving d-none d-sm-block" data-bottom="17%" data-right="6%">
+                    <Image src="/images/icon/leaves.png" alt="shapes" width={100} height={100} />
+                </div>
             </section>
 
             {/* Simple Section */}
@@ -69,7 +105,7 @@ export default function GalleryPage() {
                     <div className="row gy-40 align-items-center">
                         <div className="col-lg-6 text-center text-lg-start">
                             <div className="img-box-3">
-                                <img src="/images/normal/shape-img-1.png" alt="photo" />
+                                <Image src="/images/normal/shape-img-1.png" alt="photo" width={500} height={500} />
                             </div>
                         </div>
                         <div className="col-xl-5 col-lg-6 offset-xl-1">

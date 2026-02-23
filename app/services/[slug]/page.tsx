@@ -80,7 +80,7 @@ export default async function ServiceDetailsPage({ params }: { params: Promise<{
                     <div className="row gy-30">
                         <div className="col-xl-9 col-lg-8">
                             <div className="service-details">
-                                <div className="service-img position-relative mb-30" style={{ height: '450px' }}>
+                                <div className="service-img position-relative mb-30" style={{ height: '500px' }}>
                                     <Image
                                         src={service.image}
                                         alt={service.title}
