@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import Breadcrumb from '@/components/Breadcrumb';
 import Counter from '@/components/Counter';
 import { Metadata } from 'next';
@@ -22,9 +23,23 @@ export default function AboutPage() {
                 <div className="container">
                     <div className="row align-items-center gy-30">
                         <div className="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
-                            <div className="img-box-2">
-                                <img src="/images/project/clinic1.jpeg" alt="Maryam CDC Clinic Facility" className="big-img" />
-                                <img src="/images/project/clinic2.jpeg" alt="Therapy Room" className="small-img" />
+                            <div className="img-box-2 position-relative" style={{ height: '400px' }}>
+                                <Image
+                                    src="/images/project/clinic1.jpeg"
+                                    alt="Maryam CDC Clinic Facility"
+                                    fill
+                                    style={{ objectFit: 'cover' }}
+                                    className="big-img rounded-3"
+                                />
+                                <div className="position-absolute small-img-wrapper" style={{ bottom: '-20px', right: '0', width: '200px', height: '150px', zIndex: 1 }}>
+                                    <Image
+                                        src="/images/project/clinic2.jpeg"
+                                        alt="Therapy Room"
+                                        fill
+                                        style={{ objectFit: 'cover' }}
+                                        className="rounded-3 shadow-lg"
+                                    />
+                                </div>
                             </div>
                         </div>
                         <div className="col-lg-5 wow fadeInRight" data-wow-delay="0.1s">
@@ -51,14 +66,20 @@ export default function AboutPage() {
             </section>
 
             {/* Counter Section */}
-            <section className="counter-section space-double" style={{ backgroundImage: "url('/images/bg/counter.jpg')" }} data-overlay="title" data-opacity="8">
+            <section className="counter-section space-double position-relative overflow-hidden" data-overlay="title" data-opacity="8">
+                <Image
+                    src="/images/bg/counter.jpg"
+                    alt="Counter Background"
+                    fill
+                    style={{ objectFit: 'cover', zIndex: -1 }}
+                />
                 <div className="container">
                     <div className="row gy-30 justify-content-between">
                         {/* Single Item */}
                         <div className="col-xl-auto col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
                             <div className="counter-box">
                                 <div className="counter-icon">
-                                    <img src="/images/icon/counter-1.png" alt="icon" />
+                                    <Image src="/images/icon/counter-1.png" alt="icon" width={60} height={60} />
                                 </div>
                                 <div className="counter-info">
                                     <h2 className="counter-title" style={{ color: '#fff' }}><Counter end={45} /></h2>
@@ -70,7 +91,7 @@ export default function AboutPage() {
                         <div className="col-xl-auto col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
                             <div className="counter-box">
                                 <div className="counter-icon">
-                                    <img src="/images/icon/counter-2.png" alt="icon" />
+                                    <Image src="/images/icon/counter-2.png" alt="icon" width={60} height={60} />
                                 </div>
                                 <div className="counter-info">
                                     <h2 className="counter-title" style={{ color: '#fff' }}><Counter end={20} suffix="+" /></h2>
@@ -82,7 +103,7 @@ export default function AboutPage() {
                         <div className="col-xl-auto col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
                             <div className="counter-box">
                                 <div className="counter-icon">
-                                    <img src="/images/icon/counter-3.png" alt="icon" />
+                                    <Image src="/images/icon/counter-3.png" alt="icon" width={60} height={60} />
                                 </div>
                                 <div className="counter-info">
                                     <h2 className="counter-title" style={{ color: '#fff' }}><Counter end={565} suffix="+" /></h2>
@@ -94,7 +115,7 @@ export default function AboutPage() {
                         <div className="col-xl-auto col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
                             <div className="counter-box">
                                 <div className="counter-icon">
-                                    <img src="/images/icon/counter-4.png" alt="icon" />
+                                    <Image src="/images/icon/counter-4.png" alt="icon" width={60} height={60} />
                                 </div>
                                 <div className="counter-info">
                                     <h2 className="counter-title" style={{ color: '#fff' }}><Counter end={15} suffix="+" /></h2>
@@ -130,7 +151,7 @@ export default function AboutPage() {
                                     <span className="process-number">01</span>
                                     <div className="process-content">
                                         <div className="process-icon">
-                                            <img src="/images/icon/process2-1.png" alt="icon" />
+                                            <Image src="/images/icon/process2-1.png" alt="icon" width={60} height={60} />
                                         </div>
                                         <h5 className="process-name"><Link href="/services">Assessment</Link></h5>
                                     </div>
@@ -142,7 +163,7 @@ export default function AboutPage() {
                                     <span className="process-number">02</span>
                                     <div className="process-content">
                                         <div className="process-icon">
-                                            <img src="/images/icon/process2-2.png" alt="icon" />
+                                            <Image src="/images/icon/process2-2.png" alt="icon" width={60} height={60} />
                                         </div>
                                         <h5 className="process-name"><Link href="/contact">Consultation</Link></h5>
                                     </div>
@@ -154,7 +175,7 @@ export default function AboutPage() {
                                     <span className="process-number">03</span>
                                     <div className="process-content">
                                         <div className="process-icon">
-                                            <img src="/images/icon/process2-3.png" alt="icon" />
+                                            <Image src="/images/icon/process2-3.png" alt="icon" width={60} height={60} />
                                         </div>
                                         <h5 className="process-name"><Link href="/services">Start Therapy</Link></h5>
                                     </div>
@@ -166,7 +187,7 @@ export default function AboutPage() {
                                     <span className="process-number">04</span>
                                     <div className="process-content">
                                         <div className="process-icon">
-                                            <img src="/images/icon/process2-4.png" alt="icon" />
+                                            <Image src="/images/icon/process2-4.png" alt="icon" width={60} height={60} />
                                         </div>
                                         <h5 className="process-name"><Link href="/services">Monitor Progress</Link></h5>
                                     </div>

@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 
 const faqSchema = {
   "@context": "https://schema.org",
@@ -103,7 +104,15 @@ export default function Home() {
 
       <main>
         {/* Hero Section - Index-4 Style */}
-        <section className="vs-hero-wrapper-four position-relative" data-bg-src="/images/bg/hero4-1.jpg">
+        <section className="vs-hero-wrapper-four position-relative overflow-hidden">
+          <Image
+            src="/images/bg/hero4-1.jpg"
+            alt="Hero Background"
+            fill
+            priority
+            style={{ objectFit: 'cover', zIndex: -1 }}
+            className="hero-bg-image"
+          />
           <div className="container">
             <div className="hero-content4 text-center text-md-start">
               <span className="hero-subtitle mb-2" data-ani="slideinup" data-ani-delay="0s">Maryam Child Development Studio</span>
@@ -146,8 +155,13 @@ export default function Home() {
               {services.map((service) => (
                 <div key={service.slug} className="col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="0.1s">
                   <div className="service-box-two">
-                    <div className="service-img">
-                      <img src={service.image} alt={service.title} />
+                    <div className="service-img position-relative" style={{ height: '240px' }}>
+                      <Image
+                        src={service.image}
+                        alt={service.title}
+                        fill
+                        style={{ objectFit: 'cover' }}
+                      />
                     </div>
                     <div className="service-content">
                       <h3 className="service-title h4"><Link href={`/services/${service.slug}`}>{service.title}</Link></h3>
@@ -162,13 +176,21 @@ export default function Home() {
         </section>
 
         {/* About Section - Index-4 Style */}
-        <section className="about-section-two space" data-bg-src="/images/bg/about-bg2-1.png">
+        <section className="about-section-two space position-relative overflow-hidden">
+          <Image
+            src="/images/bg/about-bg2-1.png"
+            alt="About Background"
+            fill
+            style={{ objectFit: 'cover', zIndex: -1 }}
+          />
           <div className="container">
             <div className="row gy-30 align-items-center">
               <div className="col-xl-5 col-lg-12 wow fadeInLeft" data-wow-delay="0.1s">
                 <div className="about-img text-center text-lg-start">
-                  <img className="image-one" src="/images/normal/about2-1.jpg" alt="about" />
-                  <img className="image" src="/images/normal/about2-2.jpg" alt="about" />
+                  <div className="position-relative d-inline-block">
+                    <img className="image-one" src="/images/normal/about2-1.jpg" alt="about" />
+                    <img className="image" src="/images/normal/about2-2.jpg" alt="about" />
+                  </div>
                   <div className="anim-image">
                     <img className="image-three" src="/images/shape/circle2-2.png" alt="about" />
                   </div>
@@ -201,7 +223,15 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="anim-img"><img src="/images/icon/kids.png" alt="" /></div>
+          <div className="anim-img">
+            <Image
+              src="/images/icon/kids.png"
+              alt="Kids icon"
+              width={150}
+              height={150}
+              className="optimized-icon"
+            />
+          </div>
           <div className="tadi shapePulse d-none d-lg-block" data-bottom="23%" data-right="6%"><img src="/images/icon/tadi.png" alt="shapes" /></div>
         </section>
 
@@ -210,8 +240,13 @@ export default function Home() {
         <section className="simple-section space">
           <div className="row g-0 align-items-center">
             <div className="col-xl-5 col-lg-12 wow fadeInLeft" data-wow-delay="0.1s">
-              <div className="img-box-1">
-                <img src="/images/normal/simple1-1.jpg" alt="photo" />
+              <div className="img-box-1 position-relative" style={{ height: '500px' }}>
+                <Image
+                  src="/images/normal/simple1-1.jpg"
+                  alt="Philosophy"
+                  fill
+                  style={{ objectFit: 'cover' }}
+                />
               </div>
             </div>
             <div className="col-xl-7 col-lg-12 wow fadeInRight" data-wow-delay="0.1s">
@@ -222,7 +257,7 @@ export default function Home() {
                 <div className="simple-block">
                   <div className="feature-box-two">
                     <div className="feature-icon">
-                      <img src="/images/icon/t2-1.png" alt="icon" />
+                      <Image src="/images/icon/t2-1.png" alt="icon" width={40} height={40} />
                     </div>
                     <div className="feature-info">
                       <h4 className="feature-title">Expert Therapists</h4>
@@ -231,7 +266,7 @@ export default function Home() {
                   </div>
                   <div className="feature-box-two">
                     <div className="feature-icon">
-                      <img src="/images/icon/t2-2.png" alt="icon" />
+                      <Image src="/images/icon/t2-2.png" alt="icon" width={40} height={40} />
                     </div>
                     <div className="feature-info">
                       <h4 className="feature-title">Holistic Approach</h4>
@@ -240,7 +275,7 @@ export default function Home() {
                   </div>
                   <div className="feature-box-two">
                     <div className="feature-icon">
-                      <img src="/images/icon/t2-3.png" alt="icon" />
+                      <Image src="/images/icon/t2-3.png" alt="icon" width={40} height={40} />
                     </div>
                     <div className="feature-info">
                       <h4 className="feature-title">Parent Partnership</h4>
@@ -248,7 +283,9 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <img className="image" src="/images/normal/simple2-1.png" alt="" />
+                <div className="position-relative d-inline-block">
+                  <Image src="/images/normal/simple2-1.png" alt="" width={300} height={200} />
+                </div>
               </div>
             </div>
           </div>
@@ -267,7 +304,14 @@ export default function Home() {
                     <h2 className="sec-title">Why Parents Trust Maryam Studio</h2>
                     <p className="mb-50">Choosing the right center is one of the most important decisions you will make. Here is why families in Hyderabad choose us for their child's therapy.</p>
                   </div>
-                  <img src="/images/normal/why2-1.jpg" alt="photo" />
+                  <div className="position-relative" style={{ height: '400px' }}>
+                    <Image
+                      src="/images/normal/why2-1.jpg"
+                      alt="Why choose us"
+                      fill
+                      style={{ objectFit: 'cover' }}
+                    />
+                  </div>
                 </div>
               </div>
               <div className="col-xl-6 col-lg-12 text-center text-lg-start wow fadeInRight" data-wow-delay="0.1s">
@@ -309,10 +353,14 @@ export default function Home() {
                       <p>Located centrally in Hyderabad with easy access to Tolichowki & Manikonda. Our state-of-the-art center is designed to be sensory-friendly, safe, and calming for children with processing needs.</p>
                       <div className="row g-10 mt-3">
                         <div className="col-6">
-                          <img src="/images/project/clinic1.jpeg" alt="Clinic Interior" className="rounded-3 w-100" style={{ height: '120px', objectFit: 'cover' }} />
+                          <div className="position-relative" style={{ height: '120px' }}>
+                            <Image src="/images/project/clinic1.jpeg" alt="Clinic Interior" fill style={{ objectFit: 'cover' }} className="rounded-3" />
+                          </div>
                         </div>
                         <div className="col-6">
-                          <img src="/images/project/clinic2.jpeg" alt="Therapy Room" className="rounded-3 w-100" style={{ height: '120px', objectFit: 'cover' }} />
+                          <div className="position-relative" style={{ height: '120px' }}>
+                            <Image src="/images/project/clinic2.jpeg" alt="Therapy Room" fill style={{ objectFit: 'cover' }} className="rounded-3" />
+                          </div>
                         </div>
                       </div>
                       <div className="check-list mt-20">
@@ -358,8 +406,14 @@ export default function Home() {
               ].map((img, index) => (
                 <div key={index} className="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay={`${0.1 * (index + 1)}s`}>
                   <div className="project-card">
-                    <div className="project-img">
-                      <img src={`/images/project/${img.src}`} alt={img.alt} className="w-100" style={{ height: '280px', objectFit: 'cover', borderRadius: '15px' }} />
+                    <div className="project-img position-relative" style={{ height: '280px', borderRadius: '15px', overflow: 'hidden' }}>
+                      <Image
+                        src={`/images/project/${img.src}`}
+                        alt={img.alt}
+                        fill
+                        style={{ objectFit: 'cover' }}
+                        className="w-100"
+                      />
                     </div>
                   </div>
                 </div>
@@ -372,13 +426,19 @@ export default function Home() {
         </section>
 
         {/* Classes Section Three (CTA Style from index-4.html) */}
-        <section className="classes-section-three" data-bg-src="/images/bg/counter-bg.png">
+        <section className="classes-section-three position-relative overflow-hidden">
+          <Image
+            src="/images/bg/counter-bg.png"
+            alt="Counter Background"
+            fill
+            style={{ objectFit: 'cover', zIndex: -1 }}
+          />
           <div className="container">
             <div className="row align-items-center wow fadeInUp" data-wow-delay="0.1s">
               <div className="col-lg-6">
                 <div className="title-area text-center text-lg-start mb-0 wow fadeInUp" data-wow-delay="0.1s">
-                  <span className="sub-title">Start Your Journey</span>
-                  <h2 className="sec-title">Call To Enroll Your Child<br />
+                  <span className="sub-title text-white">Start Your Journey</span>
+                  <h2 className="sec-title text-white">Call To Enroll Your Child<br />
                     <a className="text-inherit" href="tel:+917702426362">+91 770 242 6362</a></h2>
                 </div>
               </div>

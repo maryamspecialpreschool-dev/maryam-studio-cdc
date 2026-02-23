@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
 export default function Header() {
@@ -42,7 +43,15 @@ export default function Header() {
                 <div className="vs-menu-area">
                     <button className="vs-menu-toggle"><i className="fal fa-times"></i></button>
                     <div className="mobile-logo">
-                        <Link href="/"><img src="/images/logo.png" alt="Maryam Child Development Studio" style={{ maxHeight: '60px' }} /></Link>
+                        <Link href="/">
+                            <Image
+                                src="/images/logo.png"
+                                alt="Maryam Child Development Studio"
+                                width={180}
+                                height={60}
+                                style={{ objectFit: 'contain' }}
+                            />
+                        </Link>
                     </div>
                     <div className="vs-mobile-menu">
                         <ul>
@@ -115,7 +124,13 @@ export default function Header() {
                                         <div className="col-auto">
                                             <div className="header-logo">
                                                 <Link href="/">
-                                                    <img src="/images/logo.png" alt="Maryam Child Development Studio" style={{ maxHeight: '60px' }} />
+                                                    <Image
+                                                        src="/images/logo.png"
+                                                        alt="Maryam Child Development Studio"
+                                                        width={180}
+                                                        height={60}
+                                                        style={{ objectFit: 'contain' }}
+                                                    />
                                                 </Link>
                                             </div>
                                         </div>

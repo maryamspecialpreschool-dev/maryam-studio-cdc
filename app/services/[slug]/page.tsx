@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import Image from 'next/image';
 import Breadcrumb from '@/components/Breadcrumb';
 import { notFound } from 'next/navigation';
 import { servicesData, ServiceData } from '@/lib/servicesData';
@@ -79,8 +80,14 @@ export default async function ServiceDetailsPage({ params }: { params: Promise<{
                     <div className="row gy-30">
                         <div className="col-xl-9 col-lg-8">
                             <div className="service-details">
-                                <div className="service-img">
-                                    <img src={service.image} alt={service.title} />
+                                <div className="service-img position-relative mb-30" style={{ height: '450px' }}>
+                                    <Image
+                                        src={service.image}
+                                        alt={service.title}
+                                        fill
+                                        style={{ objectFit: 'cover' }}
+                                        className="rounded-3"
+                                    />
                                 </div>
                                 <h2 className="single-title">{service.title} in Hyderabad</h2>
                                 <div className="service-content">
@@ -198,10 +205,22 @@ export default async function ServiceDetailsPage({ params }: { params: Promise<{
                                     </ul>
                                 </div>
                                 <div className="widget wow fadeInUp" data-wow-delay="0.1s">
-                                    <div className="banner-2">
-                                        <img className="d-none d-lg-block w-100" src="/images/banner/widget-banner-2.jpg" alt="ads banner" />
-                                        <img className="d-block d-lg-none w-100" src="/images/banner/widget-banner-3.jpg" alt="ads banner" />
-                                        <div className="banner-content">
+                                    <div className="banner-2 position-relative" style={{ height: '400px' }}>
+                                        <Image
+                                            src="/images/banner/widget-banner-2.jpg"
+                                            alt="ads banner"
+                                            fill
+                                            style={{ objectFit: 'cover' }}
+                                            className="d-none d-lg-block rounded-3"
+                                        />
+                                        <Image
+                                            src="/images/banner/widget-banner-3.jpg"
+                                            alt="ads banner"
+                                            fill
+                                            style={{ objectFit: 'cover' }}
+                                            className="d-block d-lg-none rounded-3"
+                                        />
+                                        <div className="banner-content position-absolute bottom-0 start-0 w-100 p-3 text-center">
                                             <Link href="/contact" className="vs-btn style-2">Book Now</Link>
                                         </div>
                                     </div>
