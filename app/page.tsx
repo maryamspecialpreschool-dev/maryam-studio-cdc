@@ -186,39 +186,74 @@ export default function Home() {
           />
           <div className="container">
             <div className="row gy-30 align-items-center">
-              <div className="col-xl-5 col-lg-12 wow fadeInLeft" data-wow-delay="0.1s">
-                <div className="about-img text-center text-lg-start">
-                  <div className="position-relative d-inline-block">
-                    {/* <Image className="image-one" src="/images/normal/about2-1.jpg" alt="about" width={370} height={450} /> */}
-                    <Image className="image" src="/images/normal/about2-2.jpg" alt="about" width={270} height={350} />
-                  </div>
-                  <div className="anim-image">
-                    <Image className="image-three" src="/images/shape/circle2-2.png" alt="about" width={500} height={500} />
+              <div className="col-xl-7 col-lg-12 order-2 order-xl-1">
+                <div className="about-content">
+                  <div className="title-area wow fadeInUp" data-wow-delay="0.1s">
+                    <span className="sub-title">Expert Care</span>
+                    <h2 className="sec-title">A Parent-Led Autism School in Hyderabad</h2>
+                    <div className="sec-text py-xl-2 py-4">
+                      <p>
+                        Maryam Child Development Studio (CDC) is a dedicated space for neurodivergent children
+                        to bloom at their own pace.
+                      </p>
+                      <p className="mt-3">
+                        Founded by parents who navigated the same path, we offer evidence-based,
+                        compassionate therapy that empowers both children and their families.
+                      </p>
+                      <div className="list-style1 py-xl-2 py-4">
+                        <ul className="list-unstyled">
+                          <li className="d-flex align-items-center mb-3">
+                            <i className="fas fa-check-circle me-3" style={{ color: '#00D1FF', fontSize: '1.2rem' }}></i>
+                            <strong>Expert-led interventions</strong>
+                          </li>
+                          <li className="d-flex align-items-center mb-3">
+                            <i className="fas fa-check-circle me-3" style={{ color: '#00D1FF', fontSize: '1.2rem' }}></i>
+                            <strong>Parent involvement</strong>
+                          </li>
+                          <li className="d-flex align-items-center mb-3">
+                            <i className="fas fa-check-circle me-3" style={{ color: '#00D1FF', fontSize: '1.2rem' }}></i>
+                            <strong>Inclusive playground</strong>
+                          </li>
+                          <li className="d-flex align-items-center mb-3">
+                            <i className="fas fa-check-circle me-3" style={{ color: '#00D1FF', fontSize: '1.2rem' }}></i>
+                            <strong>Safe and fun environment</strong>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <Link href="/about" className="vs-btn wave-btn style-1 mt-4">Read Our Story</Link>
                   </div>
                 </div>
               </div>
-              <div className="col-xl-7 col-lg-12 wow fadeInRight" data-wow-delay="0.1s">
-                <div className="content-box">
-                  <div className="title-area">
-                    <span className="sub-title">About Maryam Studio</span>
-                    <h2 className="sec-title">A Parent-Led Autism School in Hyderabad</h2>
-                  </div>
-                  <p>Maryam Child Development Studio & Research for Autism is Hyderabad’s first concept-based autism school. Unlike traditional therapy centers that offer short sessions, we provide a full-day, structured, and immersive environment where learning and therapy happen throughout the day.</p>
-                  <p>Founded by parents who understand the journey, our goal is simple: to help every child move toward independence, confidence, and inclusion.</p>
-
-                  <div className="check-list">
-                    <ul>
-                      <li>Full-Day Integrated Programs</li>
-                      <li>Sensory-Friendly Environment</li>
-                    </ul>
-                    <ul>
-                      <li>Certified Therapists & Special Educators</li>
-                      <li>Research-Based Interventions (ABA, ESDM)</li>
-                    </ul>
-                  </div>
-                  <div className="two-btns">
-                    <Link href="/contact" className="vs-btn wave-btn">Schedule a Visit</Link>
-                    <Link href="/about" className="vs-btn wave-btn style-1">Read Our Story</Link>
+              <div className="col-xl-5 col-lg-12 order-1 order-xl-2 wow fadeInRight" data-wow-delay="0.1s">
+                <div className="about-img text-center text-xl-end mb-5 mb-xl-0">
+                  <div className="position-relative d-inline-block" style={{ zIndex: 10 }}>
+                    <Image
+                      src="/images/project/clinic1.jpeg"
+                      alt="Maryam CDC Clinic"
+                      width={460}
+                      height={550}
+                      style={{
+                        borderRadius: '30px',
+                        objectFit: 'cover',
+                        border: '10px solid white',
+                        boxShadow: '0 15px 35px rgba(0,0,0,0.1)'
+                      }}
+                    />
+                    <div className="position-absolute bottom-0 start-0 translate-middle-x ms-5 mb-n4 d-none d-sm-block" style={{ zIndex: 11 }}>
+                      <Image
+                        src="/images/project/clinic2.jpeg"
+                        alt="Therapy Session"
+                        width={250}
+                        height={320}
+                        style={{
+                          borderRadius: '20px',
+                          objectFit: 'cover',
+                          border: '5px solid white',
+                          boxShadow: '0 10px 25px rgba(0,0,0,0.1)'
+                        }}
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
