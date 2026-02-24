@@ -80,12 +80,12 @@ export default async function ServiceDetailsPage({ params }: { params: Promise<{
                     <div className="row gy-30">
                         <div className="col-xl-9 col-lg-8">
                             <div className="service-details">
-                                <div className="service-img position-relative mb-30" style={{ height: '500px' }}>
+                                <div className="service-img position-relative mb-30 bg-light" style={{ height: '500px', overflow: 'hidden' }}>
                                     <Image
                                         src={service.image}
                                         alt={service.title}
                                         fill
-                                        style={{ objectFit: 'cover' }}
+                                        style={{ objectFit: service.image.includes('/blog/') ? 'contain' : 'cover' }}
                                         className="rounded-3"
                                     />
                                 </div>

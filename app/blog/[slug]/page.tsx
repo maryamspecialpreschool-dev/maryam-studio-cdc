@@ -137,12 +137,12 @@ export default async function BlogDetailsPage({ params }: { params: Promise<{ sl
                                     <div className="related-posts-list">
                                         {relatedPosts.map((rp, idx) => (
                                             <div key={idx} className="rp-item d-flex gap-3 mb-3 pb-3 border-bottom last-border-0 transition-all">
-                                                <div className="rp-img flex-shrink-0" style={{ width: '70px', height: '70px' }}>
+                                                <div className="rp-img flex-shrink-0 bg-light position-relative" style={{ width: '70px', height: '70px' }}>
                                                     <Image
                                                         src={rp.image || '/images/logo.jpeg'}
                                                         alt={rp.title}
                                                         fill
-                                                        style={{ objectFit: 'cover' }}
+                                                        style={{ objectFit: (rp.image && rp.image.includes('/blog/')) ? 'contain' : 'cover' }}
                                                         className="rounded-3 shadow-sm"
                                                     />
                                                 </div>

@@ -43,12 +43,12 @@ export default function ServicesPage() {
                         {Object.entries(servicesData).map(([slug, service], index) => (
                             <div key={slug} className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay={`${0.1 * (index + 1)}s`}>
                                 <div className="service-box" data-overlay="title" data-opacity="6">
-                                    <div className="service-img position-relative" style={{ height: '500px' }}>
+                                    <div className="service-img position-relative bg-light" style={{ height: '500px', overflow: 'hidden' }}>
                                         <Image
                                             src={service.image}
                                             alt={service.title}
                                             fill
-                                            style={{ objectFit: 'cover' }}
+                                            style={{ objectFit: service.image.includes('/blog/') ? 'contain' : 'cover' }}
                                         />
                                     </div>
                                     <div className="service-content">

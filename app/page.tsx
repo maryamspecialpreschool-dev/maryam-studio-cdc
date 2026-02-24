@@ -47,49 +47,49 @@ const services = [
     title: 'Occupational Therapy',
     slug: 'occupational-therapy',
     description: 'Expert occupational therapy for children in Hyderabad. Specialized in sensory processing, fine motor skills, and daily living activities.',
-    image: '/images/services/ot-1.jpg',
+    image: '/images/blog/pediatric.jpeg',
     icon: '/images/icon/sr2-1.svg'
   },
   {
     title: 'Speech Therapy',
     slug: 'speech-therapy',
     description: 'Professional speech therapy for toddlers and children in Hyderabad. Helping with speech delays, language development, and communication.',
-    image: '/images/services/speech-1.jpg',
+    image: '/images/blog/alexithymia.jpeg',
     icon: '/images/icon/sr2-2.svg'
   },
   {
     title: 'Physiotherapy',
     slug: 'physiotherapy',
     description: 'Pediatric physiotherapy for kids in Hyderabad. Improving gross motor skills, strength, and physical development.',
-    image: '/images/services/physio-1.jpg',
+    image: '/images/project/clinic-3.jpg',
     icon: '/images/icon/sr2-3.svg'
   },
   {
     title: 'ABA & Behavioural Therapy',
     slug: 'aba-therapy',
     description: 'Evidence-based ABA therapy for autism in Hyderabad. Led by certified BCBAs to help children reach their potential.',
-    image: '/images/services/aba-1.jpg',
+    image: '/images/blog/behaviour-communication.jpeg',
     icon: '/images/icon/sr2-4.svg'
   },
   {
     title: 'Daycare Program',
     slug: 'daycare',
     description: 'Specialized daycare for children with special needs in Hyderabad. Safe, structured environment with therapy integration.',
-    image: '/images/services/daycare-1.jpg',
+    image: '/images/project/clinic18.jpeg',
     icon: '/images/icon/sr2-5.svg'
   },
   {
     title: 'Primary Education',
     slug: 'primary-education',
     description: 'Special education school in Hyderabad for children with developmental delays. Individualized learning with therapy support.',
-    image: '/images/services/education-1.jpg',
+    image: '/images/project/clinic21.jpeg',
     icon: '/images/icon/sr2-6.svg'
   },
   {
     title: 'Living Skills Training',
     slug: 'living-skills',
     description: 'ADL and living skills training in Hyderabad. Teaching independence and self-care skills for children with autism.',
-    image: '/images/services/living-skills-1.jpg',
+    image: '/images/blog/selfcare.jpeg',
     icon: '/images/icon/sr2-1.svg'
   }
 ];

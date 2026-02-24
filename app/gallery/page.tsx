@@ -16,12 +16,31 @@ const galleryItems = [
     { id: 8, src: '/images/project/clinic8.jpeg', category: 'cat-4', alt: 'Maryam CDC Clinic - Child-Safe Furniture & Environment' },
     { id: 9, src: '/images/project/clinic9.jpeg', category: 'cat-4', alt: 'Maryam CDC Clinic - Learning & Development Corner' },
     { id: 10, src: '/images/project/clinic10.jpeg', category: 'cat-4', alt: 'Maryam CDC Clinic - Multidisciplinary Support Zone' },
-    { id: 11, src: '/images/project/clinic-1.jpg', category: 'cat-3', alt: 'Maryam CDC Clinic - Clinical Assessment Room' },
-    { id: 12, src: '/images/project/clinic-2.jpg', category: 'cat-3', alt: 'Maryam CDC Clinic - Speech Therapy Station' },
-    { id: 13, src: '/images/project/clinic-3.jpg', category: 'cat-1', alt: 'Maryam CDC Clinic - Physical Therapy Equipment' },
-    { id: 14, src: '/images/project/p-4.jpg', category: 'cat-1 cat-2', alt: 'Therapy Activity - Developing Motor Skills' },
-    { id: 15, src: '/images/project/p-5.jpg', category: 'cat-2', alt: 'Activity Zone - Creative Engagement' },
-    { id: 16, src: '/images/project/p-6.jpg', category: 'cat-3', alt: 'Event - Parent-Teacher Interaction' },
+    { id: 11, src: '/images/project/clinic11.jpeg', category: 'cat-4', alt: 'Maryam CDC Clinic - Specialized Therapy Equipment' },
+    { id: 12, src: '/images/project/clinic12.jpeg', category: 'cat-4', alt: 'Maryam CDC Clinic - Quiet Learning Space' },
+    { id: 13, src: '/images/project/clinic13.jpeg', category: 'cat-4', alt: 'Maryam CDC Clinic - Advanced Assessment Center' },
+    { id: 14, src: '/images/project/clinic14.jpeg', category: 'cat-4', alt: 'Maryam CDC Clinic - Bright Therapy Environment' },
+    { id: 15, src: '/images/project/clinic15.jpeg', category: 'cat-4', alt: 'Maryam CDC Clinic - Child-Friendly Decor' },
+    { id: 16, src: '/images/project/clinic16.jpeg', category: 'cat-4', alt: 'Maryam CDC Clinic - Modern Treatment Room' },
+    { id: 17, src: '/images/project/clinic17.jpeg', category: 'cat-4', alt: 'Maryam CDC Clinic - Safe Play Zone' },
+    { id: 18, src: '/images/project/clinic18.jpeg', category: 'cat-4', alt: 'Maryam CDC Clinic - Reception Area' },
+    { id: 19, src: '/images/project/clinic19.jpeg', category: 'cat-4', alt: 'Maryam CDC Clinic - Therapy Equipment Hall' },
+    { id: 20, src: '/images/project/clinic20.jpeg', category: 'cat-4', alt: 'Maryam CDC Clinic - Educational Display' },
+    { id: 21, src: '/images/project/clinic21.jpeg', category: 'cat-1', alt: 'Therapy Session - Early Intervention' },
+    { id: 22, src: '/images/project/clinic22.jpeg', category: 'cat-1', alt: 'Therapy Session - Progress Tracking' },
+    { id: 23, src: '/images/project/clinic-1.jpg', category: 'cat-3', alt: 'Maryam CDC Clinic - Clinical Assessment Room' },
+    { id: 24, src: '/images/project/clinic-2.jpg', category: 'cat-3', alt: 'Maryam CDC Clinic - Speech Therapy Station' },
+    { id: 25, src: '/images/project/clinic-3.jpg', category: 'cat-1', alt: 'Maryam CDC Clinic - Physical Therapy Equipment' },
+    { id: 26, src: '/images/project/p-1.jpg', category: 'cat-1', alt: 'ABA Therapy - Skill Building Session' },
+    { id: 27, src: '/images/project/p-2.jpg', category: 'cat-1', alt: 'Behavioral Support - Positive Reinforcement' },
+    { id: 28, src: '/images/project/p-3.jpg', category: 'cat-2', alt: 'Daycare Activity - Social Interaction' },
+    { id: 29, src: '/images/project/p-4.jpg', category: 'cat-1 cat-2', alt: 'Therapy Activity - Developing Motor Skills' },
+    { id: 30, src: '/images/project/p-5.jpg', category: 'cat-2', alt: 'Activity Zone - Creative Engagement' },
+    { id: 31, src: '/images/project/p-6.jpg', category: 'cat-3', alt: 'Event - Parent-Teacher Interaction' },
+    { id: 32, src: '/images/blog/alexithymia.jpeg', category: 'cat-1 cat-2', alt: 'Blog Flyer - Supporting Alexithymia' },
+    { id: 33, src: '/images/blog/pediatric.jpeg', category: 'cat-1 cat-2', alt: 'Blog Flyer - Pediatric OT Small Group Management' },
+    { id: 34, src: '/images/blog/behaviour-communication.jpeg', category: 'cat-1 cat-2', alt: 'Blog Flyer - Behavior is Communication' },
+    { id: 35, src: '/images/blog/selfcare.jpeg', category: 'cat-1 cat-2', alt: 'Blog Flyer - Beyond Self-Care social ADLs' },
 ];
 
 export default function GalleryPage() {
@@ -68,12 +87,12 @@ export default function GalleryPage() {
                         {galleryItems.filter(item => activeFilter === '*' || item.category.includes(activeFilter)).map((item) => (
                             <div key={item.id} className={`col-xl-3 col-lg-4 col-sm-6 filter-item ${item.category}`}>
                                 <div className="project-card">
-                                    <div className="project-img position-relative" style={{ height: '250px' }}>
+                                    <div className="project-img position-relative bg-light" style={{ height: '250px', overflow: 'hidden' }}>
                                         <Image
                                             src={item.src}
                                             alt={item.alt}
                                             fill
-                                            style={{ objectFit: 'cover' }}
+                                            style={{ objectFit: item.src.includes('/blog/') ? 'contain' : 'cover' }}
                                         />
                                     </div>
                                     <a href={item.src} className="plus-btn popup-image">+</a>

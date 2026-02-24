@@ -48,13 +48,14 @@ export default function BlogPage() {
                             <div key={post.slug} className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay={`${0.1 * (index % 3 + 1)}s`}>
                                 <div className="vs-blog blog-single">
                                     {post.image && (
-                                        <div className="blog-img position-relative" style={{ height: '220px' }}>
+                                        <div className="blog-img position-relative bg-light" style={{ height: '220px', overflow: 'hidden' }}>
                                             <Link href={`/blog/${post.slug}`}>
                                                 <Image
                                                     src={post.image}
                                                     alt={post.title}
                                                     fill
-                                                    style={{ objectFit: 'cover' }}
+                                                    style={{ objectFit: post.image.includes('/blog/') ? 'contain' : 'cover' }}
+                                                    priority={index < 3}
                                                 />
                                             </Link>
                                         </div>
